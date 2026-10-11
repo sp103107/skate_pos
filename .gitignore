@@ -1,0 +1,17 @@
+# Never commit live environments or runtime state
+.venv/
+**/.venv/
+.local-runtime/
+**/.local-runtime/
+__pycache__/
+*.pyc
+node_modules/
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+Thumbs.db
+
+# Editor / agent scratch
+.cursor/
+*.log
