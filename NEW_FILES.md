@@ -24,3 +24,5 @@ Sealed `frozen/` archives are never modified.
 | `docs/pos/` | Design, migration, backup, non-claims |
 | `evidence/pos/` | Measured pytest evidence |
 | `NEW_FILES.md` | This index |
+
+| gaps_package_gp0002/ | Post-A01 ChatGPT review package GP-0002 |
