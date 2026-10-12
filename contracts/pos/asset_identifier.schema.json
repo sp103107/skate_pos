@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:pos:asset-identifier:0.1.0",
+  "title": "POS Asset Identifier (lookup only — never authentication)",
+  "type": "object",
+  "required": ["identifier", "asset_id", "identifier_kind", "active", "created_at"],
+  "properties": {
+    "identifier": { "type": "string", "minLength": 1, "maxLength": 120 },
+    "asset_id": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "identifier_kind": {
+      "enum": ["LABEL", "BARCODE", "QR", "NFC_UID", "MANUAL"]
+    },
+    "active": { "type": ["boolean", "integer"] },
+    "created_at": { "type": "string", "format": "date-time" },
+    "retired_at": { "type": ["string", "null"], "format": "date-time" }
+  },
+  "additionalProperties": true
+}

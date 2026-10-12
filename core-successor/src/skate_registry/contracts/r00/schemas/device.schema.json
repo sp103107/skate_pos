@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:device:0.1.0",
+  "title": "Device",
+  "type": "object",
+  "required": [
+    "device_id",
+    "name",
+    "device_type",
+    "status",
+    "created_at"
+  ],
+  "properties": {
+    "device_id": {
+      "$ref": "common.schema.json#/$defs/device_id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 120
+    },
+    "device_type": {
+      "type": "string",
+      "enum": [
+        "COUNTER_TABLET",
+        "PHONE",
+        "BARCODE_SCANNER_HOST",
+        "SERVER",
+        "MAINTENANCE_STATION",
+        "OTHER"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "REVOKED",
+        "RETIRED"
+      ]
+    },
+    "last_sync_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

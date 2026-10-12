@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:location:0.1.0",
+  "title": "Location",
+  "type": "object",
+  "required": [
+    "location_id",
+    "name",
+    "location_type",
+    "created_at"
+  ],
+  "properties": {
+    "location_id": {
+      "$ref": "common.schema.json#/$defs/location_id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "location_type": {
+      "type": "string",
+      "enum": [
+        "RINK",
+        "STORAGE",
+        "EXTERNAL_EVENT",
+        "TRANSIT",
+        "MAINTENANCE",
+        "OTHER"
+      ]
+    },
+    "address_text": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 300
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "additionalProperties": false
+}

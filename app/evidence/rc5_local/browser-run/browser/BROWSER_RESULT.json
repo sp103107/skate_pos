@@ -1,0 +1,53 @@
+{
+  "status": "PASS_OPERATOR_MEASUREMENT_NOT_JUDGE",
+  "checks": [
+    "UIB01_runtime_ready",
+    "UIB02_keyboard_scan_detail",
+    "UIB03_mutation_projection_refresh",
+    "UIB04_receipt",
+    "UIB05_gated_controls",
+    "UIB06_navigation_health",
+    "UIB07_empty_filter",
+    "UIB08_error_receipt",
+    "UIB09_focus",
+    "UIB10_responsive_render",
+    "UIB11_runtime_unavailable"
+  ],
+  "case_count": 11,
+  "errors": [],
+  "skips": 0,
+  "browser_launched": true,
+  "browser_version": "151.0.7922.34",
+  "browser_executable": "/root/skate-ui01/work/browsers/chromium-1234/chrome-linux64/chrome",
+  "browser_executable_sha256": "0b20b130e7edd9dd51873be867761295fe0cfad490c2b9a64f95bd3cfc08fa71",
+  "screenshots": {
+    "desktop.png": "d6a1b004942f412d9c0951bd9d1ab4ff8810de9092a8b835bce562f08a89fc6f",
+    "mobile.png": "ea39e5ed022fff2d505eab71cf47cb3e827b18f0e4ed27d08a98a5ed2844b1b7"
+  },
+  "source_hashes": {
+    "frontend/app.js": "f915103d6116b0c974cd3c61e087447b850e26e31d7b61e26fbca24f3a0f56a5",
+    "frontend/adapter.js": "85f23fc74fc4449bb1641371b30021fac99b397922824f8ccb2c2b8bd3c69481",
+    "frontend/index.html": "562d9f5b1263f87675f8845028973a30d9563ef974eb1dd953156608dc23989c",
+    "frontend/app.css": "95db6677a97187f94745fbae1d3ea279910da1eefd9908f769920bab43c87e4f",
+    "tests/browser_smoke.cjs": "7e5ddd0b77c5af3fff6be5e7163dcd2ba64445167a32df8b28efc7e230add321"
+  },
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "playwright": "1.62.1"
+  },
+  "mode": "ACTUAL_CORE_SYNTHETIC_ONLY",
+  "startup": {
+    "origin": "http://127.0.0.1:41821",
+    "mode": "ACTUAL_CORE_SYNTHETIC_ONLY",
+    "workspace": "/tmp/skate-ui01-demo-browser-8a767f35-d714-47ff-ae20-e1f9435f3028",
+    "identity": {
+      "distribution": "skate-inventory-core==0.3.1rc1",
+      "origin": "/root/skate-ui01/rc5/python/lib/python3.12/site-packages",
+      "files_verified": 43
+    }
+  },
+  "serverStderr": "",
+  "independent_verdict": false,
+  "visual_review": "REQUIRES_OPERATOR_INSPECTION"
+}

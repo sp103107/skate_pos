@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:rental-session:0.1.0",
+  "title": "Rental Session",
+  "type": "object",
+  "required": [
+    "rental_session_id",
+    "session_type",
+    "location_id",
+    "opened_at",
+    "status"
+  ],
+  "properties": {
+    "rental_session_id": {
+      "type": "string",
+      "pattern": "^RS-[A-Z0-9_-]{4,64}$"
+    },
+    "session_type": {
+      "type": "string",
+      "enum": [
+        "PUBLIC_SKATE",
+        "BIRTHDAY_PARTY",
+        "ROCKIN_SKATE",
+        "STICK_AND_PUCK",
+        "EXTERNAL_EVENT",
+        "OTHER"
+      ]
+    },
+    "location_id": {
+      "$ref": "common.schema.json#/$defs/location_id"
+    },
+    "name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    },
+    "opened_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "closed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "OPEN",
+        "CLOSED",
+        "CANCELLED"
+      ]
+    },
+    "external_reference": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    }
+  },
+  "additionalProperties": false
+}

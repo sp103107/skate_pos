@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.4.0-a01.1",
+  "commands": {
+    "register_asset": {
+      "type": "object",
+      "required": ["asset"],
+      "properties": {
+        "asset": {
+          "type": "object",
+          "required": ["asset_id", "asset_kind", "current_location_id"],
+          "properties": {
+            "asset_id": {"type": "string", "minLength": 1, "maxLength": 80},
+            "asset_kind": {"enum": ["SKATE_BOOT", "SKATING_AID", "HELMET"]},
+            "brand": {"type": ["string", "null"], "maxLength": 80},
+            "model": {"type": ["string", "null"], "maxLength": 80},
+            "size_system": {
+              "anyOf": [
+                {"type": "string", "enum": ["US_MENS", "US_WOMENS", "US_YOUTH", "EU", "OTHER"]},
+                {"type": "null"}
+              ]
+            },
+            "size_value": {"type": ["string", "number", "null"]},
+            "side": {
+              "anyOf": [
+                {"type": "string", "enum": ["L", "R"]},
+                {"type": "null"}
+              ]
+            },
+            "category": {"type": ["string", "null"], "maxLength": 40},
+            "condition": {"type": "string", "maxLength": 40},
+            "availability_state": {
+              "enum": [
+                "AVAILABLE",
+                "HELD",
+                "RENTED",
+                "RETURNED_AWAITING_INSPECTION",
+                "MAINTENANCE",
+                "LOST",
+                "RETIRED"
+              ]
+            },
+            "current_location_id": {"type": "string", "pattern": "^LOC-[A-Z0-9_-]{2,48}$"},
+            "origin_pair_id": {"type": ["string", "null"]},
+            "origin_component_id": {"type": ["string", "null"]},
+            "identifier": {"type": ["string", "null"], "minLength": 1, "maxLength": 120},
+            "identifier_kind": {"enum": ["LABEL", "BARCODE", "QR", "NFC_UID", "MANUAL"]}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "add_asset_identifier": {
+      "type": "object",
+      "required": ["asset_id", "identifier", "identifier_kind"],
+      "properties": {
+        "asset_id": {"type": "string", "minLength": 1, "maxLength": 80},
+        "identifier": {"type": "string", "minLength": 1, "maxLength": 120},
+        "identifier_kind": {"enum": ["LABEL", "BARCODE", "QR", "NFC_UID", "MANUAL"]}
+      },
+      "additionalProperties": false
+    }
+  }
+}

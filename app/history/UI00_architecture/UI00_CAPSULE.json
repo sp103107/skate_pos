@@ -1,0 +1,35 @@
+{
+  "capsule_id": "skate-inventory-use-system-ui00",
+  "capsule_version": "0.1.0",
+  "status": "DESIGN_ONLY_CANDIDATE",
+  "title": "Skate Inventory + Use System \u2014 UI00 Frontend Core Architecture",
+  "parent": {
+    "artifact": "Skate_Inventory_Use_System_Core_Capsule_v0.3.0.zip",
+    "sha256": "b71b985851b90a79d9d5d667cf890738f4d951da6c2501033d43da3b88e119ea"
+  },
+  "stage": "UI00_FRONTEND_CORE_ARCHITECTURE_AND_FE_BE_MAPPING_MATRIX",
+  "runtime_baseline": "R02 Event Ledger + Runtime Spine v0.2.0",
+  "runtime_activation_authorized": false,
+  "frontend_runtime_activation_authorized": false,
+  "rental_activation_authorized": false,
+  "communications_activation_authorized": false,
+  "next_stage": "UI01_FRONTEND_REFERENCE_IMPLEMENTATION",
+  "scope": [
+    "frontend component architecture",
+    "FE/BE mapping",
+    "role-aware action surfaces",
+    "offline UX contract",
+    "communications adapter boundary",
+    "design system",
+    "PNG asset round 01",
+    "static reference shell"
+  ],
+  "non_claims": [
+    "No API server is activated.",
+    "No rental checkout/check-in runtime is activated.",
+    "No maintenance policy engine is activated.",
+    "No reservation or revenue engine is activated.",
+    "No MCP, HTTP, NATS, WebSocket, Unix socket, or VPort listener is activated.",
+    "No direct frontend writes to SQLite or other persistence are authorized."
+  ]
+}

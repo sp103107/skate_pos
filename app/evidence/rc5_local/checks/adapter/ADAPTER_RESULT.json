@@ -1,0 +1,56 @@
+{
+  "status": "PASS_FOREMAN_MEASUREMENT_NOT_JUDGE",
+  "at": "2026-10-09T02:27:45.118405+00:00",
+  "tests_run": 18,
+  "passed": 18,
+  "failures": [],
+  "errors": [],
+  "skips": [],
+  "case_ids": [
+    "ui01_tests.Integration.test_01_identity_and_seed",
+    "ui01_tests.Integration.test_02_queries_no_logical_write",
+    "ui01_tests.Integration.test_03_scan_receipt",
+    "ui01_tests.Integration.test_04_transfer_refresh_retry_conflict",
+    "ui01_tests.Integration.test_05_verify_inventory",
+    "ui01_tests.Integration.test_06_stale_version_no_write",
+    "ui01_tests.Integration.test_07_role_no_write",
+    "ui01_tests.Integration.test_08_reference_no_write",
+    "ui01_tests.Integration.test_09_invalid_envelope_no_write",
+    "ui01_tests.Integration.test_10_gated_operations_no_write",
+    "ui01_tests.Integration.test_11_invalid_queries_no_write",
+    "ui01_tests.Integration.test_12_unknown_asset_no_write",
+    "ui01_tests.Integration.test_13_perimeter_no_write",
+    "ui01_tests.Integration.test_14_methods_paths_no_write",
+    "ui01_tests.Integration.test_15_body_no_write",
+    "ui01_tests.Integration.test_16_workspace_no_overwrite",
+    "ui01_tests.Integration.test_17_static_real_source",
+    "ui01_tests.Integration.test_18_unavailable_runtime"
+  ],
+  "subtests_not_additive": true,
+  "environment": {
+    "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+    "sqlite": "3.45.1",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "dependencies": {
+      "jsonschema": "4.26.0",
+      "attrs": "26.1.0",
+      "referencing": "0.37.0",
+      "rpds-py": "2026.6.3",
+      "jsonschema-specifications": "2025.9.1",
+      "typing-extensions": "4.16.0",
+      "skate-inventory-core": "0.3.1rc1"
+    },
+    "PYTHONPATH": null
+  },
+  "source_hashes": {
+    "adapter/bridge.py": "77c500b77d8c3696a94533b2c3e84b845c2b8ceab38e356a6495a62334d6afaf",
+    "tests/test_adapter.py": "462f5127b1991163837b29a6e5f539e2edb1b46a2bfd3cc2814e1bee0a219325"
+  },
+  "synthetic_workspace": "/tmp/skate-ui01-demo-tests-f386575e1b55487f9b71d6980291277f",
+  "core_identity": {
+    "distribution": "skate-inventory-core==0.3.1rc1",
+    "origin": "/root/skate-ui01/rc5/python/lib/python3.12/site-packages",
+    "files_verified": 43
+  },
+  "independent_verdict": false
+}

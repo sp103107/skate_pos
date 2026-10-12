@@ -1,0 +1,63 @@
+{
+  "status": "IMPLEMENTED_FULL_FRONTEND_TYPES_AND_ADAPTER_MEASURED_BROWSER_ENVIRONMENT_PENDING",
+  "core_distribution": "skate-inventory-core==0.3.1rc1",
+  "source_projection_separation": "Canonical editable frontend/adapter; historical immutable UI00 design/prototype/assets retained. Browser projections read current Core; no local persistence authority.",
+  "deltas": [
+    {
+      "UI00": "R02 processor baseline",
+      "UI01": "Installed SkateInventoryCore(CoreConfig(explicit_synthetic_path))",
+      "classification": "actual_adapter_integration_measured"
+    },
+    {
+      "UI00": "ADAPTER_REQUIRED_UI01 inventory/health",
+      "UI01": "Core query(list_inventory/get_pair/find_asset/asset_history/runtime_status)",
+      "classification": "read_no_logical_write_measured"
+    },
+    {
+      "UI00": "future HTTP transport NOT_ACTIVATED",
+      "UI01": "UI01-specific serialized foreground 127.0.0.1 bridge, not API00",
+      "classification": "local_plumbing_measured"
+    },
+    {
+      "UI00": "Admin recovery tools designed",
+      "UI01": "No recovery/admin runtime endpoints; rejected",
+      "classification": "deliberate_scope_reduction"
+    },
+    {
+      "UI00": "offline queue concept",
+      "UI01": "No persistent offline queue; unavailable/stale state and explicit reconnect",
+      "classification": "deliberate_scope_reduction"
+    }
+  ],
+  "surfaces": {
+    "AppShell": "source implemented; browser navigation NOT_RUN",
+    "ScannerDock": "scan_asset command + receipt; adapter tested; browser Enter/focus NOT_RUN",
+    "Inventory": "list_inventory/get_pair queries + client filter; queries tested; browser filter/empty NOT_RUN",
+    "AssetDetail": "get_pair/version/transfer_location/verify_inventory; adapter actual tested; projection refresh code/browser NOT_RUN",
+    "ReceiptError": "Core receipts preserved, HTTP domain conflict/rejection surfaced; browser display NOT_RUN",
+    "RuntimeHealth": "runtime_status deep query actual measured; browser display NOT_RUN",
+    "RentalMaintenanceReservationsRevenue": "disabled source controls; browser disabled proof NOT_RUN; adapter rejection measured"
+  },
+  "commands": [
+    "link_pair",
+    "register_component",
+    "register_pair",
+    "scan_asset",
+    "transfer_location",
+    "verify_inventory"
+  ],
+  "query_params": "Copied exact Core C03 schema references; validated by installed Core.facades.validate_request; not redefined skate relay",
+  "identity": "Caller-supplied roles remain trusted-local, not authentication",
+  "gates": [
+    "R03 rentals",
+    "maintenance engine",
+    "reservations",
+    "revenue",
+    "recovery/rebuild UI",
+    "public API00",
+    "MCP/VPort listener",
+    "UI freeze",
+    "coding agents",
+    "Alice/Sorcerer transfer"
+  ]
+}

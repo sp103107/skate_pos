@@ -1,0 +1,2234 @@
+{
+  "status": "PASS_OPERATOR_MEASUREMENT_NOT_JUDGE",
+  "suite": "rc5_supplemental_nav_focus_workflow",
+  "independent_verdict": false,
+  "visual_review": "REQUIRES_OPERATOR_INSPECTION",
+  "browser_version": "151.0.7922.34",
+  "browser_executable_sha256": "0b20b130e7edd9dd51873be867761295fe0cfad490c2b9a64f95bd3cfc08fa71",
+  "widths": [
+    390,
+    720,
+    721,
+    1050,
+    1051,
+    1280
+  ],
+  "nav_items": [
+    "inventory",
+    "runtime",
+    "audit",
+    "rental",
+    "maintenance",
+    "reservations",
+    "revenue"
+  ],
+  "check_count": 68,
+  "failed_count": 0,
+  "checks": [
+    {
+      "name": "W390_document_no_horizontal_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyScrollWidth": 390,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W390_no_document_level_overflow_clipping",
+      "result": "PASS",
+      "detail": {
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W390_nav_all_items_fully_visible_unclipped_at_rest",
+      "result": "PASS",
+      "detail": {
+        "display": "flex",
+        "overflowX": "visible",
+        "scrollable": false,
+        "navHeight": 210,
+        "items": [
+          {
+            "view": "inventory",
+            "left": 18,
+            "right": 191,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "runtime",
+            "left": 197,
+            "right": 372,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "audit",
+            "left": 18,
+            "right": 197,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "rental",
+            "left": 203,
+            "right": 372,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "maintenance",
+            "left": 18,
+            "right": 372,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "reservations",
+            "left": 18,
+            "right": 208,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "revenue",
+            "left": 214,
+            "right": 372,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "W390_keyboard_reaches_every_nav_item_in_order",
+      "result": "PASS",
+      "detail": [
+        "inventory",
+        "runtime",
+        "audit",
+        "rental",
+        "maintenance",
+        "reservations",
+        "revenue"
+      ]
+    },
+    {
+      "name": "W390_focused_nav_item_scrolled_into_view_and_focus_visible",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "runtime",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "audit",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "rental",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "maintenance",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "reservations",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "revenue",
+          "inView": true,
+          "fv": true
+        }
+      ]
+    },
+    {
+      "name": "W390_focus_ring_unclipped_at_edges",
+      "result": "PASS",
+      "detail": {
+        "first": {
+          "inNav": true,
+          "view": "inventory",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 18,
+            "right": 190.90625,
+            "width": 172.90625
+          },
+          "clip": {
+            "left": 18,
+            "right": 372
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        },
+        "last": {
+          "inNav": true,
+          "view": "revenue",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 214.09375,
+            "right": 372,
+            "width": 157.90625
+          },
+          "clip": {
+            "left": 18,
+            "right": 372
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        }
+      }
+    },
+    {
+      "name": "W390_keyboard_enter_activates_nav_item",
+      "result": "PASS",
+      "detail": {
+        "title": "Revenue"
+      }
+    },
+    {
+      "name": "W390_pointer_click_each_nav_item_switches_view",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "title": "Inventory",
+          "ariaCurrent": "inventory",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "runtime",
+          "title": "Runtime",
+          "ariaCurrent": "runtime",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "audit",
+          "title": "Audit",
+          "ariaCurrent": "audit",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "rental",
+          "title": "Rental",
+          "ariaCurrent": "rental",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "maintenance",
+          "title": "Maintenance",
+          "ariaCurrent": "maintenance",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "reservations",
+          "title": "Reservations",
+          "ariaCurrent": "reservations",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "revenue",
+          "title": "Revenue",
+          "ariaCurrent": "revenue",
+          "sectionVisible": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "W390_inventory_table_readable",
+      "result": "PASS",
+      "detail": {
+        "rows": 2,
+        "wrapScrollWidth": 324,
+        "wrapClientWidth": 324,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 357,
+        "wrapRight": 357
+      }
+    },
+    {
+      "name": "W720_document_no_horizontal_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 720,
+        "scrollWidth": 720,
+        "clientWidth": 720,
+        "bodyScrollWidth": 720,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W720_no_document_level_overflow_clipping",
+      "result": "PASS",
+      "detail": {
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W720_nav_all_items_fully_visible_unclipped_at_rest",
+      "result": "PASS",
+      "detail": {
+        "display": "flex",
+        "overflowX": "visible",
+        "scrollable": false,
+        "navHeight": 102,
+        "items": [
+          {
+            "view": "inventory",
+            "left": 18,
+            "right": 185,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "runtime",
+            "left": 191,
+            "right": 360,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "audit",
+            "left": 366,
+            "right": 535,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "rental",
+            "left": 541,
+            "right": 702,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "maintenance",
+            "left": 18,
+            "right": 252,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "reservations",
+            "left": 258,
+            "right": 493,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "revenue",
+            "left": 499,
+            "right": 702,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "W720_keyboard_reaches_every_nav_item_in_order",
+      "result": "PASS",
+      "detail": [
+        "inventory",
+        "runtime",
+        "audit",
+        "rental",
+        "maintenance",
+        "reservations",
+        "revenue"
+      ]
+    },
+    {
+      "name": "W720_focused_nav_item_scrolled_into_view_and_focus_visible",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "runtime",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "audit",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "rental",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "maintenance",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "reservations",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "revenue",
+          "inView": true,
+          "fv": true
+        }
+      ]
+    },
+    {
+      "name": "W720_focus_ring_unclipped_at_edges",
+      "result": "PASS",
+      "detail": {
+        "first": {
+          "inNav": true,
+          "view": "inventory",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 18,
+            "right": 184.703125,
+            "width": 166.703125
+          },
+          "clip": {
+            "left": 18,
+            "right": 702
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        },
+        "last": {
+          "inNav": true,
+          "view": "revenue",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 499,
+            "right": 702,
+            "width": 203
+          },
+          "clip": {
+            "left": 18,
+            "right": 702
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        }
+      }
+    },
+    {
+      "name": "W720_keyboard_enter_activates_nav_item",
+      "result": "PASS",
+      "detail": {
+        "title": "Revenue"
+      }
+    },
+    {
+      "name": "W720_pointer_click_each_nav_item_switches_view",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "title": "Inventory",
+          "ariaCurrent": "inventory",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "runtime",
+          "title": "Runtime",
+          "ariaCurrent": "runtime",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "audit",
+          "title": "Audit",
+          "ariaCurrent": "audit",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "rental",
+          "title": "Rental",
+          "ariaCurrent": "rental",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "maintenance",
+          "title": "Maintenance",
+          "ariaCurrent": "maintenance",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "reservations",
+          "title": "Reservations",
+          "ariaCurrent": "reservations",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "revenue",
+          "title": "Revenue",
+          "ariaCurrent": "revenue",
+          "sectionVisible": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "W720_inventory_table_readable",
+      "result": "PASS",
+      "detail": {
+        "rows": 2,
+        "wrapScrollWidth": 654,
+        "wrapClientWidth": 654,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 687,
+        "wrapRight": 687
+      }
+    },
+    {
+      "name": "W721_document_no_horizontal_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 721,
+        "scrollWidth": 721,
+        "clientWidth": 721,
+        "bodyScrollWidth": 721,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W721_no_document_level_overflow_clipping",
+      "result": "PASS",
+      "detail": {
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W721_nav_all_items_fully_visible_unclipped_at_rest",
+      "result": "PASS",
+      "detail": {
+        "display": "flex",
+        "overflowX": "visible",
+        "scrollable": false,
+        "navHeight": 102,
+        "items": [
+          {
+            "view": "inventory",
+            "left": 18,
+            "right": 185,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "runtime",
+            "left": 191,
+            "right": 360,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "audit",
+            "left": 366,
+            "right": 536,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "rental",
+            "left": 542,
+            "right": 703,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "maintenance",
+            "left": 18,
+            "right": 252,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "reservations",
+            "left": 258,
+            "right": 494,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "revenue",
+            "left": 500,
+            "right": 703,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "W721_keyboard_reaches_every_nav_item_in_order",
+      "result": "PASS",
+      "detail": [
+        "inventory",
+        "runtime",
+        "audit",
+        "rental",
+        "maintenance",
+        "reservations",
+        "revenue"
+      ]
+    },
+    {
+      "name": "W721_focused_nav_item_scrolled_into_view_and_focus_visible",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "runtime",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "audit",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "rental",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "maintenance",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "reservations",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "revenue",
+          "inView": true,
+          "fv": true
+        }
+      ]
+    },
+    {
+      "name": "W721_focus_ring_unclipped_at_edges",
+      "result": "PASS",
+      "detail": {
+        "first": {
+          "inNav": true,
+          "view": "inventory",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 18,
+            "right": 184.953125,
+            "width": 166.953125
+          },
+          "clip": {
+            "left": 18,
+            "right": 703
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        },
+        "last": {
+          "inNav": true,
+          "view": "revenue",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 499.671875,
+            "right": 703,
+            "width": 203.328125
+          },
+          "clip": {
+            "left": 18,
+            "right": 703
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        }
+      }
+    },
+    {
+      "name": "W721_keyboard_enter_activates_nav_item",
+      "result": "PASS",
+      "detail": {
+        "title": "Revenue"
+      }
+    },
+    {
+      "name": "W721_pointer_click_each_nav_item_switches_view",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "title": "Inventory",
+          "ariaCurrent": "inventory",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "runtime",
+          "title": "Runtime",
+          "ariaCurrent": "runtime",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "audit",
+          "title": "Audit",
+          "ariaCurrent": "audit",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "rental",
+          "title": "Rental",
+          "ariaCurrent": "rental",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "maintenance",
+          "title": "Maintenance",
+          "ariaCurrent": "maintenance",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "reservations",
+          "title": "Reservations",
+          "ariaCurrent": "reservations",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "revenue",
+          "title": "Revenue",
+          "ariaCurrent": "revenue",
+          "sectionVisible": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "W721_inventory_table_readable",
+      "result": "PASS",
+      "detail": {
+        "rows": 2,
+        "wrapScrollWidth": 285,
+        "wrapClientWidth": 285,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 327.5,
+        "wrapRight": 327.5
+      }
+    },
+    {
+      "name": "W1050_document_no_horizontal_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 1050,
+        "scrollWidth": 1050,
+        "clientWidth": 1050,
+        "bodyScrollWidth": 1050,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W1050_no_document_level_overflow_clipping",
+      "result": "PASS",
+      "detail": {
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W1050_nav_all_items_fully_visible_unclipped_at_rest",
+      "result": "PASS",
+      "detail": {
+        "display": "flex",
+        "overflowX": "visible",
+        "scrollable": false,
+        "navHeight": 102,
+        "items": [
+          {
+            "view": "inventory",
+            "left": 18,
+            "right": 168,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "runtime",
+            "left": 174,
+            "right": 327,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "audit",
+            "left": 333,
+            "right": 486,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "rental",
+            "left": 492,
+            "right": 637,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "maintenance",
+            "left": 643,
+            "right": 834,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "reservations",
+            "left": 840,
+            "right": 1032,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "revenue",
+            "left": 18,
+            "right": 1032,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "W1050_keyboard_reaches_every_nav_item_in_order",
+      "result": "PASS",
+      "detail": [
+        "inventory",
+        "runtime",
+        "audit",
+        "rental",
+        "maintenance",
+        "reservations",
+        "revenue"
+      ]
+    },
+    {
+      "name": "W1050_focused_nav_item_scrolled_into_view_and_focus_visible",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "runtime",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "audit",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "rental",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "maintenance",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "reservations",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "revenue",
+          "inView": true,
+          "fv": true
+        }
+      ]
+    },
+    {
+      "name": "W1050_focus_ring_unclipped_at_edges",
+      "result": "PASS",
+      "detail": {
+        "first": {
+          "inNav": true,
+          "view": "inventory",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 18,
+            "right": 168.359375,
+            "width": 150.359375
+          },
+          "clip": {
+            "left": 18,
+            "right": 1032
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        },
+        "last": {
+          "inNav": true,
+          "view": "revenue",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 18,
+            "right": 1032,
+            "width": 1014
+          },
+          "clip": {
+            "left": 18,
+            "right": 1032
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        }
+      }
+    },
+    {
+      "name": "W1050_keyboard_enter_activates_nav_item",
+      "result": "PASS",
+      "detail": {
+        "title": "Revenue"
+      }
+    },
+    {
+      "name": "W1050_pointer_click_each_nav_item_switches_view",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "title": "Inventory",
+          "ariaCurrent": "inventory",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "runtime",
+          "title": "Runtime",
+          "ariaCurrent": "runtime",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "audit",
+          "title": "Audit",
+          "ariaCurrent": "audit",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "rental",
+          "title": "Rental",
+          "ariaCurrent": "rental",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "maintenance",
+          "title": "Maintenance",
+          "ariaCurrent": "maintenance",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "reservations",
+          "title": "Reservations",
+          "ariaCurrent": "reservations",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "revenue",
+          "title": "Revenue",
+          "ariaCurrent": "revenue",
+          "sectionVisible": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "W1050_inventory_table_readable",
+      "result": "PASS",
+      "detail": {
+        "rows": 2,
+        "wrapScrollWidth": 449,
+        "wrapClientWidth": 449,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 492,
+        "wrapRight": 492
+      }
+    },
+    {
+      "name": "W1051_document_no_horizontal_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 1051,
+        "scrollWidth": 1051,
+        "clientWidth": 1051,
+        "bodyScrollWidth": 1051,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W1051_no_document_level_overflow_clipping",
+      "result": "PASS",
+      "detail": {
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W1051_nav_all_items_fully_visible_unclipped_at_rest",
+      "result": "PASS",
+      "detail": {
+        "display": "block",
+        "overflowX": "visible",
+        "scrollable": false,
+        "navHeight": 372,
+        "items": [
+          {
+            "view": "inventory",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "runtime",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "audit",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "rental",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "maintenance",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "reservations",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "revenue",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "W1051_keyboard_reaches_every_nav_item_in_order",
+      "result": "PASS",
+      "detail": [
+        "inventory",
+        "runtime",
+        "audit",
+        "rental",
+        "maintenance",
+        "reservations",
+        "revenue"
+      ]
+    },
+    {
+      "name": "W1051_focused_nav_item_scrolled_into_view_and_focus_visible",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "runtime",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "audit",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "rental",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "maintenance",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "reservations",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "revenue",
+          "inView": true,
+          "fv": true
+        }
+      ]
+    },
+    {
+      "name": "W1051_focus_ring_unclipped_at_edges",
+      "result": "PASS",
+      "detail": {
+        "first": {
+          "inNav": true,
+          "view": "inventory",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 16,
+            "right": 204,
+            "width": 188
+          },
+          "clip": {
+            "left": 16,
+            "right": 204
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        },
+        "last": {
+          "inNav": true,
+          "view": "revenue",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 16,
+            "right": 204,
+            "width": 188
+          },
+          "clip": {
+            "left": 16,
+            "right": 204
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        }
+      }
+    },
+    {
+      "name": "W1051_keyboard_enter_activates_nav_item",
+      "result": "PASS",
+      "detail": {
+        "title": "Revenue"
+      }
+    },
+    {
+      "name": "W1051_pointer_click_each_nav_item_switches_view",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "title": "Inventory",
+          "ariaCurrent": "inventory",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "runtime",
+          "title": "Runtime",
+          "ariaCurrent": "runtime",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "audit",
+          "title": "Audit",
+          "ariaCurrent": "audit",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "rental",
+          "title": "Rental",
+          "ariaCurrent": "rental",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "maintenance",
+          "title": "Maintenance",
+          "ariaCurrent": "maintenance",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "reservations",
+          "title": "Reservations",
+          "ariaCurrent": "reservations",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "revenue",
+          "title": "Revenue",
+          "ariaCurrent": "revenue",
+          "sectionVisible": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "W1051_inventory_table_readable",
+      "result": "PASS",
+      "detail": {
+        "rows": 2,
+        "wrapScrollWidth": 388,
+        "wrapClientWidth": 388,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 658.71875,
+        "wrapRight": 658.71875
+      }
+    },
+    {
+      "name": "W1280_document_no_horizontal_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 1280,
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "bodyScrollWidth": 1280,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W1280_no_document_level_overflow_clipping",
+      "result": "PASS",
+      "detail": {
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "W1280_nav_all_items_fully_visible_unclipped_at_rest",
+      "result": "PASS",
+      "detail": {
+        "display": "block",
+        "overflowX": "visible",
+        "scrollable": false,
+        "navHeight": 372,
+        "items": [
+          {
+            "view": "inventory",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "runtime",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "audit",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "rental",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "maintenance",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "reservations",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          },
+          {
+            "view": "revenue",
+            "left": 16,
+            "right": 204,
+            "inNav": true,
+            "inViewport": true,
+            "height": 48
+          }
+        ]
+      }
+    },
+    {
+      "name": "W1280_keyboard_reaches_every_nav_item_in_order",
+      "result": "PASS",
+      "detail": [
+        "inventory",
+        "runtime",
+        "audit",
+        "rental",
+        "maintenance",
+        "reservations",
+        "revenue"
+      ]
+    },
+    {
+      "name": "W1280_focused_nav_item_scrolled_into_view_and_focus_visible",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "runtime",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "audit",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "rental",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "maintenance",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "reservations",
+          "inView": true,
+          "fv": true
+        },
+        {
+          "view": "revenue",
+          "inView": true,
+          "fv": true
+        }
+      ]
+    },
+    {
+      "name": "W1280_focus_ring_unclipped_at_edges",
+      "result": "PASS",
+      "detail": {
+        "first": {
+          "inNav": true,
+          "view": "inventory",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 16,
+            "right": 204,
+            "width": 188
+          },
+          "clip": {
+            "left": 16,
+            "right": 204
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        },
+        "last": {
+          "inNav": true,
+          "view": "revenue",
+          "focusVisible": true,
+          "scrollable": false,
+          "navScrollLeft": 0,
+          "button": {
+            "left": 16,
+            "right": 204,
+            "width": 188
+          },
+          "clip": {
+            "left": 16,
+            "right": 204
+          },
+          "inView": true,
+          "ringUnclipped": true,
+          "ringInViewport": true
+        }
+      }
+    },
+    {
+      "name": "W1280_keyboard_enter_activates_nav_item",
+      "result": "PASS",
+      "detail": {
+        "title": "Revenue"
+      }
+    },
+    {
+      "name": "W1280_pointer_click_each_nav_item_switches_view",
+      "result": "PASS",
+      "detail": [
+        {
+          "view": "inventory",
+          "title": "Inventory",
+          "ariaCurrent": "inventory",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "runtime",
+          "title": "Runtime",
+          "ariaCurrent": "runtime",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "audit",
+          "title": "Audit",
+          "ariaCurrent": "audit",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "rental",
+          "title": "Rental",
+          "ariaCurrent": "rental",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "maintenance",
+          "title": "Maintenance",
+          "ariaCurrent": "maintenance",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "reservations",
+          "title": "Reservations",
+          "ariaCurrent": "reservations",
+          "sectionVisible": true,
+          "ok": true
+        },
+        {
+          "view": "revenue",
+          "title": "Revenue",
+          "ariaCurrent": "revenue",
+          "sectionVisible": true,
+          "ok": true
+        }
+      ]
+    },
+    {
+      "name": "W1280_inventory_table_readable",
+      "result": "PASS",
+      "detail": {
+        "rows": 2,
+        "wrapScrollWidth": 519,
+        "wrapClientWidth": 519,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 790.265625,
+        "wrapRight": 790.265625
+      }
+    },
+    {
+      "name": "WF01_scan_enter_selects_pair_SKT-0900",
+      "result": "PASS",
+      "detail": {
+        "detail": "PairSKT-0900Size8StateAVAILABLELocationLOC-RINKCustodianORG-OWNERVersion4"
+      }
+    },
+    {
+      "name": "WF02_focus_retained_on_scan_input_after_scan",
+      "result": "PASS",
+      "detail": {
+        "activeElement": "scan-id"
+      }
+    },
+    {
+      "name": "WF03_move_and_verify_controls_visible_enabled_for_selected_pair",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "WF03_doc_width_390_selected_pair",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyScrollWidth": 390,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "WF04_move_accepted_projection_refreshed",
+      "result": "PASS",
+      "detail": {
+        "receiptState": "ACCEPTED · 7d070233-cefa-43ad-a20f-5fcb53b93caa"
+      }
+    },
+    {
+      "name": "WF05_verify_inventory_accepted_new_receipt",
+      "result": "PASS",
+      "detail": {
+        "receiptState": "ACCEPTED · ba82ec01-bd5a-4190-ba93-27b5db4cca5b"
+      }
+    },
+    {
+      "name": "WF05b_selected_identity_retained_after_verify",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "WF06_scan_next_pair_switches_selection_to_SKT-0901",
+      "result": "PASS",
+      "detail": {
+        "detail": "PairSKT-0901Size9StateAVAILABLELocationLOC-RINKCustodianORG-OWNERVersion4"
+      }
+    },
+    {
+      "name": "WF07_doc_width_390_receipt_view",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyScrollWidth": 390,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "WF08_long_identifier_error_no_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyScrollWidth": 390,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "WF08b_long_identifier_receipt_text_no_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyScrollWidth": 390,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "WF09_missing_asset_error_focus_visible_390",
+      "result": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "WF10_runtime_unavailable_390_no_overflow",
+      "result": "PASS",
+      "detail": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyScrollWidth": 390,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      }
+    },
+    {
+      "name": "PAGE_no_uncaught_page_errors",
+      "result": "PASS",
+      "detail": []
+    }
+  ],
+  "per_width": {
+    "390": {
+      "doc": {
+        "innerWidth": 390,
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "bodyScrollWidth": 390,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      },
+      "nav": {
+        "scrollWidth": 354,
+        "clientWidth": 354,
+        "scrollLeft": 0,
+        "scrollable": false,
+        "overflowX": "visible",
+        "display": "flex",
+        "rect": {
+          "left": 18,
+          "right": 372,
+          "top": 43.5,
+          "bottom": 253.5
+        },
+        "buttons": [
+          {
+            "view": "inventory",
+            "width": 172.90625
+          },
+          {
+            "view": "runtime",
+            "width": 175.09375
+          },
+          {
+            "view": "audit",
+            "width": 178.5625
+          },
+          {
+            "view": "rental",
+            "width": 169.4375
+          },
+          {
+            "view": "maintenance",
+            "width": 354
+          },
+          {
+            "view": "reservations",
+            "width": 190.09375
+          },
+          {
+            "view": "revenue",
+            "width": 157.90625
+          }
+        ]
+      },
+      "table": {
+        "rows": 2,
+        "wrapScrollWidth": 324,
+        "wrapClientWidth": 324,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 357,
+        "wrapRight": 357
+      }
+    },
+    "720": {
+      "doc": {
+        "innerWidth": 720,
+        "scrollWidth": 720,
+        "clientWidth": 720,
+        "bodyScrollWidth": 720,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      },
+      "nav": {
+        "scrollWidth": 684,
+        "clientWidth": 684,
+        "scrollLeft": 0,
+        "scrollable": false,
+        "overflowX": "visible",
+        "display": "flex",
+        "rect": {
+          "left": 18,
+          "right": 702,
+          "top": 43.5,
+          "bottom": 145.5
+        },
+        "buttons": [
+          {
+            "view": "inventory",
+            "width": 166.703125
+          },
+          {
+            "view": "runtime",
+            "width": 168.90625
+          },
+          {
+            "view": "audit",
+            "width": 169.765625
+          },
+          {
+            "view": "rental",
+            "width": 160.625
+          },
+          {
+            "view": "maintenance",
+            "width": 233.8125
+          },
+          {
+            "view": "reservations",
+            "width": 235.1875
+          },
+          {
+            "view": "revenue",
+            "width": 203
+          }
+        ]
+      },
+      "table": {
+        "rows": 2,
+        "wrapScrollWidth": 654,
+        "wrapClientWidth": 654,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 687,
+        "wrapRight": 687
+      }
+    },
+    "721": {
+      "doc": {
+        "innerWidth": 721,
+        "scrollWidth": 721,
+        "clientWidth": 721,
+        "bodyScrollWidth": 721,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      },
+      "nav": {
+        "scrollWidth": 685,
+        "clientWidth": 685,
+        "scrollLeft": 0,
+        "scrollable": false,
+        "overflowX": "visible",
+        "display": "flex",
+        "rect": {
+          "left": 18,
+          "right": 703,
+          "top": 43.5,
+          "bottom": 145.5
+        },
+        "buttons": [
+          {
+            "view": "inventory",
+            "width": 166.953125
+          },
+          {
+            "view": "runtime",
+            "width": 169.15625
+          },
+          {
+            "view": "audit",
+            "width": 170.015625
+          },
+          {
+            "view": "rental",
+            "width": 160.875
+          },
+          {
+            "view": "maintenance",
+            "width": 234.140625
+          },
+          {
+            "view": "reservations",
+            "width": 235.53125
+          },
+          {
+            "view": "revenue",
+            "width": 203.328125
+          }
+        ]
+      },
+      "table": {
+        "rows": 2,
+        "wrapScrollWidth": 285,
+        "wrapClientWidth": 285,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 327.5,
+        "wrapRight": 327.5
+      }
+    },
+    "1050": {
+      "doc": {
+        "innerWidth": 1050,
+        "scrollWidth": 1050,
+        "clientWidth": 1050,
+        "bodyScrollWidth": 1050,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      },
+      "nav": {
+        "scrollWidth": 1014,
+        "clientWidth": 1014,
+        "scrollLeft": 0,
+        "scrollable": false,
+        "overflowX": "visible",
+        "display": "flex",
+        "rect": {
+          "left": 18,
+          "right": 1032,
+          "top": 43.5,
+          "bottom": 145.5
+        },
+        "buttons": [
+          {
+            "view": "inventory",
+            "width": 150.359375
+          },
+          {
+            "view": "runtime",
+            "width": 152.5625
+          },
+          {
+            "view": "audit",
+            "width": 153.40625
+          },
+          {
+            "view": "rental",
+            "width": 144.28125
+          },
+          {
+            "view": "maintenance",
+            "width": 191
+          },
+          {
+            "view": "reservations",
+            "width": 192.390625
+          },
+          {
+            "view": "revenue",
+            "width": 1014
+          }
+        ]
+      },
+      "table": {
+        "rows": 2,
+        "wrapScrollWidth": 449,
+        "wrapClientWidth": 449,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 492,
+        "wrapRight": 492
+      }
+    },
+    "1051": {
+      "doc": {
+        "innerWidth": 1051,
+        "scrollWidth": 1051,
+        "clientWidth": 1051,
+        "bodyScrollWidth": 1051,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      },
+      "nav": {
+        "scrollWidth": 188,
+        "clientWidth": 188,
+        "scrollLeft": 0,
+        "scrollable": false,
+        "overflowX": "visible",
+        "display": "block",
+        "rect": {
+          "left": 16,
+          "right": 204,
+          "top": 115,
+          "bottom": 487
+        },
+        "buttons": [
+          {
+            "view": "inventory",
+            "width": 188
+          },
+          {
+            "view": "runtime",
+            "width": 188
+          },
+          {
+            "view": "audit",
+            "width": 188
+          },
+          {
+            "view": "rental",
+            "width": 188
+          },
+          {
+            "view": "maintenance",
+            "width": 188
+          },
+          {
+            "view": "reservations",
+            "width": 188
+          },
+          {
+            "view": "revenue",
+            "width": 188
+          }
+        ]
+      },
+      "table": {
+        "rows": 2,
+        "wrapScrollWidth": 388,
+        "wrapClientWidth": 388,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 658.71875,
+        "wrapRight": 658.71875
+      }
+    },
+    "1280": {
+      "doc": {
+        "innerWidth": 1280,
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "bodyScrollWidth": 1280,
+        "overflowX": "visible",
+        "bodyOverflowX": "visible",
+        "appOverflowX": "visible"
+      },
+      "nav": {
+        "scrollWidth": 188,
+        "clientWidth": 188,
+        "scrollLeft": 0,
+        "scrollable": false,
+        "overflowX": "visible",
+        "display": "block",
+        "rect": {
+          "left": 16,
+          "right": 204,
+          "top": 115,
+          "bottom": 487
+        },
+        "buttons": [
+          {
+            "view": "inventory",
+            "width": 188
+          },
+          {
+            "view": "runtime",
+            "width": 188
+          },
+          {
+            "view": "audit",
+            "width": 188
+          },
+          {
+            "view": "rental",
+            "width": 188
+          },
+          {
+            "view": "maintenance",
+            "width": 188
+          },
+          {
+            "view": "reservations",
+            "width": 188
+          },
+          {
+            "view": "revenue",
+            "width": 188
+          }
+        ]
+      },
+      "table": {
+        "rows": 2,
+        "wrapScrollWidth": 519,
+        "wrapClientWidth": 519,
+        "wrapScrolls": false,
+        "minFont": 13,
+        "headers": [
+          "Pair",
+          "Size",
+          "State",
+          "Location"
+        ],
+        "anyCellNarrowerThan8px": false,
+        "tableRight": 790.265625,
+        "wrapRight": 790.265625
+      }
+    }
+  },
+  "captures": {
+    "w390_inventory.png": "80234ebb90cc7849f11473f701cd9e9b0f4786a0cfd11654ffe00a90c906938b",
+    "w720_inventory.png": "07b24cd5c058f4efc997ab13308a9f4bcf69d51c13db64348a045e7817b0296f",
+    "w721_inventory.png": "a38d614c71bcbe0c61a86702a19da6b1b1fca8b1a1c5fc833a46ad80c73a5f6c",
+    "w1050_inventory.png": "e7220ec042461e1ff4fe92ae80a09e967ad60c88f7a115e04660258290837c5b",
+    "w1051_inventory.png": "8a3710af965d98430c8b0b9e239e95731766acdbc5d4d1180bf1c1f61e430597",
+    "w1280_inventory.png": "dc392db02f277b34bb66a7586d7c11edece0fb358663412b10b34d2554ae5f9d",
+    "m390_selected_pair_move_verify.png": "49bb0fc3e5074620ae9e8b9d40205049dc47c0aac1d89d65527d5d6fda3ea9a4",
+    "m390_receipt_audit.png": "6a07df719e5e11fdda74a01aed93bfa9e047b0157016cf1fdf7ec16b9089ca24",
+    "m390_long_identifier_error.png": "9763ddebff00b05993965438359a4033f221835b038c9ece70bdb23ccf70847e",
+    "m390_long_identifier_receipt.png": "9ad63ccb8fe10a22011adcedc5185a9e1397fccc7472c1181d9254926050f00f",
+    "m390_missing_asset_error.png": "408fb4db3e8cdb5cb2ff7fafef093d72a57010c9282dae5280d51ae4b03b7ebe",
+    "m390_runtime_unavailable.png": "7ff4c5ea20e634fae79e7c62255750edebc4c1629e02670353e39cfe90cb62cb",
+    "m390_runtime_unavailable_health_view.png": "77ae4b905727dbd22c16055d319f2671fdd25967d75fe45dc6dda22453b953d1"
+  },
+  "source_hashes": {
+    "frontend/app.css": "95db6677a97187f94745fbae1d3ea279910da1eefd9908f769920bab43c87e4f",
+    "frontend/index.html": "562d9f5b1263f87675f8845028973a30d9563ef974eb1dd953156608dc23989c",
+    "frontend/app.js": "f915103d6116b0c974cd3c61e087447b850e26e31d7b61e26fbca24f3a0f56a5",
+    "frontend/adapter.js": "85f23fc74fc4449bb1641371b30021fac99b397922824f8ccb2c2b8bd3c69481"
+  },
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "linux",
+    "playwright": "1.62.1"
+  },
+  "startup": {
+    "origin": "http://127.0.0.1:43785",
+    "mode": "ACTUAL_CORE_SYNTHETIC_ONLY",
+    "workspace": "/tmp/skate-ui01-demo-navfocus-af6d8a46-4114-4c03-8279-11ae26fd34ea",
+    "identity": {
+      "distribution": "skate-inventory-core==0.3.1rc1",
+      "origin": "/root/skate-ui01/rc5/python/lib/python3.12/site-packages",
+      "files_verified": 43
+    }
+  },
+  "serverStderr": ""
+}

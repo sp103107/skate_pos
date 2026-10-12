@@ -1,0 +1,12 @@
+rc.5 screenshot observations (operator inspection, not Judge)
+official desktop.png 1280x900: desktop layout structurally identical to rc.4; aside note "Companion candidate rc.5"; focus ring intact; no clipping. OK
+official mobile.png 390x844: produced (rc.4 never reached capture); nav wraps 4 rows; all content within 390px; focus ring visible. OK
+w390/w720/w721/w1050: nav wraps (4/2/2/2 rows); tables readable; no horizontal overflow. OK
+w1051/w1280: desktop sidebar layout unchanged. OK
+m390 selected pair: Move pair + Verify inventory visible and enabled; ACCEPTED receipt line. OK
+m390 receipt/audit: receipt JSON wraps within card; long hashes break cleanly. OK
+m390 long identifier (80 chars): error banner, no layout push, doc width 390. OK
+m390 missing asset: focus ring visible, ASSET_NOT_FOUND, selection retained. OK
+m390 runtime unavailable: pill Unavailable, Failed to fetch, controls disabled, projection Stale. OK
+m390 runtime unavailable health view: #health-state still shows stale HEALTHY text -> finding F-01 (app.js, outside CSS scope, recorded not repaired)
+F-02: wrapped nav ~210px tall at 390 (trade-off accepted; see lineage/RC5_REPAIR.json)

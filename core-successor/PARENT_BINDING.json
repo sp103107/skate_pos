@@ -1,0 +1,5 @@
+{
+  "parent": "Skate_Inventory_Use_System_R01_Asset_Registry_v0.1.0.zip",
+  "sha256": "8e28144fad30ae800eb0ab50f2441f8fdffc464bd127ccc42caa4ed8298615f8",
+  "binding": "R02 extends R01 without changing R00 schema_version 0.1.0 or R01 asset identity semantics."
+}

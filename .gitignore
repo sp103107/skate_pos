@@ -9,9 +9,18 @@ node_modules/
 *.db
 *.sqlite
 *.sqlite3
+*.pre_r03_backup.db
 .DS_Store
 Thumbs.db
+
+# Staff secrets / local PINs
+config/staff.local.json
 
 # Editor / agent scratch
 .cursor/
 *.log
+!evidence/pos/*.log
+.pytest_cache/
+**/.pytest_cache/
+*.egg-info/
+**/*.egg-info/

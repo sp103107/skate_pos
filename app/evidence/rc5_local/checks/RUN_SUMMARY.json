@@ -1,0 +1,19 @@
+{
+  "status": "PASS_SCOPED_OPERATOR_MEASUREMENT_NOT_JUDGE",
+  "mode": "checks",
+  "at": "2026-10-09T02:27:45.140002+00:00",
+  "result_files": [
+    "TYPECHECK.json",
+    "SYNTAX_app.json",
+    "SYNTAX_adapter.json",
+    "SYNTAX_browser_smoke.json",
+    "ADAPTER.json"
+  ],
+  "browser_invoked": false,
+  "browser_launched": false,
+  "browser_cases": 0,
+  "independent_review": false,
+  "UI01_completion": false,
+  "core_unchanged": true,
+  "screenshots_require_operator_visual_review": true
+}

@@ -1,0 +1,90 @@
+{
+  "bootstrap_id": "SKATE_POS_BOOTSTRAP_0003",
+  "version": "0.3.0",
+  "operator": "Stephen",
+  "currency": "USD",
+  "pricing": {
+    "skate_rental": {
+      "unit_amount_minor": 1000,
+      "unit": "one_valid_left_right_set"
+    },
+    "polar_bear_rental": {
+      "unit_amount_minor": 600,
+      "unit": "one_item",
+      "asset_category_assumption": "skating_aid_requires_confirmation"
+    },
+    "helmet_rental": {
+      "unit_amount_minor": 400,
+      "unit": "one_helmet"
+    }
+  },
+  "pairing": {
+    "original_pair_required": false,
+    "same_brand_required": true,
+    "same_size_required": true,
+    "required_sides": [
+      "LEFT",
+      "RIGHT"
+    ],
+    "size_comparison": "normalized_size_value_and_size_system",
+    "unknown_brand_or_size": "needs_staff_resolution",
+    "same_component_twice": "reject"
+  },
+  "payment": {
+    "hosted_checkout_url_required": true,
+    "render_url_as_qr": true,
+    "share_same_url_as_link": true,
+    "cash_enabled": "operator_configurable",
+    "cash_default_for_seed_config": false,
+    "processor": "TBD",
+    "scan_means_paid": false,
+    "live_mode": false
+  },
+  "identification": {
+    "manual": true,
+    "barcode_qr": true,
+    "nfc_checkout": "desired_hardware_integration",
+    "location_tracking": "separate_RFID_hardware_bench_assignment",
+    "ambient_read_means_checkout": false
+  },
+  "unresolved": [
+    "tax_inclusive_or_exclusive",
+    "tax_configuration",
+    "rental_session_and_due_time",
+    "merchant_processor",
+    "counter_operating_system",
+    "NFC_reader_and_tag_models",
+    "location_precision_and_coverage",
+    "customer_or_staff_operates_scanner",
+    "polar_bear_asset_category",
+    "waiver_procedure"
+  ],
+  "distribution": "HANDOFF_ONLY",
+  "validation_policy": "targeted_system_and_app_breaking_gates",
+  "independent_review_default": "not_required_unless_explicitly_activated",
+  "live_activation_authorized": false,
+  "asset_states": [
+    "AVAILABLE",
+    "HELD",
+    "RENTED",
+    "RETURNED_AWAITING_INSPECTION",
+    "MAINTENANCE",
+    "LOST",
+    "RETIRED"
+  ],
+  "return_policy": {
+    "inspection_required_before_availability": true,
+    "partial_return_keeps_remaining_assets_outstanding": true,
+    "automatic_refund_on_return": false
+  },
+  "cart_policy": {
+    "repeat_scan": "show_already_selected_no_quantity_change",
+    "split_tender_mvp": false,
+    "checkout_attempt_bound_to_order_revision": true
+  },
+  "tag_policy": {
+    "replacement_preserves_asset_id": true,
+    "revoked_tag_lookup": "show_revoked_no_active_resolution",
+    "tag_is_authentication": false
+  }
+}

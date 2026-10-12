@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:reservation:0.1.0",
+  "title": "Reservation",
+  "type": "object",
+  "required": [
+    "reservation_id",
+    "name",
+    "start_at",
+    "end_at",
+    "status",
+    "requirements",
+    "created_at"
+  ],
+  "properties": {
+    "reservation_id": {
+      "type": "string",
+      "pattern": "^RES-[A-Z0-9_-]{3,64}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "venue": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    },
+    "start_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "end_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "lockout_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "DRAFT",
+        "CONFIRMED",
+        "PACKING",
+        "IN_TRANSIT",
+        "ACTIVE",
+        "RETURNING",
+        "CLOSED",
+        "CANCELLED"
+      ]
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "size_system",
+          "size_value",
+          "quantity"
+        ],
+        "properties": {
+          "size_system": {
+            "type": "string"
+          },
+          "size_value": {
+            "type": "string"
+          },
+          "category": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "quantity": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "allocated_pair_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/pair_id"
+      },
+      "uniqueItems": true
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

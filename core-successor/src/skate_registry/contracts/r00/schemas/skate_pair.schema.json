@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:skate-pair:0.1.0",
+  "title": "Skate Pair",
+  "type": "object",
+  "required": [
+    "pair_id",
+    "owner_org_id",
+    "size_system",
+    "size_value",
+    "category",
+    "home_location_id",
+    "current_location_id",
+    "custodian_org_id",
+    "availability_state",
+    "maintenance_state",
+    "lifecycle_state",
+    "total_rental_cycles",
+    "estimated_use_minutes",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "pair_id": {
+      "$ref": "common.schema.json#/$defs/pair_id"
+    },
+    "owner_org_id": {
+      "$ref": "common.schema.json#/$defs/org_id"
+    },
+    "size_system": {
+      "type": "string",
+      "enum": [
+        "US_MENS",
+        "US_WOMENS",
+        "US_YOUTH",
+        "EU",
+        "OTHER"
+      ]
+    },
+    "size_value": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 16
+    },
+    "brand": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 80
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 80
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "HOCKEY",
+        "FIGURE",
+        "OTHER"
+      ]
+    },
+    "acquisition_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "acquisition_source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 160
+    },
+    "acquisition_cost_minor": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "ownership_evidence_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 512
+    },
+    "home_location_id": {
+      "$ref": "common.schema.json#/$defs/location_id"
+    },
+    "current_location_id": {
+      "$ref": "common.schema.json#/$defs/location_id"
+    },
+    "custodian_org_id": {
+      "$ref": "common.schema.json#/$defs/org_id"
+    },
+    "availability_state": {
+      "type": "string",
+      "enum": [
+        "AVAILABLE",
+        "RENTED",
+        "RESERVED",
+        "IN_MAINTENANCE",
+        "QUARANTINED",
+        "MISSING_COMPONENT",
+        "LOST",
+        "RETIRED"
+      ]
+    },
+    "maintenance_state": {
+      "type": "string",
+      "enum": [
+        "OK",
+        "INSPECTION_DUE",
+        "QUICK_CLEAN_DUE",
+        "DEEP_CLEAN_DUE",
+        "SHARPEN_DUE",
+        "REPAIR_DUE",
+        "OUT_OF_SERVICE"
+      ]
+    },
+    "maintenance_flags": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "OK",
+          "INSPECTION_DUE",
+          "QUICK_CLEAN_DUE",
+          "DEEP_CLEAN_DUE",
+          "SHARPEN_DUE",
+          "REPAIR_DUE",
+          "OUT_OF_SERVICE"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "lifecycle_state": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "SEASONAL_STORAGE",
+        "TRANSFERRED",
+        "RETIRED",
+        "DISPOSED"
+      ]
+    },
+    "total_rental_cycles": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "estimated_use_minutes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "last_inventory_verified_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,10 @@
+{
+  "provider_id": "11GmaoO3mIwM8CX09vQHdailFtp8mlIOP",
+  "sha256": "88c35fb9c741c50e31dc9d513b5cc32d7da20dbea50562d9ef4a34673b870d23",
+  "version": "0.1.0-rc.3",
+  "status": "IMMUTABLE_BLOCKED_CHECKPOINT",
+  "receipt_provider_id": "1fwg1xxh3CUwHRMAmtgqghlp7jzZZdnCi",
+  "receipt_sha256": "1c0dc4bade481d3f077d8c04e74d02470d51cd20135b0b27e484f4ea3bb872e0",
+  "evidence_preserved": "history/rc3_evidence",
+  "core_unchanged": true
+}

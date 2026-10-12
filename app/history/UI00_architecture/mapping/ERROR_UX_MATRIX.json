@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0",
+  "errors": [
+    {
+      "code": "ASSET_NOT_FOUND",
+      "ux": "Inline not-found state; retain scan input; offer rescan/search."
+    },
+    {
+      "code": "PAIR_INCOMPLETE",
+      "ux": "Block completion; identify missing/mismatched side."
+    },
+    {
+      "code": "ROLE_FORBIDDEN",
+      "ux": "Hide or disable action before submit; if returned, show permission notice without retry loop."
+    },
+    {
+      "code": "VERSION_CONFLICT",
+      "ux": "Refresh authoritative pair state; show changed fields; require operator retry."
+    },
+    {
+      "code": "IDEMPOTENCY_CONFLICT",
+      "ux": "Stop automatic retry; show command identity collision and audit details."
+    },
+    {
+      "code": "DUPLICATE_COMMAND",
+      "ux": "Treat as successful replay of prior logical outcome; show DUPLICATE receipt badge."
+    },
+    {
+      "code": "OFFLINE_CONFLICT",
+      "ux": "Move draft to Needs Review; do not auto-resolve."
+    },
+    {
+      "code": "VALIDATION_ERROR",
+      "ux": "Map field-level details where possible; retain entered values."
+    }
+  ]
+}

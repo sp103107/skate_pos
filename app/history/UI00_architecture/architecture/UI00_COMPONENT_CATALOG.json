@@ -1,0 +1,152 @@
+{
+  "version": "0.1.0",
+  "components": [
+    {
+      "component_id": "APP_SHELL",
+      "component_name": "AppShell",
+      "family": "global",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Top-level navigation, role context, runtime status, route framing."
+    },
+    {
+      "component_id": "GLOBAL_STATUS",
+      "component_name": "GlobalStatusBar",
+      "family": "global",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Shows runtime health, offline/adapter state, device/location context."
+    },
+    {
+      "component_id": "SCANNER_DOCK",
+      "component_name": "ScannerDock",
+      "family": "scanner",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Primary QR/barcode/typed identifier capture."
+    },
+    {
+      "component_id": "SCAN_RESULT",
+      "component_name": "ScanResultPanel",
+      "family": "scanner",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Resolved pair/component details and allowed next actions."
+    },
+    {
+      "component_id": "INVENTORY_DASH",
+      "component_name": "InventoryDashboard",
+      "family": "inventory",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Summary counts and inventory integrity cues."
+    },
+    {
+      "component_id": "INVENTORY_TABLE",
+      "component_name": "InventoryTable",
+      "family": "inventory",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Filterable read model of pairs/components."
+    },
+    {
+      "component_id": "ASSET_DETAIL",
+      "component_name": "AssetDetail",
+      "family": "asset_detail",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Pair state, components, location, custody, event history."
+    },
+    {
+      "component_id": "PAIR_WIZARD",
+      "component_name": "PairRegistrationWizard",
+      "family": "inventory",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Register pair + left/right components + link flow."
+    },
+    {
+      "component_id": "VERIFY_FLOW",
+      "component_name": "InventoryVerificationFlow",
+      "family": "inventory",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Physical verification action with receipt."
+    },
+    {
+      "component_id": "TRANSFER_FLOW",
+      "component_name": "TransferLocationFlow",
+      "family": "inventory",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Location move through command boundary."
+    },
+    {
+      "component_id": "LABEL_FLOW",
+      "component_name": "ReplaceLabelFlow",
+      "family": "inventory",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Retire/reissue component label identity."
+    },
+    {
+      "component_id": "MISSING_FLOW",
+      "component_name": "MissingComponentFlow",
+      "family": "inventory",
+      "capability_state": "ACTIVE_R02_IMPLEMENTED",
+      "description": "Record missing left/right component."
+    },
+    {
+      "component_id": "RUNTIME_HEALTH",
+      "component_name": "RuntimeHealthPanel",
+      "family": "runtime_health",
+      "capability_state": "READ_ONLY_R02",
+      "description": "Health, ledger/replay status, projection integrity."
+    },
+    {
+      "component_id": "RECOVERY_TOOLS",
+      "component_name": "RecoveryToolsPanel",
+      "family": "admin_audit",
+      "capability_state": "ADMIN_R02_IMPLEMENTED",
+      "description": "Checkpoint, replay, rebuild, recovery bundle controls."
+    },
+    {
+      "component_id": "EVIDENCE_PANEL",
+      "component_name": "EvidenceAttachmentPanel",
+      "family": "admin_audit",
+      "capability_state": "ADMIN_R02_IMPLEMENTED",
+      "description": "Hash and attach evidence to ledger events."
+    },
+    {
+      "component_id": "AUDIT_TIMELINE",
+      "component_name": "AuditTimeline",
+      "family": "admin_audit",
+      "capability_state": "READ_ONLY_R02",
+      "description": "Append-only events and command receipts."
+    },
+    {
+      "component_id": "OFFLINE_QUEUE",
+      "component_name": "OfflineQueuePanel",
+      "family": "global",
+      "capability_state": "DESIGN_ONLY",
+      "description": "Draft/queued command UX; no transport activation."
+    },
+    {
+      "component_id": "RENTAL_COUNTER",
+      "component_name": "RentalCounterShell",
+      "family": "rental_counter",
+      "capability_state": "DESIGN_GATED_R03",
+      "description": "Counter checkout/check-in shell; controls disabled until R03."
+    },
+    {
+      "component_id": "MAINT_QUEUE",
+      "component_name": "MaintenanceQueueShell",
+      "family": "maintenance",
+      "capability_state": "DESIGN_GATED_FUTURE",
+      "description": "Maintenance work queue shell; disabled."
+    },
+    {
+      "component_id": "RESERVATION",
+      "component_name": "ReservationPlannerShell",
+      "family": "reservations",
+      "capability_state": "DESIGN_GATED_FUTURE",
+      "description": "Reservation/external-event shell; disabled."
+    },
+    {
+      "component_id": "REVENUE",
+      "component_name": "RevenueReconciliationShell",
+      "family": "revenue",
+      "capability_state": "DESIGN_GATED_FUTURE",
+      "description": "Financial reconciliation shell; disabled."
+    }
+  ]
+}

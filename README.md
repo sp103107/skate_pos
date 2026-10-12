@@ -1,64 +1,54 @@
-# skate_pos — frozen inventory companion checkpoint
+# skate_pos — inventory companion + POS-A01 asset workspace
 
 **This repository is not a rental POS and cannot take payments.**
 
-It holds a **frozen local checkpoint** of the Skate Inventory UI companion (UI01 rc.6) bound to frozen Core `0.3.1-rc.1`, plus evidence and a gap roadmap toward a future rental kiosk / payments product.
+Branch `pos-a01-asset-workspace` adds a **Core successor** and staff asset workspace on top of the frozen UI01 rc.6 / Core `0.3.1-rc.1` checkpoint.
 
 | Field | Value |
 | --- | --- |
-| Status | Checkpoint / historical handoff only |
+| Status | POS-A01 **CANDIDATE_COMPLETE** (not Judge PASS) |
 | Distribution | `HANDOFF_ONLY` |
 | UI freeze | **false** |
-| Release / deployment | **false** |
-| Rental / checkout | **not implemented** (gated in Core for this binding) |
-| Payments | **not implemented** |
+| App working copy | `app/` `0.2.0-a01.1` |
+| Core successor | `core-successor/` `0.4.0-a01.1` |
+| Checkout / payments | **not implemented** |
 
-## What is frozen here
+## Frozen parents (immutable)
 
 | Path | Artifact | SHA-256 |
 | --- | --- | --- |
 | `frozen/ui/` | `Skate_Inventory_UI_Candidate_v0.1.0-rc.6.zip` | `60d902370abbbda7e403d46163ccd102bc73a6df7b4158e6718551d3716778fc` |
 | `frozen/core/` | `Skate_Inventory_Use_System_Core_Capsule_v0.3.1-rc.1.zip` | `40ffdac4d0eb2bbbd6dd72cce2be0ec953842eb4b34ff7934cc6bab5f53b27e3` |
-| `frozen/evidence/` | `UI01_LOCAL_AGENT_RESULTS_0003.zip` | `06d32007bb78adef578c5e9ff1991d9a2991e19e1146b350e1bb4c04d766d654` |
+| `frozen/evidence/` | results 0003 + disposition / handoff | see `MANIFEST.sha256` |
+| `bootstrap/` | `Skate_POS_Bootstrap_v0.3.0.zip` | `0d0bd7d04cda7f864c70823bc3750b628527c57cd3eb13fa927f4fbe2d4d1b31` |
 
-See `MANIFEST.sha256` for full file hashes. Sidecar `.sha256` files travel with each archive.
+## What A01 adds
 
-## What this companion can do today
+- Individual assets: skate boots, skating aids (Polar Bear default), helmets
+- Migration from pair components with `origin_pair_id` lineage preserved
+- Staff session login (PBKDF2 PIN); server stamps actor role
+- Demo vs real workspace modes (`SKATE_UI01_MODE=demo|real`)
+- Backup / restore / verify via `app/scripts/pos_backup.py`
+- Read-only Assets UI view
 
-Trusted-local **operator inventory** UI on `127.0.0.1`:
+**Not included:** rental checkout, payments, NFC/RFID drivers, enrollment UI (POS-A02).
 
-- Scan / find asset by identifier string  
-- List inventory, pair detail, transfer location, verify  
-- Local start/stop scripts (`start_all` / `stop_all` inside the UI zip)  
-- Synthetic demo database only  
-
-**Not included:** rental kiosk UX, NFC/barcode/QR hardware drivers, checkout/checkin, payment processor, public API, production DB, Android packaging.
-
-## Run locally (after extracting the UI zip)
+## Run locally (WSL recommended)
 
 ```bash
-# Linux/WSL — see LOCAL_RUN.md inside the candidate
+cd app
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.lock.txt
-.venv/bin/python scripts/install_core.py --core-zip /path/to/Skate_Inventory_Use_System_Core_Capsule_v0.3.1-rc.1.zip
+.venv/bin/python scripts/install_core.py   # editable ../core-successor
 ./start_all.sh
 # open http://127.0.0.1:8765  (use 127.0.0.1, not localhost)
+# demo staff: STAFF-DEMO / PIN from config/staff.example.json
 ```
-
-WSL lifecycle was measured PASS in results 0003. Native Windows launcher lifecycle is **NOT_RUN**.
 
 ## Docs
 
-- [`REPO_STATUS.md`](REPO_STATUS.md) — binding, acceptance, non-claims  
-- [`docs/ROADMAP.md`](docs/ROADMAP.md) — gap lanes toward kiosk / scan / rental / payments  
-- [`docs/GAPS.md`](docs/GAPS.md) — concrete gap checklist  
-
-## Provenance
-
-- Baseline UI rc.5 accepted `PASS_WITH_KNOWN_LIMITATIONS` (disposition 0002; evidence review, not fresh Judge runtime).  
-- rc.6 adds local launchers + persistent demo workspace only.  
-- Retained findings: F-01 (stale HEALTHY), F-02 (mobile nav height), F-03 (lineage note).  
-- Do not substitute historical Core `0.3.0` for this binding.
-
-Local mirror of this tree (before/while GitHub sync):  
-`M:\OTHER\test_rink_rental_app\skate_pos\`
+- [`docs/pos/A01_DESIGN.md`](docs/pos/A01_DESIGN.md)
+- [`docs/pos/MIGRATION.md`](docs/pos/MIGRATION.md)
+- [`docs/pos/BACKUP_RESTORE.md`](docs/pos/BACKUP_RESTORE.md)
+- [`REPO_STATUS.md`](REPO_STATUS.md)
+- [`NEW_FILES.md`](NEW_FILES.md)

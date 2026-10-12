@@ -1,0 +1,40 @@
+{
+  "status": "PASS_FOREMAN_MEASUREMENT_NOT_JUDGE",
+  "typescript": "5.9.3",
+  "scope": [
+    "frontend/app.js",
+    "frontend/adapter.js",
+    "contracts/runtime-adapter.d.ts"
+  ],
+  "flags": [
+    "allowJs",
+    "checkJs",
+    "noEmit",
+    "target es2022",
+    "module es2022"
+  ],
+  "strict_mode": false,
+  "exit_code": 0,
+  "command": [
+    "node",
+    "/workspace/scratch/792d47681b99/ui01_resume_tools/node_modules/typescript/bin/tsc",
+    "--allowJs",
+    "--checkJs",
+    "--noEmit",
+    "--target",
+    "es2022",
+    "--module",
+    "es2022",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/adapter.js",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/contracts/runtime-adapter.d.ts"
+  ],
+  "source_hashes": {
+    "frontend/app.js": "f915103d6116b0c974cd3c61e087447b850e26e31d7b61e26fbca24f3a0f56a5",
+    "frontend/adapter.js": "85f23fc74fc4449bb1641371b30021fac99b397922824f8ccb2c2b8bd3c69481",
+    "contracts/runtime-adapter.d.ts": "06792f3313ad42b09f4784faf9f8482d312edca2757bcbb0b985424ef995345e"
+  },
+  "initial_typecheck": "INITIAL_FULL_TYPECHECK.json:6 DOM typing errors preserved",
+  "fresh_rc4": true,
+  "browser_execution": false
+}

@@ -1,0 +1,3 @@
+PASS
+mapping_rows 27
+png_assets 23

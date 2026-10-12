@@ -1,0 +1,48 @@
+{
+  "record_type": "RC6_LOCAL_BUILD_RECORD",
+  "not_a_relay_head": true,
+  "stage": "PACKAGE",
+  "disposition": "CANDIDATE_COMPLETE",
+  "assignment": "L01-L05",
+  "bind": {
+    "record_type": "L01_BASELINE_BIND",
+    "recorded_at": "2026-10-11T15:34:32-04:00",
+    "participant_id": "skate-ui01-local-review",
+    "operator": "Stephen",
+    "assignment": "L01-L05 local launchers",
+    "baseline_candidate": {
+      "file": "Skate_Inventory_UI_Candidate_v0.1.0-rc.5.zip",
+      "sha256": "14275ffb7d892ff61345f10a5185aebae872f19249903f509417b49a75ce7215"
+    },
+    "disposition": {
+      "file": "UI01_RC5_ACCEPTANCE_DISPOSITION_0002.zip",
+      "sha256": "80254a65c5879ca0bafbfd68c6945951fca5f89f3f786e03bc51e27ea4021a47",
+      "verdict": "PASS_WITH_KNOWN_LIMITATIONS",
+      "scope": "independent evidence review; not fresh Judge runtime"
+    },
+    "task_bump": {
+      "meta_skill": {
+        "path": "M:\\\\SALVAGE\\\\KNOWLEDGE\\\\aos_task_bump_meta_skill_v0_1_0_rc_1-20261011T192648Z-1-001.zip",
+        "sha256": "04eba3ea27f594167d8f588b25916f03afec77efc173a2fbe346d647c55c1de8"
+      },
+      "control_plane_rc2_candidate": {
+        "path": "M:\\\\SALVAGE\\\\KNOWLEDGE\\\\aos_task_bump_control_plane_skill_v0_2_0_rc_2_candidate-20261011T192701Z-1-001.zip",
+        "sha256": "b34ce5705138969f1c647e49a6b8adcdf2329062a09ef9fcb40eb758d5440b22",
+        "authority_effect": "NONE"
+      }
+    },
+    "aos_response_skill": "NOT_FOUND_LOCALLY",
+    "retained_findings": [
+      "F-01",
+      "F-02",
+      "F-03"
+    ],
+    "h04": "NOT_VERIFIED_DEFERRED_NONBLOCKING",
+    "flags": {
+      "ui_freeze": false,
+      "core_changed": false,
+      "distribution": "HANDOFF_ONLY"
+    }
+  },
+  "recorded_at": "2026-10-11T17:22:06-04:00"
+}

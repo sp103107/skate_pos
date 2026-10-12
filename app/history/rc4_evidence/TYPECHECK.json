@@ -1,0 +1,21 @@
+{
+  "label": "TYPECHECK",
+  "command": [
+    "node",
+    "/workspace/scratch/792d47681b99/ui01_resume_tools/node_modules/typescript/bin/tsc",
+    "--allowJs",
+    "--checkJs",
+    "--noEmit",
+    "--target",
+    "es2022",
+    "--module",
+    "es2022",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/adapter.js",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/contracts/runtime-adapter.d.ts"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "timeout": false
+}

@@ -1,0 +1,52 @@
+{
+  "version": "0.1.0",
+  "primary": [
+    {
+      "id": "scan",
+      "label": "Scan",
+      "state": "ACTIVE_R02_IMPLEMENTED"
+    },
+    {
+      "id": "inventory",
+      "label": "Inventory",
+      "state": "ACTIVE_R02_IMPLEMENTED"
+    },
+    {
+      "id": "rental",
+      "label": "Rental Counter",
+      "state": "DESIGN_GATED_R03"
+    },
+    {
+      "id": "maintenance",
+      "label": "Maintenance",
+      "state": "DESIGN_GATED_FUTURE"
+    },
+    {
+      "id": "reservations",
+      "label": "Reservations",
+      "state": "DESIGN_GATED_FUTURE"
+    },
+    {
+      "id": "runtime",
+      "label": "Runtime Health",
+      "state": "READ_ONLY_R02"
+    },
+    {
+      "id": "audit",
+      "label": "Audit",
+      "state": "READ_ONLY_R02"
+    }
+  ],
+  "admin": [
+    {
+      "id": "recovery",
+      "label": "Recovery Tools",
+      "state": "ADMIN_R02_IMPLEMENTED"
+    },
+    {
+      "id": "revenue",
+      "label": "Revenue",
+      "state": "DESIGN_GATED_FUTURE"
+    }
+  ]
+}

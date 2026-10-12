@@ -1,0 +1,65 @@
+{
+  "version": "0.1.0",
+  "invariants": [
+    {
+      "id": "INV-001",
+      "rule": "Every ACTIVE pair has exactly one active L component and one active R component except during an explicitly recorded replacement or missing-component condition."
+    },
+    {
+      "id": "INV-002",
+      "rule": "A component may belong to at most one active pair at a time."
+    },
+    {
+      "id": "INV-003",
+      "rule": "Ownership never changes from location, custody, rental, reservation, or maintenance events."
+    },
+    {
+      "id": "INV-004",
+      "rule": "Ownership changes only through transfer_ownership with OWNER_ADMIN authorization and an OWNERSHIP_TRANSFERRED event."
+    },
+    {
+      "id": "INV-005",
+      "rule": "At most one active rental exists for a pair."
+    },
+    {
+      "id": "INV-006",
+      "rule": "A normal checkout requires AVAILABLE state, a complete pair, no blocking maintenance, and no reservation lockout conflict."
+    },
+    {
+      "id": "INV-007",
+      "rule": "A check-in must resolve an active rental unless an authorized correction workflow is used."
+    },
+    {
+      "id": "INV-008",
+      "rule": "Events are append-only. Corrections use compensating events; durable events are never silently edited or deleted."
+    },
+    {
+      "id": "INV-009",
+      "rule": "A financial record never creates, deletes, or substitutes for a physical rental-use event."
+    },
+    {
+      "id": "INV-010",
+      "rule": "A payment record does not imply a particular skate was used unless a rental event exists."
+    },
+    {
+      "id": "INV-011",
+      "rule": "A pair in QUARANTINED, MISSING_COMPONENT, LOST, RETIRED, or blocking maintenance state cannot be normally checked out."
+    },
+    {
+      "id": "INV-012",
+      "rule": "The same command idempotency key must produce the same logical outcome or a deterministic conflict."
+    },
+    {
+      "id": "INV-013",
+      "rule": "recorded_at is assigned by the authoritative runtime; occurred_at may precede recorded_at for offline events but must not be used to rewrite prior durable history."
+    },
+    {
+      "id": "INV-014",
+      "rule": "Current state projections must be rebuildable from the event ledger plus immutable reference/master data."
+    },
+    {
+      "id": "INV-015",
+      "rule": "Counter operation must not require customer PII for ordinary rentals."
+    }
+  ]
+}

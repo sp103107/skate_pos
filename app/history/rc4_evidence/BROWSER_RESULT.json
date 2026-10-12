@@ -1,0 +1,13 @@
+{
+  "status": "NOT_RUN_BLOCKED_BROWSER_ENVIRONMENT_SELECTION",
+  "checks": [],
+  "browser_cases": 0,
+  "screenshots_generated": false,
+  "screenshots": 0,
+  "browser_launched": false,
+  "browser_download_attempts_current_turn": 0,
+  "matching_chromium": "151.0.7922.34 revision1234",
+  "prior_provisioning_failure": "history/rc3_evidence/PROVISIONING_RESULT.json",
+  "full_frontend_typecheck": "PASS_FRESH_RC4",
+  "independent_review": false
+}

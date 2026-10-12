@@ -1,0 +1,30 @@
+{
+  "name": "Skate Inventory UI Companion",
+  "version": "0.2.0-a01.1",
+  "status": "POS_A01_ASSET_WORKSPACE_CANDIDATE",
+  "kind": "CAPSULE_UI_COMPANION",
+  "product_lineage": "Skate Inventory + Use System",
+  "core_dependency": "lineage/CORE_DEPENDENCY.json",
+  "canonical_source": [
+    "frontend",
+    "adapter"
+  ],
+  "entry": "adapter/bridge.py",
+  "manifest": "MANIFEST.sha256",
+  "validation": "evidence/rc5_local/checks/RUN_SUMMARY.json",
+  "browser": "evidence/rc5_local/browser-run/browser/BROWSER_RESULT.json",
+  "release_freeze": false,
+  "independent_validation_complete": false,
+  "runtime_release_complete": false,
+  "promotion": false,
+  "deployment_complete": false,
+  "precommit_head": 35,
+  "live_relay_resume_authority": true,
+  "validation_kit": "validation-kit/README.md",
+  "supplemental_validation": "evidence/rc5_local/supplemental/NAV_FOCUS_RESULTS.json",
+  "parent_checkpoint": "lineage/RC5_CHECKPOINT_PARENT.json",
+  "local_repair_record": "lineage/RC6_LAUNCHER.json",
+  "historical_rc4_evidence": "history/rc4_evidence",
+  "note": "POS-A01: expanded asset workspace over Core successor 0.4.0-a01.1. Not a UI freeze/release. Checkout/payment out of scope.",
+  "a01_lineage": "lineage/A01_ASSET_WORKSPACE.json"
+}

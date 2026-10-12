@@ -1,0 +1,23 @@
+test_01_identity_and_seed (ui01_tests.Integration.test_01_identity_and_seed) ... ok
+test_02_queries_no_logical_write (ui01_tests.Integration.test_02_queries_no_logical_write) ... ok
+test_03_scan_receipt (ui01_tests.Integration.test_03_scan_receipt) ... ok
+test_04_transfer_refresh_retry_conflict (ui01_tests.Integration.test_04_transfer_refresh_retry_conflict) ... ok
+test_05_verify_inventory (ui01_tests.Integration.test_05_verify_inventory) ... ok
+test_06_stale_version_no_write (ui01_tests.Integration.test_06_stale_version_no_write) ... ok
+test_07_role_no_write (ui01_tests.Integration.test_07_role_no_write) ... ok
+test_08_reference_no_write (ui01_tests.Integration.test_08_reference_no_write) ... ok
+test_09_invalid_envelope_no_write (ui01_tests.Integration.test_09_invalid_envelope_no_write) ... ok
+test_10_gated_operations_no_write (ui01_tests.Integration.test_10_gated_operations_no_write) ... ok
+test_11_invalid_queries_no_write (ui01_tests.Integration.test_11_invalid_queries_no_write) ... ok
+test_12_unknown_asset_no_write (ui01_tests.Integration.test_12_unknown_asset_no_write) ... ok
+test_13_perimeter_no_write (ui01_tests.Integration.test_13_perimeter_no_write) ... ok
+test_14_methods_paths_no_write (ui01_tests.Integration.test_14_methods_paths_no_write) ... ok
+test_15_body_no_write (ui01_tests.Integration.test_15_body_no_write) ... ok
+test_16_workspace_no_overwrite (ui01_tests.Integration.test_16_workspace_no_overwrite) ... ok
+test_17_static_real_source (ui01_tests.Integration.test_17_static_real_source) ... ok
+test_18_unavailable_runtime (ui01_tests.Integration.test_18_unavailable_runtime) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.655s
+
+OK

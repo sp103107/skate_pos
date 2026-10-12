@@ -1,0 +1,66 @@
+{
+  "status": "PASS_SCOPED_FOREMAN_KIT_MECHANICS_NOT_EXTERNAL_BROWSER_PROOF",
+  "preflight": "PREFLIGHT.json",
+  "checks_driver": "RUN_SUMMARY.json",
+  "negative_cases": [
+    {
+      "case": "NO_EXTERNAL_ATTESTATION",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "Browser mode requires prior explicit environment/execution authorization and an already provisioned task-local browser cache\n",
+      "browser_launched": false
+    },
+    {
+      "case": "NO_OVERWRITE_EVIDENCE",
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "Evidence directory must be new and external\n",
+      "browser_launched": false
+    },
+    {
+      "case": "WRONG_CORE_ZIP",
+      "exit_code": 2,
+      "stderr": "Frozen Core ZIP hash mismatch\n",
+      "browser_launched": false
+    },
+    {
+      "case": "NO_OVERWRITE_RETURN_ARCHIVE",
+      "exit_code": 2,
+      "stderr": "usage: collect_evidence.py [-h] --evidence-dir EVIDENCE_DIR --output OUTPUT\ncollect_evidence.py: error: Use new output outside evidence directory\n"
+    }
+  ],
+  "collector_actual_run": {
+    "zip_crc": "PASS",
+    "manifest_files": 11,
+    "archive_sha256": "4d83ce82dd2f583243851b2d9df0e4beb26b63cb08889dfaf9888e0d4012e10d",
+    "output_is_intermediate_mechanics_proof_not_UI_acceptance": true
+  },
+  "python_syntax": [
+    {
+      "path": "validation-kit/run_validation.py",
+      "sha256": "08675d88eab6897ca389194b802f8bfdc00c42a4f81b079d8ad83c1f901464cc",
+      "python_AST": "PASS"
+    },
+    {
+      "path": "validation-kit/collect_evidence.py",
+      "sha256": "08e073be765448557352242c8f85d4a5eb4d4904b7a72bf62223fa31799e3aaf",
+      "python_AST": "PASS"
+    },
+    {
+      "path": "scripts/install_core.py",
+      "sha256": "4b581cbeca74a4a7a8ae26fe77216df1fce1e7ba5bd4b3a50fd60273e689f0c7",
+      "python_AST": "PASS"
+    },
+    {
+      "path": "scripts/validate.py",
+      "sha256": "4cbf8095856f92b4f1569a0b18c4b0f4a0a1965a4ca467b0a6fa442693410ee5",
+      "python_AST": "PASS"
+    }
+  ],
+  "browser_invocations": 0,
+  "browser_download_invocations": 0,
+  "external_machine_execution": "NOT_RUN",
+  "native_windows": "UNSUPPORTED_NOT_VERIFIED",
+  "WSL2": "GUIDANCE_ONLY_NOT_RUN",
+  "verified_platform": "Linux6.18.44 x86_64 glibc2.39 Python3.12.14 SQLite3.53.1 Node24.19.0"
+}

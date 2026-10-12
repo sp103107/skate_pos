@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skate-inventory-core"
+version = "0.4.0a1"
+description = "POS-A01 Core successor: individual assets (skates/aids/helmets) over pair registry"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["jsonschema>=4.21,<5"]
+authors = [{name = "Avarachi Ventures LLC"}]
+license = {text = "Proprietary - project source package"}
+
+[project.scripts]
+skate-inventory = "skate_inventory_core.cli:main"
+skate-registry = "skate_registry.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+skate_registry = ["contracts/r00/schemas/*.json", "contracts/r00/catalogs/*.json", "contracts/r01/*.json", "contracts/r02/*.json", "contracts/r03/*.json", "sql/*.sql"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

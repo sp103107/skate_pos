@@ -1,0 +1,11 @@
+{
+  "identity": "Skate_Inventory_Core_Successor_v0.4.0-a01.1",
+  "package_version": "0.4.0a1",
+  "parent_core_zip": "Skate_Inventory_Use_System_Core_Capsule_v0.3.1-rc.1.zip",
+  "parent_core_sha256": "40ffdac4d0eb2bbbd6dd72cce2be0ec953842eb4b34ff7934cc6bab5f53b27e3",
+  "assignment": "POS-A01",
+  "copy_on_write": true,
+  "sealed_parent_immutable": true,
+  "schema_level": "r03",
+  "notes": "Adds assets/asset_identifiers; preserves pair tables and lineage via origin_pair_id/origin_component_id."
+}

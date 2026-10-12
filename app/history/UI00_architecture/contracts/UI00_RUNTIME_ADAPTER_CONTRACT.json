@@ -1,0 +1,61 @@
+{
+  "contract_name": "UI00 Runtime Adapter Boundary",
+  "contract_version": "0.1.0",
+  "status": "DESIGN_ONLY",
+  "principles": [
+    "Frontend never writes persistence tables directly.",
+    "All mutations cross a command boundary and return a receipt.",
+    "Read adapters return projections/snapshots and never create authority.",
+    "Transport adapters may change transport, not command/query semantics.",
+    "A future MCP adapter is an edge adapter only."
+  ],
+  "interfaces": {
+    "submit_command": {
+      "input": "R00 command_envelope",
+      "output": "R00 command_receipt",
+      "baseline": "R02 local CommandProcessor",
+      "active": true
+    },
+    "scan_asset": {
+      "input": "identifier + actor/device/location context",
+      "output": "resolved pair/component result",
+      "baseline": "R02 scan_asset command",
+      "active": true
+    },
+    "read_inventory": {
+      "input": "query/filter",
+      "output": "projection snapshot/read model",
+      "baseline": "R02 projection/export facade",
+      "active": "ADAPTER_REQUIRED_UI01"
+    },
+    "runtime_health": {
+      "input": "deep:boolean",
+      "output": "health report",
+      "baseline": "R02 RuntimeSpine.health_report",
+      "active": "ADAPTER_REQUIRED_UI01"
+    },
+    "admin_operation": {
+      "input": "explicit typed operation",
+      "output": "typed report/receipt",
+      "baseline": "R02 checkpoint/replay/rebuild/evidence/recovery methods",
+      "active": "ADAPTER_REQUIRED_UI01"
+    }
+  },
+  "future_transports": [
+    "MCP",
+    "HTTP",
+    "UNIX_DOMAIN_SOCKET",
+    "NATS",
+    "WEBSOCKET"
+  ],
+  "future_transport_state": "NOT_ACTIVATED",
+  "relay_rc1_reference": {
+    "sha256": "862daec091ba51b33fde4127e00761ee902c6d812ed35b22626f2bcb71daf860",
+    "adopted_patterns": [
+      "transport independence",
+      "atomic stale-write rejection pattern",
+      "human-gated high-risk transition pattern"
+    ],
+    "not_adopted_as_skate_protocol": "Agent relay packets remain a separate contract family and do not replace skate command envelopes."
+  }
+}

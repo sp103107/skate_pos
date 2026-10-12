@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:evidence-attachment:0.1.0",
+  "title": "Evidence Attachment",
+  "type": "object",
+  "required": [
+    "attachment_id",
+    "media_type",
+    "sha256",
+    "created_at"
+  ],
+  "properties": {
+    "attachment_id": {
+      "type": "string",
+      "pattern": "^ATT-[A-Z0-9_-]{3,64}$"
+    },
+    "media_type": {
+      "type": "string",
+      "maxLength": 120
+    },
+    "filename": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 255
+    },
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "storage_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 512
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

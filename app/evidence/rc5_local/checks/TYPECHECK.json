@@ -1,0 +1,21 @@
+{
+  "label": "TYPECHECK",
+  "command": [
+    "node",
+    "/root/skate-ui01/work/npm/node_modules/typescript/bin/tsc",
+    "--allowJs",
+    "--checkJs",
+    "--noEmit",
+    "--target",
+    "es2022",
+    "--module",
+    "es2022",
+    "/root/skate-ui01/rc5/source/Skate_Inventory_UI_Candidate_v0.1.0-rc.5/frontend/app.js",
+    "/root/skate-ui01/rc5/source/Skate_Inventory_UI_Candidate_v0.1.0-rc.5/frontend/adapter.js",
+    "/root/skate-ui01/rc5/source/Skate_Inventory_UI_Candidate_v0.1.0-rc.5/contracts/runtime-adapter.d.ts"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "timeout": false
+}

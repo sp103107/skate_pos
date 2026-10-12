@@ -1,0 +1,93 @@
+{
+  "provider_id": null,
+  "provider_note": "Sealed rc.4 archive supplied inside Skate_UI01_Local_Agent_Handoff_v0.1.0/inputs (local operator review bundle); no Drive provider id recorded for rc.4",
+  "archive": "Skate_Inventory_UI_Candidate_v0.1.0-rc.4.zip",
+  "sha256": "fd4d6a2f989f08c610c317dafa22c30255a307feb26d175b87f7cb17886de518",
+  "version": "0.1.0-rc.4",
+  "status": "IMMUTABLE_LOCAL_VALIDATED_CHECKS_PASS_BROWSER_FAIL_UIB10_CHECKPOINT",
+  "local_results_archive": "UI01_LOCAL_AGENT_RESULTS_0001.zip",
+  "local_results_sha256": "3615fa61ea603582c77e56c25def8c0f0a42650b06e747c6ea7b4e6d04c47433",
+  "local_results_summary": {
+    "checks": "PASS (typecheck 3 targets, syntax 3, adapter 18/18)",
+    "browser": "FAIL UIB10_responsive_render MOBILE_OVERFLOW (scrollWidth 997 @390); UIB01-UIB09 PASS; UIB11 NOT_RUN",
+    "corrections": "history/rc4_evidence/BASELINE_EVIDENCE_CORRECTIONS.md"
+  },
+  "successor_authorization": "Sorcerer \"SKATE UI01 \u2014 RC.5 REPAIR AND VALIDATION DIRECTIVE\" and \"SORCERER DISPOSITION \u2014 UI01 RC.5 PLAN: APPROVED WITH REQUIRED REFINEMENTS\" (operator Stephen, 2026-10-08); scope = bounded frontend/app.css repair, successor bookkeeping, complete local revalidation, results packaging",
+  "core_dependency": "lineage/CORE_DEPENDENCY.json",
+  "core_zip_sha256": "40ffdac4d0eb2bbbd6dd72cce2be0ec953842eb4b34ff7934cc6bab5f53b27e3",
+  "core_unchanged": true,
+  "evidence_preserved": "history/rc4_evidence",
+  "changed_files_rc4_to_rc5": {
+    "VERSION": {
+      "before": "88dc6c9a8422a49fd83cb0490b89139d85bcc4e7429edba1fa57069d46f27c5b",
+      "after": "44c34b7b3886975856dcd8810743e6f467ee399ecc3d42b02dca509905287b16"
+    },
+    "CAPSULE.json": {
+      "before": "e81a29a31848dfee258fd0c24eaec65da37292d735d185f98d4edb36c6d044c6",
+      "after": "cbd0a63fbb52864af171a584b6415d35976324320bcbf35105b3b2d289a53328"
+    },
+    "package.json": {
+      "before": "d747df91548906c1879705f40696230d703f5c646be2d9ad3372b83b51b0ffbf",
+      "after": "09895441263d37ccf6d8aac7a90e4e8452b7d2f29362354fad7f48b1c02379b3"
+    },
+    "package-lock.json": {
+      "before": "7b53eb58b2f5494b9ff8ce20f80a62d0f14e559c4a617b11376f326d1025f1d2",
+      "after": "505badf2beeeb3e39f76abf5081b2a2293e8674fff9025eea881a1062d5f857f"
+    },
+    "README.md": {
+      "before": "857c40984987275a1e7d84fd9aba8751f26f6a75118444ae89c4cd25ff10b4fa",
+      "after": "f24d3c63d1bb1bf2424e5afea25c1888e674df024e5fc657c7170ad964f0bb0b"
+    },
+    "NON_CLAIMS.md": {
+      "before": "ffc9d8a1c4a153dd0e3dd95712ceb92bd24de7a27e21576a35b1889c9987318a",
+      "after": "66aa12b07227280e270b013e42a796b50722424572cb05038ff50ded13bd40af"
+    },
+    "BROWSER_EQUIPPED_VALIDATION_HANDOFF.md": {
+      "before": "76bc97ced6818145797b635ce3b16192dfdcc9b7ea77eedf5a06ddefd3eabe21",
+      "after": "6b22f67fcf011e113737293e2add4e0b4ab1ebdf2e194697219f4dd2ce6ad0e1"
+    },
+    "frontend/index.html": {
+      "before": "aefecf6a4bfc8caaf9140c266afc1026a7c1e569f4bbb72d69fd7684835d5474",
+      "after": "562d9f5b1263f87675f8845028973a30d9563ef974eb1dd953156608dc23989c"
+    },
+    "frontend/app.css": {
+      "before": "95db6677a97187f94745fbae1d3ea279910da1eefd9908f769920bab43c87e4f",
+      "after": "95db6677a97187f94745fbae1d3ea279910da1eefd9908f769920bab43c87e4f"
+    },
+    "validation-kit/README.md": {
+      "before": "ba22975c95b7bf216d969c4433b31b891c6305fda820eabd25762bca7fd1ed56",
+      "after": "f1736ee7ce75b009c38e65d48d03f17187ce46939ef9e60ac4b321a565085f3b"
+    }
+  },
+  "moved_unchanged": {
+    "evidence/* -> history/rc4_evidence/": [
+      "ADAPTER.json",
+      "ADAPTER_RESULT.json",
+      "ADAPTER_TEST_LOG.txt",
+      "BROWSER_RESULT.json",
+      "HTTP_TRANSCRIPT.json",
+      "INITIAL_FULL_TYPECHECK.json",
+      "KIT_VERIFICATION.json",
+      "PREFLIGHT.json",
+      "RUN_SUMMARY.json",
+      "SEED_RECEIPTS.json",
+      "SOURCE_CHANGES.json",
+      "SYNTAX_adapter.json",
+      "SYNTAX_app.json",
+      "SYNTAX_browser_smoke.json",
+      "TYPECHECK.json",
+      "TYPECHECK_RESULT.json"
+    ]
+  },
+  "added_files": [
+    "lineage/RC4_CHECKPOINT_PARENT.json",
+    "lineage/RC5_REPAIR.json",
+    "context/RC5_LOCAL_BUILD_RECORD.json",
+    "history/rc4_evidence/BASELINE_EVIDENCE_CORRECTIONS.md",
+    "history/rc4_evidence/README_rc4.md",
+    "history/rc4_evidence/NON_CLAIMS_rc4.md",
+    "history/rc4_evidence/BROWSER_EQUIPPED_VALIDATION_HANDOFF_rc4.md",
+    "evidence/rc5_local/ (added at seal time)"
+  ],
+  "recorded_at": "2026-10-08T22:26:30-04:00"
+}

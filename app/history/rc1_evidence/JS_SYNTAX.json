@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "path": "frontend/app.js",
+      "sha256": "64e492c7ccd1c43951781e0abcc9f722b2857b6d2709b736c232da0943e357b6",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "path": "frontend/adapter.js",
+      "sha256": "85f23fc74fc4449bb1641371b30021fac99b397922824f8ccb2c2b8bd3c69481",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "path": "tests/browser_smoke.cjs",
+      "sha256": "a7c7f4e1d9d084fbe039f21197d926127d3e78720cc559e642fb31215ccb62e7",
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "typecheck": "NOT_RUN_TYPESCRIPT_COMPILER_ABSENT",
+  "not_browser_execution": true
+}

@@ -1,0 +1,69 @@
+{
+  "version": "0.1.0",
+  "errors": [
+    {
+      "code": "ASSET_NOT_FOUND",
+      "http_hint": 404
+    },
+    {
+      "code": "PAIR_INCOMPLETE",
+      "http_hint": 409
+    },
+    {
+      "code": "PAIR_NOT_AVAILABLE",
+      "http_hint": 409
+    },
+    {
+      "code": "PAIR_QUARANTINED",
+      "http_hint": 409
+    },
+    {
+      "code": "MAINTENANCE_BLOCK",
+      "http_hint": 409
+    },
+    {
+      "code": "ACTIVE_RENTAL_EXISTS",
+      "http_hint": 409
+    },
+    {
+      "code": "NO_ACTIVE_RENTAL",
+      "http_hint": 409
+    },
+    {
+      "code": "RESERVATION_CONFLICT",
+      "http_hint": 409
+    },
+    {
+      "code": "OWNERSHIP_AUTH_REQUIRED",
+      "http_hint": 403
+    },
+    {
+      "code": "ROLE_FORBIDDEN",
+      "http_hint": 403
+    },
+    {
+      "code": "VERSION_CONFLICT",
+      "http_hint": 409
+    },
+    {
+      "code": "IDEMPOTENCY_CONFLICT",
+      "http_hint": 409
+    },
+    {
+      "code": "DUPLICATE_COMMAND",
+      "http_hint": 200
+    },
+    {
+      "code": "OFFLINE_CONFLICT",
+      "http_hint": 409
+    },
+    {
+      "code": "INVALID_TRANSITION",
+      "http_hint": 409
+    },
+    {
+      "code": "VALIDATION_ERROR",
+      "http_hint": 422
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.1.0",
+  "commands": {
+    "register_pair": {
+      "type": "object",
+      "required": ["pair"],
+      "properties": {
+        "pair": {
+          "type": "object",
+          "required": ["pair_id", "owner_org_id", "size_system", "size_value", "category", "home_location_id", "current_location_id", "custodian_org_id"],
+          "properties": {
+            "pair_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}$"},
+            "owner_org_id": {"type": "string", "pattern": "^ORG-[A-Z0-9_-]{2,48}$"},
+            "size_system": {"enum": ["US_MENS", "US_WOMENS", "US_YOUTH", "EU", "OTHER"]},
+            "size_value": {"type": ["string", "number"]},
+            "brand": {"type": ["string", "null"]},
+            "model": {"type": ["string", "null"]},
+            "category": {"enum": ["HOCKEY", "FIGURE", "OTHER"]},
+            "acquisition_date": {"type": ["string", "null"], "format": "date"},
+            "acquisition_source": {"type": ["string", "null"]},
+            "acquisition_cost_minor": {"type": ["integer", "null"], "minimum": 0},
+            "ownership_evidence_ref": {"type": ["string", "null"]},
+            "home_location_id": {"type": "string", "pattern": "^LOC-[A-Z0-9_-]{2,48}$"},
+            "current_location_id": {"type": "string", "pattern": "^LOC-[A-Z0-9_-]{2,48}$"},
+            "custodian_org_id": {"type": "string", "pattern": "^ORG-[A-Z0-9_-]{2,48}$"},
+            "custody_agreement_ref": {"type": ["string", "null"]}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "register_component": {
+      "type": "object",
+      "required": ["component"],
+      "properties": {
+        "component": {
+          "type": "object",
+          "required": ["component_id", "pair_id", "side", "label_identifier", "current_location_id"],
+          "properties": {
+            "component_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}-[LR]$"},
+            "pair_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}$"},
+            "side": {"enum": ["L", "R"]},
+            "label_identifier": {"type": "string", "pattern": "^SKT-[0-9]{4,8}-[LR]$"},
+            "serial_or_manufacturer_id": {"type": ["string", "null"]},
+            "blade_type": {"type": ["string", "null"]},
+            "component_condition": {"enum": ["GOOD", "WATCH", "DAMAGED", "OUT_OF_SERVICE", "MISSING", "RETIRED"]},
+            "current_location_id": {"type": "string", "pattern": "^LOC-[A-Z0-9_-]{2,48}$"},
+            "last_seen_at": {"type": ["string", "null"], "format": "date-time"},
+            "replacement_of_component_id": {"type": ["string", "null"]}
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "link_pair": {
+      "type": "object",
+      "required": ["pair_id", "left_component_id", "right_component_id"],
+      "properties": {
+        "pair_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}$"},
+        "left_component_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}-L$"},
+        "right_component_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}-R$"}
+      },
+      "additionalProperties": false
+    },
+    "verify_inventory": {
+      "type": "object",
+      "required": ["pair_id"],
+      "properties": {
+        "pair_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}$"},
+        "observed_component_ids": {"type": "array", "items": {"type": "string", "pattern": "^SKT-[0-9]{4,8}-[LR]$"}, "uniqueItems": true},
+        "notes": {"type": ["string", "null"], "maxLength": 2000}
+      },
+      "additionalProperties": false
+    },
+    "scan_asset": {
+      "type": "object",
+      "required": ["identifier"],
+      "properties": {"identifier": {"type": "string", "minLength": 1, "maxLength": 128}},
+      "additionalProperties": false
+    },
+    "transfer_location": {
+      "type": "object",
+      "required": ["pair_id", "to_location_id"],
+      "properties": {
+        "pair_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}$"},
+        "to_location_id": {"type": "string", "pattern": "^LOC-[A-Z0-9_-]{2,48}$"},
+        "reason_code": {"type": ["string", "null"]},
+        "notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "transfer_custody": {
+      "type": "object",
+      "required": ["pair_id", "to_custodian_org_id"],
+      "properties": {
+        "pair_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}$"},
+        "to_custodian_org_id": {"type": "string", "pattern": "^ORG-[A-Z0-9_-]{2,48}$"},
+        "agreement_ref": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "transfer_ownership": {
+      "type": "object",
+      "required": ["pair_id", "to_owner_org_id"],
+      "properties": {
+        "pair_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}$"},
+        "to_owner_org_id": {"type": "string", "pattern": "^ORG-[A-Z0-9_-]{2,48}$"},
+        "ownership_evidence_ref": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "replace_label": {
+      "type": "object",
+      "required": ["component_id", "new_label_identifier"],
+      "properties": {
+        "component_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}-[LR]$"},
+        "new_label_identifier": {"type": "string", "pattern": "^SKT-[0-9]{4,8}-[LR]$"},
+        "reason_code": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    },
+    "mark_component_missing": {
+      "type": "object",
+      "required": ["component_id"],
+      "properties": {
+        "component_id": {"type": "string", "pattern": "^SKT-[0-9]{4,8}-[LR]$"},
+        "reason_code": {"type": ["string", "null"]},
+        "notes": {"type": ["string", "null"]}
+      },
+      "additionalProperties": false
+    }
+  }
+}

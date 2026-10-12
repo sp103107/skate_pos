@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:organization:0.1.0",
+  "title": "Organization",
+  "type": "object",
+  "required": [
+    "org_id",
+    "name",
+    "org_type",
+    "created_at"
+  ],
+  "properties": {
+    "org_id": {
+      "$ref": "common.schema.json#/$defs/org_id"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "org_type": {
+      "type": "string",
+      "enum": [
+        "ASSET_OWNER",
+        "VENUE_OPERATOR",
+        "MAINTENANCE_PROVIDER",
+        "EXTERNAL_EVENT_CLIENT",
+        "OTHER"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "additionalProperties": false
+}

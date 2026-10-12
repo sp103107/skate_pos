@@ -1,0 +1,23 @@
+{
+  "parent": "0.1.0-rc.3",
+  "changes": [
+    {
+      "path": "frontend/app.js",
+      "reason": "Fix6 DOM compiler errors with checked element lookups and button-only navigation selectors; no type suppression."
+    },
+    {
+      "path": "frontend/index.html",
+      "reason": "Correct visible companion version rc.1 to rc.4."
+    },
+    {
+      "path": "tests/browser_smoke.cjs",
+      "reason": "Bind exact checked executable/version, capture actual screenshot/source/executable hashes and platform, bound bridge shutdown and record truthful launched/failure status."
+    },
+    {
+      "path": "validation-kit",
+      "reason": "Portable Linux preflight/check/browser/collection harness and supported operator instructions; no automatic external execution."
+    }
+  ],
+  "core_or_adapter_runtime_changes": false,
+  "tests/browser_smoke.cjs_browser_execution": "NOT_RUN; syntax-only measured"
+}

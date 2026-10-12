@@ -1,0 +1,63 @@
+{
+  "record_type": "CURRENT_ASSIGNMENT",
+  "participant_id": "skate-ui01-local-review",
+  "operator": "Stephen",
+  "series": "UI01",
+  "assignment": "L01-L05 local launchers",
+  "task_bump_stages": [
+    "INTENT",
+    "PLAN",
+    "BUILD",
+    "VALIDATE",
+    "PACKAGE",
+    "DISTRIBUTE"
+  ],
+  "baseline_acceptance": "PASS_WITH_KNOWN_LIMITATIONS",
+  "baseline_candidate_sha256": "14275ffb7d892ff61345f10a5185aebae872f19249903f509417b49a75ce7215",
+  "governing_refs": {
+    "disposition_0002": {
+      "file": "UI01_RC5_ACCEPTANCE_DISPOSITION_0002.zip",
+      "sha256": "80254a65c5879ca0bafbfd68c6945951fca5f89f3f786e03bc51e27ea4021a47",
+      "verdict": "PASS_WITH_KNOWN_LIMITATIONS",
+      "scope": "independent evidence review; not fresh Judge runtime"
+    },
+    "task_bump_meta": {
+      "path": "M:\\\\SALVAGE\\\\KNOWLEDGE\\\\aos_task_bump_meta_skill_v0_1_0_rc_1-20261011T192648Z-1-001.zip",
+      "sha256": "04eba3ea27f594167d8f588b25916f03afec77efc173a2fbe346d647c55c1de8"
+    },
+    "task_bump_control_plane_rc2": {
+      "path": "M:\\\\SALVAGE\\\\KNOWLEDGE\\\\aos_task_bump_control_plane_skill_v0_2_0_rc_2_candidate-20261011T192701Z-1-001.zip",
+      "sha256": "b34ce5705138969f1c647e49a6b8adcdf2329062a09ef9fcb40eb758d5440b22",
+      "authority_effect": "NONE"
+    },
+    "aos_response_skill": "NOT_FOUND_LOCALLY"
+  },
+  "open_findings": [
+    {
+      "id": "F-01",
+      "status": "ACCEPTED_KNOWN_UI_STATUS_DEFECT",
+      "text": "stale HEALTHY during runtime unavailability"
+    },
+    {
+      "id": "F-02",
+      "status": "ACCEPTED_DEFERRED_UX_DEBT",
+      "text": "wrapped mobile navigation height"
+    },
+    {
+      "id": "F-03",
+      "status": "NONBLOCKING_RECORD_CORRECTION",
+      "text": "secondary lineage hash correction"
+    }
+  ],
+  "h04": "NOT_VERIFIED_DEFERRED_NONBLOCKING",
+  "flags": {
+    "ui_freeze": false,
+    "core_changed": false,
+    "distribution": "HANDOFF_ONLY"
+  },
+  "package_target": "Skate_Inventory_UI_Candidate_v0.1.0-rc.6.zip",
+  "return_target": "UI01_LOCAL_AGENT_RESULTS_0003.zip",
+  "recorded_at": "2026-10-11T17:22:06-04:00",
+  "stage": "DISTRIBUTE",
+  "work_disposition": "ARMED_IDLE_COMPLETE"
+}

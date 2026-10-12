@@ -1,0 +1,11 @@
+{
+  "script_sha256": "a7c7f4e1d9d084fbe039f21197d926127d3e78720cc559e642fb31215ccb62e7",
+  "playwright": "1.62.1",
+  "node": "v24.19.0",
+  "result": "NOT_RUN_BLOCKED",
+  "executed_browser_checks": 0,
+  "screenshots": 0,
+  "blocker": "Matching Chromium executable absent; no downloaded binary or permission bypass attempted.",
+  "source_visual_proof": false,
+  "typescript_compiler": "NOT_RUN_COMPILER_ABSENT"
+}

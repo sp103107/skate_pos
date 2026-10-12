@@ -1,0 +1,9 @@
+{
+  "contract_version": "0.1.0",
+  "parent": {
+    "name": "Skate Inventory + Use System Foundation Book v0.1.0",
+    "docx_sha256": "de06748985a4ed2d53f9e22e7e0c8ee002e0f18ccc7fc85815927ca1bf164323",
+    "markdown_sha256": "4b488be3bc4d7f37f69b7d392a8a67b6174b8b6cdd470a6da4e913cc2751e241"
+  },
+  "authority_effect": "R00 derives implementation contracts from the parent foundation and does not replace or weaken parent invariants."
+}

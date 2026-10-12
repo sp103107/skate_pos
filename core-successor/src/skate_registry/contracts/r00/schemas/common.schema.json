@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:common:0.1.0",
+  "title": "R00 Common Definitions",
+  "$defs": {
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "pair_id": {
+      "type": "string",
+      "pattern": "^SKT-[0-9]{4,8}$"
+    },
+    "component_id": {
+      "type": "string",
+      "pattern": "^SKT-[0-9]{4,8}-[LR]$"
+    },
+    "org_id": {
+      "type": "string",
+      "pattern": "^ORG-[A-Z0-9_-]{2,48}$"
+    },
+    "location_id": {
+      "type": "string",
+      "pattern": "^LOC-[A-Z0-9_-]{2,48}$"
+    },
+    "user_id": {
+      "type": "string",
+      "pattern": "^USR-[A-Z0-9_-]{2,48}$"
+    },
+    "device_id": {
+      "type": "string",
+      "pattern": "^DEV-[A-Z0-9_-]{2,48}$"
+    },
+    "evidence_ref": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 512
+    },
+    "money": {
+      "type": "object",
+      "required": [
+        "amount_minor",
+        "currency"
+      ],
+      "properties": {
+        "amount_minor": {
+          "type": "integer"
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

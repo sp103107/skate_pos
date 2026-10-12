@@ -1,0 +1,33 @@
+{
+  "status": "ARMED_IDLE_COMPLETE",
+  "stage": "DISTRIBUTE",
+  "distribution_mode": "HANDOFF_ONLY",
+  "candidate_file": "Skate_Inventory_UI_Candidate_v0.1.0-rc.6.zip",
+  "candidate_sha256_authority": "UI01_LOCAL_AGENT_RESULTS_0003 / RESULT_SUMMARY.json",
+  "open_findings": [
+    {
+      "id": "F-01",
+      "status": "ACCEPTED_KNOWN_UI_STATUS_DEFECT"
+    },
+    {
+      "id": "F-02",
+      "status": "ACCEPTED_DEFERRED_UX_DEBT"
+    },
+    {
+      "id": "F-03",
+      "status": "NONBLOCKING_RECORD_CORRECTION"
+    }
+  ],
+  "platforms": {
+    "wsl_ubuntu_lifecycle": "PASS",
+    "native_windows_lifecycle": "NOT_RUN"
+  },
+  "next_action_owner": "operator_or_coordinator",
+  "resume_condition": "bounded new assignment or operator instruction",
+  "flags": {
+    "ui_freeze": false,
+    "core_changed": false,
+    "distribution": "HANDOFF_ONLY"
+  },
+  "recorded_at": "2026-10-11T17:22:06-04:00"
+}

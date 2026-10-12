@@ -1,0 +1,149 @@
+{
+  "version": "0.1.0",
+  "event_types": [
+    {
+      "event_type": "ASSET_REGISTERED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "COMPONENT_REGISTERED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "PAIR_LINKED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "PAIR_UNLINKED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "INVENTORY_VERIFIED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "LOCATION_TRANSFERRED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "CUSTODY_TRANSFERRED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "OWNERSHIP_TRANSFERRED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "RENTAL_CHECKOUT",
+      "class": "RENTAL"
+    },
+    {
+      "event_type": "RENTAL_CHECKIN",
+      "class": "RENTAL"
+    },
+    {
+      "event_type": "RENTAL_VOIDED",
+      "class": "RENTAL"
+    },
+    {
+      "event_type": "RENTAL_EXTENSION",
+      "class": "RENTAL"
+    },
+    {
+      "event_type": "CONDITION_INSPECTED",
+      "class": "MAINTENANCE"
+    },
+    {
+      "event_type": "QUICK_CLEAN_COMPLETED",
+      "class": "MAINTENANCE"
+    },
+    {
+      "event_type": "DEEP_CLEAN_COMPLETED",
+      "class": "MAINTENANCE"
+    },
+    {
+      "event_type": "SHARPEN_COMPLETED",
+      "class": "MAINTENANCE"
+    },
+    {
+      "event_type": "REPAIR_OPENED",
+      "class": "MAINTENANCE"
+    },
+    {
+      "event_type": "REPAIR_COMPLETED",
+      "class": "MAINTENANCE"
+    },
+    {
+      "event_type": "QUARANTINED",
+      "class": "MAINTENANCE"
+    },
+    {
+      "event_type": "RETURNED_TO_SERVICE",
+      "class": "MAINTENANCE"
+    },
+    {
+      "event_type": "DAMAGE_REPORTED",
+      "class": "EXCEPTION"
+    },
+    {
+      "event_type": "COMPONENT_MISSING",
+      "class": "EXCEPTION"
+    },
+    {
+      "event_type": "ASSET_LOST",
+      "class": "EXCEPTION"
+    },
+    {
+      "event_type": "ASSET_FOUND",
+      "class": "EXCEPTION"
+    },
+    {
+      "event_type": "LABEL_REPLACED",
+      "class": "EXCEPTION"
+    },
+    {
+      "event_type": "PAIR_MISMATCH_DETECTED",
+      "class": "EXCEPTION"
+    },
+    {
+      "event_type": "RESERVATION_CREATED",
+      "class": "RESERVATION"
+    },
+    {
+      "event_type": "RESERVATION_RELEASED",
+      "class": "RESERVATION"
+    },
+    {
+      "event_type": "EXTERNAL_EVENT_PACKED",
+      "class": "RESERVATION"
+    },
+    {
+      "event_type": "EXTERNAL_EVENT_RETURNED",
+      "class": "RESERVATION"
+    },
+    {
+      "event_type": "RECONCILIATION_OPENED",
+      "class": "RECONCILIATION"
+    },
+    {
+      "event_type": "RECONCILIATION_CLOSED",
+      "class": "RECONCILIATION"
+    },
+    {
+      "event_type": "CORRECTION_RECORDED",
+      "class": "EXCEPTION"
+    },
+    {
+      "event_type": "ASSET_MIGRATED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "ASSET_UNIT_REGISTERED",
+      "class": "INVENTORY"
+    },
+    {
+      "event_type": "ASSET_IDENTIFIER_ADDED",
+      "class": "INVENTORY"
+    }
+  ]
+}

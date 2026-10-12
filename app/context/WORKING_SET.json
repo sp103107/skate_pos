@@ -1,0 +1,25 @@
+{
+  "inputs": [
+    "Locked Core provider ZIP/wheel",
+    "C07 accepted handoff",
+    "live packets1..29",
+    "UI00 design/prototype/tokens/assets/maps",
+    "installed Core contracts/facades"
+  ],
+  "excluded": [
+    "v0.3.0 project attachment as current runtime",
+    "release-layer ZIP not needed for bounded UI01",
+    "production operator data",
+    "Core rewrite",
+    "rental/public API/coding agents"
+  ],
+  "canonical_companion_sources": [
+    "frontend",
+    "adapter",
+    "scripts",
+    "tests",
+    "contracts/runtime-adapter.d.ts"
+  ],
+  "minimal_missing_gate": "Browser executable + real rendered validation",
+  "local_mutable_work_only": true
+}

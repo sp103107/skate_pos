@@ -1,0 +1,15 @@
+{
+  "status": "PASS_SCOPED_OPERATOR_MEASUREMENT_NOT_JUDGE",
+  "mode": "browser",
+  "at": "2026-10-09T02:27:49.841784+00:00",
+  "result_files": [
+    "BROWSER.json"
+  ],
+  "browser_invoked": true,
+  "browser_launched": true,
+  "browser_cases": 11,
+  "independent_review": false,
+  "UI01_completion": false,
+  "core_unchanged": true,
+  "screenshots_require_operator_visual_review": true
+}

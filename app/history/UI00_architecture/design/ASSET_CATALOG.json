@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0",
+  "round": "PNG_ASSET_ROUND_01",
+  "purpose": "Deterministic UI implementation/reference assets. Generative concept imagery may be explored separately and is non-authoritative.",
+  "icons": [
+    "audit.png",
+    "evidence.png",
+    "health.png",
+    "inventory.png",
+    "maintenance.png",
+    "offline.png",
+    "recovery.png",
+    "rental.png",
+    "reservation.png",
+    "revenue.png",
+    "scan.png",
+    "skate.png",
+    "sync.png"
+  ],
+  "buttons": [
+    "add_pair.png",
+    "export_recovery.png",
+    "offline_queue.png",
+    "rental_gated.png",
+    "runtime_health.png",
+    "scan_primary.png",
+    "type_id.png",
+    "verify_inventory.png"
+  ],
+  "mockups": [
+    "UI00_OPERATOR_DASHBOARD_CONCEPT.png",
+    "UI00_PNG_ASSET_ROUND_01_SHEET.png"
+  ]
+}

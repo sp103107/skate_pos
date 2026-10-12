@@ -1,0 +1,1536 @@
+[
+  {
+    "path": "/api/status",
+    "method": null,
+    "request": null,
+    "raw": null,
+    "status": 200,
+    "response": {
+      "mode": "ACTUAL_CORE_SYNTHETIC_ONLY",
+      "identity": {
+        "distribution": "skate-inventory-core==0.3.1rc1",
+        "origin": "/workspace/scratch/792d47681b99/ui01_env/lib/python3.12/site-packages",
+        "files_verified": 43
+      },
+      "token": "fB0rQk_ldyecs3wyOk15Q4OkNmTIAb9FUZtLkf7hZwM",
+      "origin": "http://127.0.0.1:37807",
+      "workspace": "/tmp/skate-ui01-demo-tests-79145deb070a49c7b99fd711907c190a",
+      "capabilities": {
+        "commands": [
+          "link_pair",
+          "register_component",
+          "register_pair",
+          "scan_asset",
+          "transfer_location",
+          "verify_inventory"
+        ],
+        "queries": [
+          "asset_history",
+          "find_asset",
+          "get_pair",
+          "list_inventory",
+          "runtime_status"
+        ],
+        "recovery": false,
+        "rental": false
+      },
+      "context": {
+        "actor_id": "ui01-synthetic-operator",
+        "actor_role": "OWNER_ADMIN",
+        "device_id": "DEV-COUNTER",
+        "location_id": "LOC-RINK"
+      },
+      "locations": [
+        "LOC-RINK",
+        "LOC-STORAGE"
+      ]
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "list_inventory",
+      "params": {}
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "result": [
+        {
+          "pair_id": "SKT-0900",
+          "owner_org_id": "ORG-OWNER",
+          "size_system": "US_MENS",
+          "size_value": "8",
+          "brand": null,
+          "model": null,
+          "category": "HOCKEY",
+          "acquisition_date": null,
+          "acquisition_source": null,
+          "acquisition_cost_minor": null,
+          "ownership_evidence_ref": null,
+          "home_location_id": "LOC-RINK",
+          "current_location_id": "LOC-RINK",
+          "custodian_org_id": "ORG-OWNER",
+          "availability_state": "AVAILABLE",
+          "maintenance_state": "OK",
+          "lifecycle_state": "ACTIVE",
+          "total_rental_cycles": 0,
+          "estimated_use_minutes": 0,
+          "last_inventory_verified_at": null,
+          "version": 4,
+          "created_at": "2026-10-07T00:50:29.653199Z",
+          "updated_at": "2026-10-07T00:50:29.662603Z",
+          "maintenance_flags": [],
+          "components": [
+            {
+              "component_id": "SKT-0900-L",
+              "pair_id": "SKT-0900",
+              "side": "L",
+              "label_identifier": "SKT-0900-L",
+              "serial_or_manufacturer_id": null,
+              "blade_type": null,
+              "component_condition": "GOOD",
+              "current_location_id": "LOC-RINK",
+              "last_seen_at": null,
+              "replacement_of_component_id": null,
+              "version": 1,
+              "created_at": "2026-10-07T00:50:29.656167Z",
+              "updated_at": "2026-10-07T00:50:29.656167Z"
+            },
+            {
+              "component_id": "SKT-0900-R",
+              "pair_id": "SKT-0900",
+              "side": "R",
+              "label_identifier": "SKT-0900-R",
+              "serial_or_manufacturer_id": null,
+              "blade_type": null,
+              "component_condition": "GOOD",
+              "current_location_id": "LOC-RINK",
+              "last_seen_at": null,
+              "replacement_of_component_id": null,
+              "version": 1,
+              "created_at": "2026-10-07T00:50:29.659779Z",
+              "updated_at": "2026-10-07T00:50:29.659779Z"
+            }
+          ]
+        },
+        {
+          "pair_id": "SKT-0901",
+          "owner_org_id": "ORG-OWNER",
+          "size_system": "US_MENS",
+          "size_value": "9",
+          "brand": null,
+          "model": null,
+          "category": "HOCKEY",
+          "acquisition_date": null,
+          "acquisition_source": null,
+          "acquisition_cost_minor": null,
+          "ownership_evidence_ref": null,
+          "home_location_id": "LOC-RINK",
+          "current_location_id": "LOC-RINK",
+          "custodian_org_id": "ORG-OWNER",
+          "availability_state": "AVAILABLE",
+          "maintenance_state": "OK",
+          "lifecycle_state": "ACTIVE",
+          "total_rental_cycles": 0,
+          "estimated_use_minutes": 0,
+          "last_inventory_verified_at": null,
+          "version": 4,
+          "created_at": "2026-10-07T00:50:29.665290Z",
+          "updated_at": "2026-10-07T00:50:29.673554Z",
+          "maintenance_flags": [],
+          "components": [
+            {
+              "component_id": "SKT-0901-L",
+              "pair_id": "SKT-0901",
+              "side": "L",
+              "label_identifier": "SKT-0901-L",
+              "serial_or_manufacturer_id": null,
+              "blade_type": null,
+              "component_condition": "GOOD",
+              "current_location_id": "LOC-RINK",
+              "last_seen_at": null,
+              "replacement_of_component_id": null,
+              "version": 1,
+              "created_at": "2026-10-07T00:50:29.668006Z",
+              "updated_at": "2026-10-07T00:50:29.668006Z"
+            },
+            {
+              "component_id": "SKT-0901-R",
+              "pair_id": "SKT-0901",
+              "side": "R",
+              "label_identifier": "SKT-0901-R",
+              "serial_or_manufacturer_id": null,
+              "blade_type": null,
+              "component_condition": "GOOD",
+              "current_location_id": "LOC-RINK",
+              "last_seen_at": null,
+              "replacement_of_component_id": null,
+              "version": 1,
+              "created_at": "2026-10-07T00:50:29.670797Z",
+              "updated_at": "2026-10-07T00:50:29.670797Z"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "get_pair",
+      "params": {
+        "pair_id": "SKT-0900"
+      }
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "result": {
+        "pair_id": "SKT-0900",
+        "owner_org_id": "ORG-OWNER",
+        "size_system": "US_MENS",
+        "size_value": "8",
+        "brand": null,
+        "model": null,
+        "category": "HOCKEY",
+        "acquisition_date": null,
+        "acquisition_source": null,
+        "acquisition_cost_minor": null,
+        "ownership_evidence_ref": null,
+        "home_location_id": "LOC-RINK",
+        "current_location_id": "LOC-RINK",
+        "custodian_org_id": "ORG-OWNER",
+        "availability_state": "AVAILABLE",
+        "maintenance_state": "OK",
+        "lifecycle_state": "ACTIVE",
+        "total_rental_cycles": 0,
+        "estimated_use_minutes": 0,
+        "last_inventory_verified_at": null,
+        "version": 4,
+        "created_at": "2026-10-07T00:50:29.653199Z",
+        "updated_at": "2026-10-07T00:50:29.662603Z",
+        "maintenance_flags": [],
+        "components": [
+          {
+            "component_id": "SKT-0900-L",
+            "pair_id": "SKT-0900",
+            "side": "L",
+            "label_identifier": "SKT-0900-L",
+            "serial_or_manufacturer_id": null,
+            "blade_type": null,
+            "component_condition": "GOOD",
+            "current_location_id": "LOC-RINK",
+            "last_seen_at": null,
+            "replacement_of_component_id": null,
+            "version": 1,
+            "created_at": "2026-10-07T00:50:29.656167Z",
+            "updated_at": "2026-10-07T00:50:29.656167Z"
+          },
+          {
+            "component_id": "SKT-0900-R",
+            "pair_id": "SKT-0900",
+            "side": "R",
+            "label_identifier": "SKT-0900-R",
+            "serial_or_manufacturer_id": null,
+            "blade_type": null,
+            "component_condition": "GOOD",
+            "current_location_id": "LOC-RINK",
+            "last_seen_at": null,
+            "replacement_of_component_id": null,
+            "version": 1,
+            "created_at": "2026-10-07T00:50:29.659779Z",
+            "updated_at": "2026-10-07T00:50:29.659779Z"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "find_asset",
+      "params": {
+        "identifier": "SKT-0900-L"
+      }
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "result": {
+        "resolved_type": "COMPONENT_LABEL",
+        "identifier": "SKT-0900-L",
+        "active_label": true,
+        "alias": {
+          "label_identifier": "SKT-0900-L",
+          "component_id": "SKT-0900-L",
+          "pair_id": "SKT-0900",
+          "active": 1,
+          "created_at": "2026-10-07T00:50:29.656167Z",
+          "retired_at": null
+        },
+        "component": {
+          "component_id": "SKT-0900-L",
+          "pair_id": "SKT-0900",
+          "side": "L",
+          "label_identifier": "SKT-0900-L",
+          "serial_or_manufacturer_id": null,
+          "blade_type": null,
+          "component_condition": "GOOD",
+          "current_location_id": "LOC-RINK",
+          "last_seen_at": null,
+          "replacement_of_component_id": null,
+          "version": 1,
+          "created_at": "2026-10-07T00:50:29.656167Z",
+          "updated_at": "2026-10-07T00:50:29.656167Z"
+        },
+        "pair": {
+          "pair_id": "SKT-0900",
+          "owner_org_id": "ORG-OWNER",
+          "size_system": "US_MENS",
+          "size_value": "8",
+          "brand": null,
+          "model": null,
+          "category": "HOCKEY",
+          "acquisition_date": null,
+          "acquisition_source": null,
+          "acquisition_cost_minor": null,
+          "ownership_evidence_ref": null,
+          "home_location_id": "LOC-RINK",
+          "current_location_id": "LOC-RINK",
+          "custodian_org_id": "ORG-OWNER",
+          "availability_state": "AVAILABLE",
+          "maintenance_state": "OK",
+          "lifecycle_state": "ACTIVE",
+          "total_rental_cycles": 0,
+          "estimated_use_minutes": 0,
+          "last_inventory_verified_at": null,
+          "version": 4,
+          "created_at": "2026-10-07T00:50:29.653199Z",
+          "updated_at": "2026-10-07T00:50:29.662603Z",
+          "maintenance_flags": []
+        }
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "asset_history",
+      "params": {
+        "pair_id": "SKT-0900"
+      }
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "result": [
+        {
+          "ledger_sequence": 1,
+          "event_id": "9abef1a6-0788-4f0b-8e66-eb97aa93aa29",
+          "schema_version": "0.1.0",
+          "event_type": "ASSET_REGISTERED",
+          "occurred_at": "2026-10-07T00:50:29.650551Z",
+          "recorded_at": "2026-10-07T00:50:29.653897Z",
+          "actor_id": "ui01-synthetic-operator",
+          "actor_role": "OWNER_ADMIN",
+          "location_id": "LOC-RINK",
+          "pair_id": "SKT-0900",
+          "component_id": null,
+          "rental_session_id": null,
+          "command_id": "7b79d24c-e855-4028-b2db-8898bba20eed",
+          "reason_code": null,
+          "notes": null,
+          "device_id": "DEV-COUNTER",
+          "offline_sequence": 0,
+          "payload": {
+            "initial_custody_assignment_id": "CUS-C850ECE3CA2A401B",
+            "pair": {
+              "acquisition_cost_minor": null,
+              "acquisition_date": null,
+              "acquisition_source": null,
+              "availability_state": "MISSING_COMPONENT",
+              "brand": null,
+              "category": "HOCKEY",
+              "created_at": "2026-10-07T00:50:29.653199Z",
+              "current_location_id": "LOC-RINK",
+              "custodian_org_id": "ORG-OWNER",
+              "estimated_use_minutes": 0,
+              "home_location_id": "LOC-RINK",
+              "last_inventory_verified_at": null,
+              "lifecycle_state": "ACTIVE",
+              "maintenance_flags": [],
+              "maintenance_state": "OK",
+              "model": null,
+              "owner_org_id": "ORG-OWNER",
+              "ownership_evidence_ref": null,
+              "pair_id": "SKT-0900",
+              "size_system": "US_MENS",
+              "size_value": "8",
+              "total_rental_cycles": 0,
+              "updated_at": "2026-10-07T00:50:29.653199Z",
+              "version": 1
+            }
+          },
+          "evidence_refs": [],
+          "integrity": {
+            "algorithm": "SHA-256",
+            "event_hash": "47a56a89ea8bda53c9b5e20983149eacf602861a1cae13df91151acd0b30250d",
+            "previous_event_hash": null
+          }
+        },
+        {
+          "ledger_sequence": 2,
+          "event_id": "02832e51-e306-4f98-965e-6c56de7b1c36",
+          "schema_version": "0.1.0",
+          "event_type": "COMPONENT_REGISTERED",
+          "occurred_at": "2026-10-07T00:50:29.655097Z",
+          "recorded_at": "2026-10-07T00:50:29.657035Z",
+          "actor_id": "ui01-synthetic-operator",
+          "actor_role": "OWNER_ADMIN",
+          "location_id": "LOC-RINK",
+          "pair_id": "SKT-0900",
+          "component_id": "SKT-0900-L",
+          "rental_session_id": null,
+          "command_id": "b06a05c1-39d2-417e-b5ac-c82dc6772a7d",
+          "reason_code": null,
+          "notes": null,
+          "device_id": "DEV-COUNTER",
+          "offline_sequence": 0,
+          "payload": {
+            "component": {
+              "blade_type": null,
+              "component_condition": "GOOD",
+              "component_id": "SKT-0900-L",
+              "created_at": "2026-10-07T00:50:29.656167Z",
+              "current_location_id": "LOC-RINK",
+              "label_identifier": "SKT-0900-L",
+              "last_seen_at": null,
+              "pair_id": "SKT-0900",
+              "replacement_of_component_id": null,
+              "serial_or_manufacturer_id": null,
+              "side": "L",
+              "updated_at": "2026-10-07T00:50:29.656167Z",
+              "version": 1
+            }
+          },
+          "evidence_refs": [],
+          "integrity": {
+            "algorithm": "SHA-256",
+            "event_hash": "33a44de52688b6711904a10f6342d305ad3e1aa151f4edd949ce9e085d96ae58",
+            "previous_event_hash": "47a56a89ea8bda53c9b5e20983149eacf602861a1cae13df91151acd0b30250d"
+          }
+        },
+        {
+          "ledger_sequence": 3,
+          "event_id": "b5ee30b6-a2b9-481d-873b-6f7d023c2a86",
+          "schema_version": "0.1.0",
+          "event_type": "COMPONENT_REGISTERED",
+          "occurred_at": "2026-10-07T00:50:29.658641Z",
+          "recorded_at": "2026-10-07T00:50:29.660430Z",
+          "actor_id": "ui01-synthetic-operator",
+          "actor_role": "OWNER_ADMIN",
+          "location_id": "LOC-RINK",
+          "pair_id": "SKT-0900",
+          "component_id": "SKT-0900-R",
+          "rental_session_id": null,
+          "command_id": "affb1227-799f-43cf-9a37-766c9e3beab9",
+          "reason_code": null,
+          "notes": null,
+          "device_id": "DEV-COUNTER",
+          "offline_sequence": 0,
+          "payload": {
+            "component": {
+              "blade_type": null,
+              "component_condition": "GOOD",
+              "component_id": "SKT-0900-R",
+              "created_at": "2026-10-07T00:50:29.659779Z",
+              "current_location_id": "LOC-RINK",
+              "label_identifier": "SKT-0900-R",
+              "last_seen_at": null,
+              "pair_id": "SKT-0900",
+              "replacement_of_component_id": null,
+              "serial_or_manufacturer_id": null,
+              "side": "R",
+              "updated_at": "2026-10-07T00:50:29.659779Z",
+              "version": 1
+            }
+          },
+          "evidence_refs": [],
+          "integrity": {
+            "algorithm": "SHA-256",
+            "event_hash": "69a34ffaf58c809239b0ed5421cec373730437a06c13ea4fcad618764200e533",
+            "previous_event_hash": "33a44de52688b6711904a10f6342d305ad3e1aa151f4edd949ce9e085d96ae58"
+          }
+        },
+        {
+          "ledger_sequence": 4,
+          "event_id": "b3a9fb68-6dfe-4632-a2a7-ae7a172ee691",
+          "schema_version": "0.1.0",
+          "event_type": "PAIR_LINKED",
+          "occurred_at": "2026-10-07T00:50:29.661549Z",
+          "recorded_at": "2026-10-07T00:50:29.662650Z",
+          "actor_id": "ui01-synthetic-operator",
+          "actor_role": "OWNER_ADMIN",
+          "location_id": "LOC-RINK",
+          "pair_id": "SKT-0900",
+          "component_id": null,
+          "rental_session_id": null,
+          "command_id": "399f3a29-b9cf-4570-b88d-80c87d5bb102",
+          "reason_code": null,
+          "notes": null,
+          "device_id": "DEV-COUNTER",
+          "offline_sequence": 0,
+          "payload": {
+            "availability_state": "AVAILABLE",
+            "left_component_id": "SKT-0900-L",
+            "right_component_id": "SKT-0900-R"
+          },
+          "evidence_refs": [],
+          "integrity": {
+            "algorithm": "SHA-256",
+            "event_hash": "3f7315a17b62df186ec39037107d282bcbee4a9dadc0a5a36a032c1ee54fd393",
+            "previous_event_hash": "69a34ffaf58c809239b0ed5421cec373730437a06c13ea4fcad618764200e533"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "runtime_status",
+      "params": {
+        "deep": true
+      }
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "result": {
+        "status": "HEALTHY",
+        "ledger": {
+          "ok": true,
+          "first_bad_event_id": null,
+          "event_count": 8,
+          "last_event_id": "91aff204-09c3-4b1e-a5cf-7087a8940198",
+          "last_event_hash": "ff75c2d2120d102692aee28cd2c7c670fa130c15ab65862aee8a0e84e1e7f844",
+          "last_recorded_at": "2026-10-07T00:50:29.673607Z"
+        },
+        "foreign_key_findings": [],
+        "duplicate_component_side_findings": [],
+        "incomplete_pair_findings": [],
+        "projection_digest": "b124ab20bbde65578ea128ec38f718d1a649f4b7d321433b032712779a2c1a55",
+        "latest_checkpoint": null,
+        "replay": {
+          "ledger_ok": true,
+          "first_bad_event_id": null,
+          "event_count": 8,
+          "last_event_hash": "ff75c2d2120d102692aee28cd2c7c670fa130c15ab65862aee8a0e84e1e7f844",
+          "unsupported_event_types": [],
+          "live_semantic_digest": "d6f99b1749d3d6c7fce0b088a5dbacb414570912043f1ac045be7f0512642eb2",
+          "rebuilt_semantic_digest": "d6f99b1749d3d6c7fce0b088a5dbacb414570912043f1ac045be7f0512642eb2",
+          "semantic_match": true
+        }
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "685326ae-e00f-413b-94d7-bb4e99cdd700",
+      "schema_version": "0.1.0",
+      "command_name": "scan_asset",
+      "requested_at": "2026-10-07T00:50:29.700451Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:947a00ac-0710-48bf-9c7b-c783078e6995",
+      "payload": {
+        "identifier": "SKT-0900-L"
+      },
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "receipt": {
+        "receipt_id": "0d894f15-534a-40d6-8966-4db4646b03d3",
+        "command_id": "685326ae-e00f-413b-94d7-bb4e99cdd700",
+        "status": "ACCEPTED",
+        "recorded_at": "2026-10-07T00:50:29.700884Z",
+        "event_ids": [],
+        "result": {
+          "resolved_type": "COMPONENT_LABEL",
+          "identifier": "SKT-0900-L",
+          "active_label": true,
+          "component": {
+            "component_id": "SKT-0900-L",
+            "pair_id": "SKT-0900",
+            "side": "L",
+            "label_identifier": "SKT-0900-L",
+            "serial_or_manufacturer_id": null,
+            "blade_type": null,
+            "component_condition": "GOOD",
+            "current_location_id": "LOC-RINK",
+            "last_seen_at": null,
+            "replacement_of_component_id": null,
+            "version": 1,
+            "created_at": "2026-10-07T00:50:29.656167Z",
+            "updated_at": "2026-10-07T00:50:29.656167Z"
+          },
+          "pair": {
+            "pair_id": "SKT-0900",
+            "owner_org_id": "ORG-OWNER",
+            "size_system": "US_MENS",
+            "size_value": "8",
+            "brand": null,
+            "model": null,
+            "category": "HOCKEY",
+            "acquisition_date": null,
+            "acquisition_source": null,
+            "acquisition_cost_minor": null,
+            "ownership_evidence_ref": null,
+            "home_location_id": "LOC-RINK",
+            "current_location_id": "LOC-RINK",
+            "custodian_org_id": "ORG-OWNER",
+            "availability_state": "AVAILABLE",
+            "maintenance_state": "OK",
+            "lifecycle_state": "ACTIVE",
+            "total_rental_cycles": 0,
+            "estimated_use_minutes": 0,
+            "last_inventory_verified_at": null,
+            "version": 4,
+            "created_at": "2026-10-07T00:50:29.653199Z",
+            "updated_at": "2026-10-07T00:50:29.662603Z",
+            "maintenance_flags": []
+          }
+        },
+        "error": null
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "e953e0ba-687f-4ea7-9feb-83aaf0a23b88",
+      "schema_version": "0.1.0",
+      "command_name": "transfer_location",
+      "requested_at": "2026-10-07T00:50:29.703963Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:d607973a-db5f-4bfc-b46d-604378aefda1",
+      "payload": {
+        "pair_id": "SKT-0900",
+        "to_location_id": "LOC-STORAGE"
+      },
+      "offline_created": false,
+      "expected_pair_version": 4
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "receipt": {
+        "receipt_id": "a6079c44-22b9-4a72-ba84-0eedb59a4544",
+        "command_id": "e953e0ba-687f-4ea7-9feb-83aaf0a23b88",
+        "status": "ACCEPTED",
+        "recorded_at": "2026-10-07T00:50:29.704450Z",
+        "event_ids": [
+          "d19b636c-4e71-44fd-acfb-09483b4a3917"
+        ],
+        "result": {
+          "pair": {
+            "pair_id": "SKT-0900",
+            "owner_org_id": "ORG-OWNER",
+            "size_system": "US_MENS",
+            "size_value": "8",
+            "brand": null,
+            "model": null,
+            "category": "HOCKEY",
+            "acquisition_date": null,
+            "acquisition_source": null,
+            "acquisition_cost_minor": null,
+            "ownership_evidence_ref": null,
+            "home_location_id": "LOC-RINK",
+            "current_location_id": "LOC-STORAGE",
+            "custodian_org_id": "ORG-OWNER",
+            "availability_state": "AVAILABLE",
+            "maintenance_state": "OK",
+            "lifecycle_state": "ACTIVE",
+            "total_rental_cycles": 0,
+            "estimated_use_minutes": 0,
+            "last_inventory_verified_at": null,
+            "version": 5,
+            "created_at": "2026-10-07T00:50:29.653199Z",
+            "updated_at": "2026-10-07T00:50:29.705631Z",
+            "maintenance_flags": []
+          }
+        },
+        "error": null
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "e953e0ba-687f-4ea7-9feb-83aaf0a23b88",
+      "schema_version": "0.1.0",
+      "command_name": "transfer_location",
+      "requested_at": "2026-10-07T00:50:29.703963Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:d607973a-db5f-4bfc-b46d-604378aefda1",
+      "payload": {
+        "pair_id": "SKT-0900",
+        "to_location_id": "LOC-STORAGE"
+      },
+      "offline_created": false,
+      "expected_pair_version": 4
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "receipt": {
+        "receipt_id": "32794310-fcb7-4914-9c9c-9dfb1617fa6a",
+        "command_id": "e953e0ba-687f-4ea7-9feb-83aaf0a23b88",
+        "status": "DUPLICATE",
+        "recorded_at": "2026-10-07T00:50:29.709591Z",
+        "event_ids": [
+          "d19b636c-4e71-44fd-acfb-09483b4a3917"
+        ],
+        "result": {
+          "pair": {
+            "acquisition_cost_minor": null,
+            "acquisition_date": null,
+            "acquisition_source": null,
+            "availability_state": "AVAILABLE",
+            "brand": null,
+            "category": "HOCKEY",
+            "created_at": "2026-10-07T00:50:29.653199Z",
+            "current_location_id": "LOC-STORAGE",
+            "custodian_org_id": "ORG-OWNER",
+            "estimated_use_minutes": 0,
+            "home_location_id": "LOC-RINK",
+            "last_inventory_verified_at": null,
+            "lifecycle_state": "ACTIVE",
+            "maintenance_flags": [],
+            "maintenance_state": "OK",
+            "model": null,
+            "owner_org_id": "ORG-OWNER",
+            "ownership_evidence_ref": null,
+            "pair_id": "SKT-0900",
+            "size_system": "US_MENS",
+            "size_value": "8",
+            "total_rental_cycles": 0,
+            "updated_at": "2026-10-07T00:50:29.705631Z",
+            "version": 5
+          }
+        },
+        "error": null
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "e953e0ba-687f-4ea7-9feb-83aaf0a23b88",
+      "schema_version": "0.1.0",
+      "command_name": "transfer_location",
+      "requested_at": "2026-10-07T00:50:29.703963Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:d607973a-db5f-4bfc-b46d-604378aefda1",
+      "payload": {
+        "pair_id": "SKT-0900",
+        "to_location_id": "LOC-RINK"
+      },
+      "offline_created": false,
+      "expected_pair_version": 4
+    },
+    "raw": null,
+    "status": 409,
+    "response": {
+      "receipt": {
+        "receipt_id": "12373bae-4f7f-405c-bf40-638bb43584de",
+        "command_id": "e953e0ba-687f-4ea7-9feb-83aaf0a23b88",
+        "status": "CONFLICT",
+        "recorded_at": "2026-10-07T00:50:29.715142Z",
+        "event_ids": [],
+        "result": {},
+        "error": {
+          "code": "IDEMPOTENCY_CONFLICT",
+          "message": "Command ID was already used for a different logical command",
+          "details": {}
+        }
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "a4a795df-2efe-4735-9a54-ab20dd6cb6ca",
+      "schema_version": "0.1.0",
+      "command_name": "verify_inventory",
+      "requested_at": "2026-10-07T00:50:29.723397Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:dfe78f99-6b64-4abf-b166-3c30932e9a25",
+      "payload": {
+        "pair_id": "SKT-0901"
+      },
+      "offline_created": false,
+      "expected_pair_version": 4
+    },
+    "raw": null,
+    "status": 200,
+    "response": {
+      "receipt": {
+        "receipt_id": "4ffbbfb3-090c-4195-8607-a3a6a6362ebd",
+        "command_id": "a4a795df-2efe-4735-9a54-ab20dd6cb6ca",
+        "status": "ACCEPTED",
+        "recorded_at": "2026-10-07T00:50:29.723873Z",
+        "event_ids": [
+          "964d84d5-b8d7-473c-8f94-f69e99b700b3"
+        ],
+        "result": {
+          "pair": {
+            "pair_id": "SKT-0901",
+            "owner_org_id": "ORG-OWNER",
+            "size_system": "US_MENS",
+            "size_value": "9",
+            "brand": null,
+            "model": null,
+            "category": "HOCKEY",
+            "acquisition_date": null,
+            "acquisition_source": null,
+            "acquisition_cost_minor": null,
+            "ownership_evidence_ref": null,
+            "home_location_id": "LOC-RINK",
+            "current_location_id": "LOC-RINK",
+            "custodian_org_id": "ORG-OWNER",
+            "availability_state": "AVAILABLE",
+            "maintenance_state": "OK",
+            "lifecycle_state": "ACTIVE",
+            "total_rental_cycles": 0,
+            "estimated_use_minutes": 0,
+            "last_inventory_verified_at": "2026-10-07T00:50:29.725628Z",
+            "version": 5,
+            "created_at": "2026-10-07T00:50:29.665290Z",
+            "updated_at": "2026-10-07T00:50:29.725628Z",
+            "maintenance_flags": []
+          }
+        },
+        "error": null
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "4b412756-0edf-4387-a475-6aa9623c8442",
+      "schema_version": "0.1.0",
+      "command_name": "transfer_location",
+      "requested_at": "2026-10-07T00:50:29.728578Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:6c8d1bb5-f825-48c6-9d71-7f6118935620",
+      "payload": {
+        "pair_id": "SKT-0900",
+        "to_location_id": "LOC-RINK"
+      },
+      "offline_created": false,
+      "expected_pair_version": 1
+    },
+    "raw": null,
+    "status": 409,
+    "response": {
+      "receipt": {
+        "receipt_id": "8f689ca4-1e70-4aea-9b80-78ed57191a59",
+        "command_id": "4b412756-0edf-4387-a475-6aa9623c8442",
+        "status": "CONFLICT",
+        "recorded_at": "2026-10-07T00:50:29.729165Z",
+        "event_ids": [],
+        "result": {},
+        "error": {
+          "code": "VERSION_CONFLICT",
+          "message": "Expected pair version 1, found 5",
+          "details": {
+            "pair_id": "SKT-0900",
+            "expected": 1,
+            "actual": 5
+          }
+        }
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "eb6145a4-ebbe-48c6-bfc7-5414053b6359",
+      "schema_version": "0.1.0",
+      "command_name": "transfer_location",
+      "requested_at": "2026-10-07T00:50:29.742732Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "NOT_A_ROLE",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:f7789253-d9e7-4171-923e-476e7f2e7b82",
+      "payload": {
+        "pair_id": "SKT-0900",
+        "to_location_id": "LOC-RINK"
+      },
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 422,
+    "response": {
+      "receipt": {
+        "receipt_id": "bad44d8e-d007-4ec7-959f-a349897d1103",
+        "command_id": "eb6145a4-ebbe-48c6-bfc7-5414053b6359",
+        "status": "REJECTED",
+        "recorded_at": "2026-10-07T00:50:29.744021Z",
+        "event_ids": [],
+        "result": {},
+        "error": {
+          "code": "ROLE_FORBIDDEN",
+          "message": "Unknown role NOT_A_ROLE",
+          "details": {}
+        }
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "6f573332-83a7-4ece-a48e-5d880729a3f5",
+      "schema_version": "0.1.0",
+      "command_name": "scan_asset",
+      "requested_at": "2026-10-07T00:50:29.746362Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-MISSING",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:a23fdc37-cf9e-4d51-91a4-d930683875f1",
+      "payload": {
+        "identifier": "SKT-0900"
+      },
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 422,
+    "response": {
+      "receipt": {
+        "receipt_id": "02375c2c-f543-4b9f-bde2-98700ee85b6d",
+        "command_id": "6f573332-83a7-4ece-a48e-5d880729a3f5",
+        "status": "REJECTED",
+        "recorded_at": "2026-10-07T00:50:29.750117Z",
+        "event_ids": [],
+        "result": {},
+        "error": {
+          "code": "VALIDATION_ERROR",
+          "message": "Device DEV-MISSING is not registered/active",
+          "details": {}
+        }
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "0d071008-3e6c-4e86-b934-2497c81396e7",
+      "schema_version": "0.1.0",
+      "command_name": "scan_asset",
+      "requested_at": "2026-10-07T00:50:29.753046Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:9c5ab4bc-3341-4e71-83de-e77cbda7c585",
+      "payload": {
+        "identifier": "SKT-0900"
+      },
+      "offline_created": false,
+      "extra": true
+    },
+    "raw": null,
+    "status": 422,
+    "response": {
+      "receipt": {
+        "receipt_id": "c4cbd7f9-5f72-47c0-920e-85b53182ab50",
+        "command_id": "0d071008-3e6c-4e86-b934-2497c81396e7",
+        "status": "REJECTED",
+        "recorded_at": "2026-10-07T00:50:29.754520Z",
+        "event_ids": [],
+        "result": {},
+        "error": {
+          "code": "VALIDATION_ERROR",
+          "message": "command_envelope.schema.json validation failed at $: Additional properties are not allowed ('extra' was unexpected)",
+          "details": {
+            "schema": "command_envelope.schema.json",
+            "path": "$"
+          }
+        }
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "e98c2e6a-343d-47c5-a579-b1ab4d0b21f1",
+      "schema_version": "0.1.0",
+      "command_name": "checkout_pair",
+      "requested_at": "2026-10-07T00:50:29.757278Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:ea3c7689-69ee-4b75-9489-ec4ba93d1f10",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "20d8c4fb-3654-43b2-93ae-712cd8e4937f",
+      "schema_version": "0.1.0",
+      "command_name": "checkin_pair",
+      "requested_at": "2026-10-07T00:50:29.759594Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:b4346abb-c053-4d19-9cb3-448caba385a4",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "879d46d0-5918-43bc-9a57-441f0b737259",
+      "schema_version": "0.1.0",
+      "command_name": "complete_cleaning",
+      "requested_at": "2026-10-07T00:50:29.761828Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:f6877a04-6411-425b-8c50-06782860ebab",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "b69730c5-6902-44ab-9805-aa698dcec732",
+      "schema_version": "0.1.0",
+      "command_name": "reserve_inventory",
+      "requested_at": "2026-10-07T00:50:29.763843Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:b1f0379d-cb37-4d09-aa79-6b35bc8646ab",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "4a37992f-7896-48d2-a957-4820cc0cf75f",
+      "schema_version": "0.1.0",
+      "command_name": "record_correction",
+      "requested_at": "2026-10-07T00:50:29.766305Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:227f2002-0854-48a6-bb39-9238d90112f2",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "333952b5-2b2d-45d4-b8a4-de1ceab1aef7",
+      "schema_version": "0.1.0",
+      "command_name": "transfer_ownership",
+      "requested_at": "2026-10-07T00:50:29.769093Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:29d94ce1-46ac-4f01-b4c1-3aa017ebe770",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "1b95b4a6-4c7f-4d3e-b08c-333edf51981a",
+      "schema_version": "0.1.0",
+      "command_name": "rebuild_projections",
+      "requested_at": "2026-10-07T00:50:29.772763Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:736ae67b-478d-4cac-b970-4c0480774ec0",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "e36a8f97-706e-4e08-a694-d68370975351",
+      "schema_version": "0.1.0",
+      "command_name": "restore_recovery",
+      "requested_at": "2026-10-07T00:50:29.777602Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:4222e590-cb86-4786-b3c9-cf588f8945b2",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "4575f13c-ce72-40e7-a8fb-93308883a01b",
+      "schema_version": "0.1.0",
+      "command_name": "shell",
+      "requested_at": "2026-10-07T00:50:29.779809Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:3fc7e311-b7b9-43c8-9d0f-af445a01ab0e",
+      "payload": {},
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "COMMAND_GATED"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "list_inventory",
+      "params": {
+        "db": "/tmp/other.db"
+      }
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "INVALID_PARAMS"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "restore_recovery",
+      "params": {}
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "UNKNOWN_QUERY"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "get_pair",
+      "params": {
+        "pair_id": 0
+      }
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "INVALID_PARAMS"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "list_inventory",
+      "params": {},
+      "extra": true
+    },
+    "raw": null,
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "INVALID_REQUEST"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": null,
+    "request": {
+      "command_id": "9e8729c5-f6b2-4d20-a827-052ae4016d95",
+      "schema_version": "0.1.0",
+      "command_name": "scan_asset",
+      "requested_at": "2026-10-07T00:50:29.792171Z",
+      "actor_id": "ui01-synthetic-operator",
+      "actor_role": "OWNER_ADMIN",
+      "device_id": "DEV-COUNTER",
+      "location_id": "LOC-RINK",
+      "idempotency_key": "ui01:eb591960-6555-41c5-82d7-b1630d97c0ff",
+      "payload": {
+        "identifier": "NO-ASSET"
+      },
+      "offline_created": false
+    },
+    "raw": null,
+    "status": 422,
+    "response": {
+      "receipt": {
+        "receipt_id": "aaa4d75a-92c1-4a94-95af-03ecb23d2a56",
+        "command_id": "9e8729c5-f6b2-4d20-a827-052ae4016d95",
+        "status": "REJECTED",
+        "recorded_at": "2026-10-07T00:50:29.792547Z",
+        "event_ids": [],
+        "result": {},
+        "error": {
+          "code": "ASSET_NOT_FOUND",
+          "message": "Identifier NO-ASSET not found",
+          "details": {}
+        }
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "list_inventory",
+      "params": {}
+    },
+    "raw": null,
+    "status": 403,
+    "response": {
+      "error": {
+        "code": "ORIGIN_FORBIDDEN"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "list_inventory",
+      "params": {}
+    },
+    "raw": null,
+    "status": 403,
+    "response": {
+      "error": {
+        "code": "HOST_FORBIDDEN"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "list_inventory",
+      "params": {}
+    },
+    "raw": null,
+    "status": 403,
+    "response": {
+      "error": {
+        "code": "TOKEN_REQUIRED"
+      }
+    }
+  },
+  {
+    "path": "/api/runtime",
+    "method": "POST",
+    "request": {},
+    "raw": null,
+    "status": 404,
+    "response": {
+      "error": {
+        "code": "PATH_GATED"
+      }
+    }
+  },
+  {
+    "path": "/../../etc/passwd",
+    "method": "GET",
+    "request": {},
+    "raw": null,
+    "status": 404,
+    "response": {
+      "error": {
+        "code": "NOT_FOUND"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": "PUT",
+    "request": {},
+    "raw": null,
+    "status": 405,
+    "response": {
+      "error": {
+        "code": "METHOD_FORBIDDEN"
+      }
+    }
+  },
+  {
+    "path": "/api/command",
+    "method": "OPTIONS",
+    "request": {},
+    "raw": null,
+    "status": 405,
+    "response": {
+      "error": {
+        "code": "METHOD_FORBIDDEN"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": null,
+    "raw": "{broken",
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "INVALID_REQUEST"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": null,
+    "raw": "{\"name\":\"list_inventory\",\"name\":\"get_pair\",\"params\":{}}",
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "INVALID_REQUEST"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": null,
+    "raw": "{\"name\":\"get_pair\",\"params\":{\"pair_id\":NaN}}",
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "INVALID_REQUEST"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": null,
+    "raw": "[]",
+    "status": 400,
+    "response": {
+      "error": {
+        "code": "INVALID_REQUEST"
+      }
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": null,
+    "raw": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "status": 413,
+    "response": {
+      "error": {
+        "code": "BODY_LIMIT"
+      }
+    }
+  },
+  {
+    "path": "/",
+    "method": null,
+    "request": null,
+    "raw": null,
+    "status": 200,
+    "response": {
+      "bytes": 4315
+    }
+  },
+  {
+    "path": "/app.js",
+    "method": null,
+    "request": null,
+    "raw": null,
+    "status": 200,
+    "response": {
+      "bytes": 5522
+    }
+  },
+  {
+    "path": "/adapter.js",
+    "method": null,
+    "request": null,
+    "raw": null,
+    "status": 200,
+    "response": {
+      "bytes": 1968
+    }
+  },
+  {
+    "path": "/app.css",
+    "method": null,
+    "request": null,
+    "raw": null,
+    "status": 200,
+    "response": {
+      "bytes": 4652
+    }
+  },
+  {
+    "path": "/inventory.png",
+    "method": null,
+    "request": null,
+    "raw": null,
+    "status": 200,
+    "response": {
+      "bytes": 1127
+    }
+  },
+  {
+    "path": "/api/query",
+    "method": null,
+    "request": {
+      "name": "list_inventory",
+      "params": {}
+    },
+    "raw": null,
+    "status": 503,
+    "response": {
+      "error": {
+        "code": "RUNTIME_UNAVAILABLE"
+      }
+    }
+  }
+]

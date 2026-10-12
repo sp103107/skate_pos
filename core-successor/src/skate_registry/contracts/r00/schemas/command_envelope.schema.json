@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:command-envelope:0.1.0",
+  "title": "Command Envelope",
+  "type": "object",
+  "required": [
+    "command_id",
+    "schema_version",
+    "command_name",
+    "requested_at",
+    "actor_id",
+    "actor_role",
+    "device_id",
+    "location_id",
+    "idempotency_key",
+    "payload"
+  ],
+  "properties": {
+    "command_id": {
+      "$ref": "common.schema.json#/$defs/uuid"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "command_name": {
+      "type": "string",
+      "enum": [
+        "register_pair",
+        "register_component",
+        "link_pair",
+        "verify_inventory",
+        "scan_asset",
+        "checkout_pair",
+        "checkin_pair",
+        "void_rental",
+        "extend_rental",
+        "flag_condition",
+        "complete_cleaning",
+        "complete_sharpening",
+        "open_repair",
+        "complete_repair",
+        "quarantine_pair",
+        "return_pair_to_service",
+        "reserve_inventory",
+        "release_reservation",
+        "pack_external_event",
+        "receive_external_event",
+        "transfer_location",
+        "transfer_custody",
+        "transfer_ownership",
+        "replace_label",
+        "mark_component_missing",
+        "mark_asset_lost",
+        "mark_asset_found",
+        "open_reconciliation_period",
+        "close_reconciliation_period",
+        "record_correction",
+        "register_asset",
+        "add_asset_identifier",
+        "migrate_r03_assets"
+      ]
+    },
+    "requested_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actor_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "actor_role": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "device_id": {
+      "$ref": "common.schema.json#/$defs/device_id"
+    },
+    "location_id": {
+      "$ref": "common.schema.json#/$defs/location_id"
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 8,
+      "maxLength": 128
+    },
+    "expected_pair_version": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "payload": {
+      "type": "object"
+    },
+    "offline_created": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "additionalProperties": false
+}

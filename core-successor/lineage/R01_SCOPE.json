@@ -1,0 +1,27 @@
+{
+  "package": "R01_Asset_Registry_v0.1.0",
+  "stage": "R01_ASSET_REGISTRY",
+  "version": "0.1.0",
+  "r00_schema_version": "0.1.0",
+  "implemented_commands": [
+    "register_pair",
+    "register_component",
+    "link_pair",
+    "verify_inventory",
+    "scan_asset",
+    "transfer_location",
+    "transfer_custody",
+    "transfer_ownership",
+    "replace_label",
+    "mark_component_missing"
+  ],
+  "not_activated": [
+    "rental_execution",
+    "reservation_execution",
+    "maintenance_workflows",
+    "revenue_reconciliation",
+    "offline_sync",
+    "frontend",
+    "payment_processing"
+  ]
+}

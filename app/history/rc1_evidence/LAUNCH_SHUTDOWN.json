@@ -1,0 +1,46 @@
+{
+  "status": "PASS_FOREMAN_MEASUREMENT",
+  "startup": {
+    "origin": "http://127.0.0.1:39075",
+    "mode": "ACTUAL_CORE_SYNTHETIC_ONLY",
+    "workspace": "/tmp/skate-ui01-demo-launch-36a9b41cdf2646778540bfcf780cc03f",
+    "identity": {
+      "distribution": "skate-inventory-core==0.3.1rc1",
+      "origin": "/workspace/scratch/792d47681b99/ui01_env/lib/python3.12/site-packages",
+      "files_verified": 43
+    }
+  },
+  "health": {
+    "result": {
+      "status": "HEALTHY",
+      "ledger": {
+        "ok": true,
+        "first_bad_event_id": null,
+        "event_count": 8,
+        "last_event_id": "22ddc2b9-2094-4de6-8d2b-a0b1af2fb45d",
+        "last_event_hash": "f7f6a8aa759be3e515da71890ab569e3c71bc87eabd4f256c30713b52bc2a088",
+        "last_recorded_at": "2026-10-07T00:07:59.548242Z"
+      },
+      "foreign_key_findings": [],
+      "duplicate_component_side_findings": [],
+      "incomplete_pair_findings": [],
+      "projection_digest": "3aea9d3ec838c1bda59d1f4c2bb5019e3072148a7d6ea5b5754413d46846ae74",
+      "latest_checkpoint": null,
+      "replay": {
+        "ledger_ok": true,
+        "first_bad_event_id": null,
+        "event_count": 8,
+        "last_event_hash": "f7f6a8aa759be3e515da71890ab569e3c71bc87eabd4f256c30713b52bc2a088",
+        "unsupported_event_types": [],
+        "live_semantic_digest": "0d1ce4fc3f3f656770af4d7d7dc64f1af54f1108cd747dffbf9832f29c2f3ebd",
+        "rebuilt_semantic_digest": "0d1ce4fc3f3f656770af4d7d7dc64f1af54f1108cd747dffbf9832f29c2f3ebd",
+        "semantic_match": true
+      }
+    }
+  },
+  "returncode": 0,
+  "stdout_after_start": "",
+  "stderr": "",
+  "no_production_data": true,
+  "foreground_loopback_only": true
+}

@@ -1,0 +1,29 @@
+{"event": "UI01_AUTHORIZED", "head": 29, "operator": "continue"}
+{"core_unchanged": true, "event": "CORE_INPUT_HASH_VERIFIED"}
+{"event": "UI01_SOURCE_IMPLEMENTED", "self_pass": false}
+{"errors": 0, "event": "ADAPTER_MEASURED", "failures": 0, "skips": 0, "unique_cases": 18}
+{"event": "BROWSER_ATTEMPT_BLOCKED", "executed_cases": 0, "screenshots": 0}
+{"UI01_complete": false, "event": "CHECKPOINT_REQUESTED_SORCERER"}
+{"event": "RESUME_AUTHORIZED", "head": 31}
+{"event": "NPM_TOOLS_PROVISIONED", "playwright": "1.62.1", "typescript": "5.9.3"}
+{"browser_cases": 0, "event": "CHROMIUM_PROVISIONING_FAILED", "reason": "invalid ZIP then stale lock update"}
+{"errors": 0, "event": "ADAPTER_RERUN", "failures": 0, "passed": 18, "skips": 0}
+{"compiler": "5.9.3", "event": "ADAPTER_TYPECHECK_PASS"}
+{"core_unchanged": true, "event": "RC2_BLOCKED_SUCCESSOR", "self_pass": false}
+{"event": "RECOVERY_AUTHORIZED", "head": 33, "operator_at": "2026-10-06T21:45:31-04:00"}
+{"core_unchanged": true, "event": "INPUT_RECOVERY_VERIFIED", "rc2_sha256": "97857c6d776d68660f68d1eee7f81333f28d0eec7149e0133fb4111cfe3e6754"}
+{"error": "missing ZIP central directory signature", "event": "ONE_OFFICIAL_CLEAN_CACHE_RETRY", "exit": 1, "internal_attempts": 5, "stale_lock_error_recurred": false}
+{"browser_cases": 0, "event": "STOP_TOOLING_BRANCH", "further_retries": 0, "screenshots": 0}
+{"event": "RC3_BLOCKED_SUCCESSOR", "no_current_runtime_pass": true, "no_source_behavior_change": true}
+{"event": "PREPARATION_AUTHORIZED", "head": 35, "operator_at": "2026-10-06T22:24:11-04:00"}
+{"DOM_errors": 6, "event": "INITIAL_FULL_TYPECHECK_FAILED"}
+{"compiler": "5.9.3", "event": "UI_ONLY_DOM_FIX_AND_FULL_TYPECHECK_PASS", "strict": false}
+{"errors": 0, "event": "FRESH_ADAPTER_REGRESSION", "failures": 0, "skips": 0, "unique_passed": 18}
+{"event": "PORTABLE_KIT_MECHANICS_VERIFIED", "external_browser_execution": false, "platform": "Linux"}
+{"browser_cases": 0, "core_unchanged": true, "event": "RC4_BLOCKED_ENVIRONMENT_SELECTION", "screenshots": 0}
+{"baseline_sha256": "14275ffb7d892ff61345f10a5185aebae872f19249903f509417b49a75ce7215", "disposition_verdict": "PASS_WITH_KNOWN_LIMITATIONS", "entry_kind": "TASK_LOCAL_CHECKPOINT", "event": "L01_BASELINE_BOUND", "recorded_at": "2026-10-11T17:14:12-04:00", "task_bump_cp_rc2_sha256": "b34ce5705138969f1c647e49a6b8adcdf2329062a09ef9fcb40eb758d5440b22", "task_bump_meta_sha256": "04eba3ea27f594167d8f588b25916f03afec77efc173a2fbe346d647c55c1de8"}
+{"entry_kind": "TASK_LOCAL_CHECKPOINT", "event": "RC6_LAUNCHER_BUILD_STARTED", "recorded_at": "2026-10-11T17:14:12-04:00", "stage": "BUILD"}
+{"event": "L04_LAUNCHER_LIFECYCLE_PASS", "platform": "WSL2_Ubuntu", "recorded_at": "2026-10-11T17:22:06-04:00"}
+{"event": "NATIVE_WINDOWS_LIFECYCLE", "reason": "Core capsule not provisioned into a native Windows venv for this assignment; scripts shipped", "recorded_at": "2026-10-11T17:22:06-04:00", "result": "NOT_RUN"}
+{"entry_kind": "TASK_LOCAL_CHECKPOINT", "event": "RC6_CANDIDATE_COMPLETE", "recorded_at": "2026-10-11T17:22:06-04:00"}
+{"entry_kind": "TASK_LOCAL_CHECKPOINT", "event": "ASSIGNMENT_HANDOFF_ONLY", "recorded_at": "2026-10-11T17:22:06-04:00", "work_disposition": "ARMED_IDLE_COMPLETE"}

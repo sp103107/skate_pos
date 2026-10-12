@@ -1,0 +1,10 @@
+{
+  "status": "NOT_RUN_BLOCKED_ONE_CONTROLLED_RETRY_FAILED",
+  "checks": [],
+  "browser_cases": 0,
+  "screenshots_generated": false,
+  "screenshots": 0,
+  "browser_launch": "NOT_RUN_NO_VALID_EXECUTABLE",
+  "blocker": "Official matching Chromium clean-cache install exit1: missing ZIP central directory signature; no archive retained, underlying response cause undetermined. One authorized invocation exhausted.",
+  "independent_verdict": false
+}

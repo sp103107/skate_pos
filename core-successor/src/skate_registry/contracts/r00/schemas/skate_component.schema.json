@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:skate-component:0.1.0",
+  "title": "Skate Component",
+  "type": "object",
+  "required": [
+    "component_id",
+    "pair_id",
+    "side",
+    "label_identifier",
+    "component_condition",
+    "current_location_id",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "component_id": {
+      "$ref": "common.schema.json#/$defs/component_id"
+    },
+    "pair_id": {
+      "$ref": "common.schema.json#/$defs/pair_id"
+    },
+    "side": {
+      "type": "string",
+      "enum": [
+        "L",
+        "R"
+      ]
+    },
+    "label_identifier": {
+      "type": "string",
+      "pattern": "^SKT-[0-9]{4,8}-[LR]$"
+    },
+    "serial_or_manufacturer_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 120
+    },
+    "blade_type": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 120
+    },
+    "component_condition": {
+      "type": "string",
+      "enum": [
+        "GOOD",
+        "WATCH",
+        "DAMAGED",
+        "OUT_OF_SERVICE",
+        "MISSING",
+        "RETIRED"
+      ]
+    },
+    "current_location_id": {
+      "$ref": "common.schema.json#/$defs/location_id"
+    },
+    "last_seen_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "replacement_of_component_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "default": 1
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,32 @@
+{
+  "assignment": "POS-A01",
+  "status": "CANDIDATE_COMPLETE",
+  "distribution": "HANDOFF_ONLY",
+  "ui_freeze": false,
+  "measured_at": "2026-10-12T01:56:00Z",
+  "platform": "WSL2 Ubuntu / Python 3.12",
+  "acceptance_tests": {
+    "path": "tests/pos/test_a01_acceptance.py",
+    "result": "8 passed",
+    "log": "evidence/pos/A01_ACCEPTANCE.log"
+  },
+  "core_substantive_tests": {
+    "suites": [
+      "test_registry.py",
+      "test_r02_spine.py",
+      "test_inventory_io.py",
+      "test_recovery_control.py"
+    ],
+    "result": "38 passed",
+    "log": "evidence/pos/CORE_SUBSTANTIVE.log",
+    "note": "Packaging/version identity suites that assert 0.3.1rc1 are expected to fail against successor 0.4.0a1 and were not used as the regression gate."
+  },
+  "identities": {
+    "app": "0.2.0-a01.1",
+    "core_successor": "0.4.0-a01.1",
+    "parent_core_sha256": "40ffdac4d0eb2bbbd6dd72cce2be0ec953842eb4b34ff7934cc6bab5f53b27e3",
+    "parent_ui_sha256": "60d902370abbbda7e403d46163ccd102bc73a6df7b4158e6718551d3716778fc",
+    "bootstrap_sha256": "0d0bd7d04cda7f864c70823bc3750b628527c57cd3eb13fa927f4fbe2d4d1b31"
+  },
+  "frozen_archives_modified": false
+}

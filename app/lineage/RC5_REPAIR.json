@@ -1,0 +1,73 @@
+{
+  "repair_id": "RC5_MOBILE_LAYOUT_REPAIR",
+  "scope": "frontend/app.css @media(max-width:1050px) block only",
+  "defect": "rc.4 UIB10 MOBILE_OVERFLOW: at 390x844 document scrollWidth 997 > innerWidth 390. Root cause: single-column grid item min-width:auto plus flex-shrink:0 nav buttons in a non-shrinking flex row let the aside/nav intrinsic width (1082px) size the document.",
+  "app_css_sha256": {
+    "rc4": "e5c4bafadddc2657ccd272f2a27a4300e15dd429ed7e0c9a13dc6e576c1631ef",
+    "rc5": "95db6677a97187f94745fbae1d3ea279910da1eefd9908f769920bab43c87e4f"
+  },
+  "unified_diff_sha256": "0f967cbb809468a7a4b7537bb4eb562d0060c28376119b1ecb629f37d7ae0cc1",
+  "unified_diff": "--- rc.4 frontend/app.css\n+++ rc.5 frontend/app.css\n@@ -1,5 +1,5 @@\n /* UI00 token projection, adapted counter layout; historical prototype remains unchanged. */\n :root{--canvas:#F6F8FA;--surface:#FFFFFF;--text:#17202A;--muted:#536170;--border:#D7DEE6;--primary:#146EF5;--success:#198754;--warning:#D89A00;--danger:#C93434}\n *{box-sizing:border-box}body{margin:0;background:var(--canvas);font:16px/1.5 Segoe UI,system-ui,sans-serif;color:var(--text)}button,input,select{font:inherit}button{min-height:48px;border:0;border-radius:10px;padding:10px 18px;background:var(--primary);color:white;font-weight:650;cursor:pointer}button:disabled{background:#e6eaee;color:#536170;cursor:not-allowed;border:1px solid var(--border)}input,select{width:100%;min-height:48px;padding:10px;border:1px solid #a8b4c0;border-radius:8px;background:white;color:var(--text)}:focus-visible{outline:3px solid #17202A;outline-offset:3px}.skip{position:absolute;left:8px;top:-70px;background:white;padding:10px;z-index:5}.skip:focus{top:8px}.app{display:grid;grid-template-columns:220px 1fr;min-height:100vh}aside{background:#101820;color:white;padding:26px 16px}aside h1{font-size:25px;letter-spacing:2px}aside h1 span{display:block;font-size:12px;letter-spacing:0;font-weight:400;color:#d6e0ea}nav button{display:flex;align-items:center;justify-content:space-between;width:100%;background:transparent;color:#dbe3ec;text-align:left;margin:6px 0;padding:12px}nav button[aria-current]{background:#233341;color:white}nav img{width:24px;height:24px;margin-right:8px}nav small{font-size:11px;border:1px solid #83909b;border-radius:30px;padding:2px 5px}.aside-note{font-size:12px;color:#dbe3ec;margin-top:40px}main{padding:28px;min-width:0;max-width:1500px;width:100%}header{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:18px}h2{margin:0;font-size:30px}h3{margin:0 0 12px}.eyebrow{font-size:11px;font-weight:750;letter-spacing:1.7px;color:var(--muted);margin:0 0 8px}.banner{background:#fff7df;border:1px solid #e8ce85;padding:12px 16px;border-radius:10px;font-size:13px}.card{background:white;border:1px solid var(--border);border-radius:16px;padding:22px;box-shadow:0 1px 2px #14203008}.scanner{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin:22px 0}.scanner h3{font-size:24px}.scanner p{color:var(--muted);max-width:400px}label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}.row{display:flex;gap:10px;margin:8px 0 14px}.row input{min-width:0}.row button{flex-shrink:0}.secondary{background:white;color:var(--text);border:1px solid var(--border)}.pill{display:inline-block;font-size:13px;padding:7px 12px;border-radius:30px;background:white;border:1px solid var(--border);margin:0 8px 8px 0}.green{color:#146c43;border-color:#9fd3b6;background:#effaf3}.amber{color:#795700;border-color:#ddc177;background:#fff8e3}.red{color:#982525;border-color:#e1aaaa;background:#fff1f1}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}.metrics span,.metrics small{display:block;color:var(--muted);font-size:13px}.metrics strong{display:block;font-size:26px;margin:6px 0}.split{display:grid;grid-template-columns:1.35fr 1fr;gap:20px}.section-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;margin-top:18px}th,td{text-align:left;border-bottom:1px solid #edf0f3;padding:12px 6px}th{font-size:12px;color:var(--muted)}td{font-size:13px}td button{padding:8px;color:#1460c4;background:#edf4ff;font-size:13px;min-height:44px}dl{display:grid;grid-template-columns:1fr 1.2fr;gap:12px;font-size:14px}dt{color:var(--muted)}dd{margin:0;overflow-wrap:anywhere;font-weight:600}.muted,footer{font-size:12px;color:var(--muted)}footer{margin-top:24px}pre{padding:14px;background:#f5f7f9;border-radius:10px;white-space:pre-wrap;overflow-wrap:anywhere;font:12px/1.6 ui-monospace,monospace}#message:empty{display:none}#message{padding:12px;border-radius:8px}#actions .secondary{width:100%}[hidden]{display:none!important}\n-@media(max-width:1050px){.app{grid-template-columns:1fr}aside{padding:10px 18px}aside h1{font-size:17px;margin:0}aside h1 span,.aside-note{display:none}nav{display:flex;gap:6px;overflow-x:auto;margin-top:8px}nav button{width:auto;flex-shrink:0;font-size:13px;gap:8px}.scanner{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr 1fr}main{padding:20px}}\n+@media(max-width:1050px){.app{grid-template-columns:minmax(0,1fr)}aside,main{min-width:0;max-width:100%}aside{padding:10px 18px}aside h1{font-size:17px;margin:0}aside h1 span,.aside-note{display:none}nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;max-width:100%;min-width:0}nav button{width:auto;flex:1 1 auto;margin:0;font-size:13px;gap:8px}.scanner{grid-template-columns:1fr 1fr}.split{grid-template-columns:1fr 1fr}main{padding:20px}}\n @media(max-width:720px){header{align-items:flex-start;flex-direction:column}.scanner,.split{grid-template-columns:1fr}.scanner{gap:6px}.row{flex-wrap:wrap}.row button{width:100%}.metrics{grid-template-columns:1fr 1fr}.metrics strong{font-size:21px}.card{padding:18px}main{padding:14px}h2{font-size:26px}}\n",
+  "changes": [
+    {
+      "rule": ".app{grid-template-columns:minmax(0,1fr)} + aside,main{min-width:0;max-width:100%}",
+      "why": "grid items may shrink below content size; document width follows the viewport"
+    },
+    {
+      "rule": "nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;max-width:100%;min-width:0}",
+      "why": "all seven workspace buttons stay fully visible; no horizontal scroll container, so focus rings are never clipped"
+    },
+    {
+      "rule": "nav button{width:auto;flex:1 1 auto;margin:0;font-size:13px;gap:8px}",
+      "why": "rows fill the width like the desktop list; gap replaces vertical margins"
+    },
+    {
+      "removed": "overflow-x:auto on nav; flex-shrink:0 on nav button",
+      "why": "scroll row replaced by wrapping"
+    }
+  ],
+  "constraints_honoured": [
+    "no overflow-x:hidden on html/body/.app (no document-level clipping)",
+    "desktop (>1050px) rules untouched",
+    "no app.js/index.html structural change",
+    "touch targets >=44px kept (button min-height 48px)"
+  ],
+  "measured": {
+    "document_scrollWidth_eq_innerWidth_at": [
+      390,
+      720,
+      721,
+      1050,
+      1051,
+      1280
+    ],
+    "nav_height_px": {
+      "390": 210,
+      "720": 102,
+      "1050": 102,
+      "1051_desktop": 372
+    },
+    "keyboard": "Tab reaches all 7 items in order; Enter activates; ring unclipped at every item (68/68 supplemental checks PASS, R03 measure)",
+    "evidence": "evidence/rc5_local/supplemental/NAV_FOCUS_RESULTS.json (final R05 run); R03 diagnostics in results archive logs/03*"
+  },
+  "alternatives_rejected": [
+    {
+      "option": "keep horizontal scroll row + scroll-padding/scroll-margin",
+      "result": "Chromium 151 does not scroll a partially visible focused item into view on Tab; last item ring clipped at 390 and 1050 (logs/03b, 03c)"
+    },
+    {
+      "option": "scroll-snap (mandatory/proximity)",
+      "result": "no effect on focus-without-scroll; ring still clipped"
+    },
+    {
+      "option": "document-level overflow-x:hidden",
+      "result": "forbidden by Sorcerer (conceals defects)"
+    },
+    {
+      "option": "JS focusin -> scrollIntoView",
+      "result": "outside authorized CSS-only scope; recorded as possible future work, not implemented"
+    }
+  ],
+  "trade_off": "nav block grows from 68px to ~210px at 390px width (4 wrapped rows); content remains above the fold on 844px tall viewport",
+  "recorded_at": "2026-10-08T22:26:30-04:00"
+}

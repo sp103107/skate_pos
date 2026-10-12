@@ -1,0 +1,266 @@
+[
+  {
+    "receipt_id": "5d1c7de2-bca7-4bf0-8da3-d9caad8fc415",
+    "command_id": "7b79d24c-e855-4028-b2db-8898bba20eed",
+    "status": "ACCEPTED",
+    "recorded_at": "2026-10-07T00:50:29.650569Z",
+    "event_ids": [
+      "9abef1a6-0788-4f0b-8e66-eb97aa93aa29"
+    ],
+    "result": {
+      "pair": {
+        "pair_id": "SKT-0900",
+        "owner_org_id": "ORG-OWNER",
+        "size_system": "US_MENS",
+        "size_value": "8",
+        "brand": null,
+        "model": null,
+        "category": "HOCKEY",
+        "acquisition_date": null,
+        "acquisition_source": null,
+        "acquisition_cost_minor": null,
+        "ownership_evidence_ref": null,
+        "home_location_id": "LOC-RINK",
+        "current_location_id": "LOC-RINK",
+        "custodian_org_id": "ORG-OWNER",
+        "availability_state": "MISSING_COMPONENT",
+        "maintenance_state": "OK",
+        "maintenance_flags": [],
+        "lifecycle_state": "ACTIVE",
+        "total_rental_cycles": 0,
+        "estimated_use_minutes": 0,
+        "last_inventory_verified_at": null,
+        "version": 1,
+        "created_at": "2026-10-07T00:50:29.653199Z",
+        "updated_at": "2026-10-07T00:50:29.653199Z"
+      }
+    },
+    "error": null
+  },
+  {
+    "receipt_id": "a0bbf91a-9f3d-4e2a-b6b7-06373d59720e",
+    "command_id": "b06a05c1-39d2-417e-b5ac-c82dc6772a7d",
+    "status": "ACCEPTED",
+    "recorded_at": "2026-10-07T00:50:29.655116Z",
+    "event_ids": [
+      "02832e51-e306-4f98-965e-6c56de7b1c36"
+    ],
+    "result": {
+      "component": {
+        "component_id": "SKT-0900-L",
+        "pair_id": "SKT-0900",
+        "side": "L",
+        "label_identifier": "SKT-0900-L",
+        "serial_or_manufacturer_id": null,
+        "blade_type": null,
+        "component_condition": "GOOD",
+        "current_location_id": "LOC-RINK",
+        "last_seen_at": null,
+        "replacement_of_component_id": null,
+        "version": 1,
+        "created_at": "2026-10-07T00:50:29.656167Z",
+        "updated_at": "2026-10-07T00:50:29.656167Z"
+      },
+      "pair_version": 2
+    },
+    "error": null
+  },
+  {
+    "receipt_id": "7ae41223-e818-4d71-b66e-2956d02827cf",
+    "command_id": "affb1227-799f-43cf-9a37-766c9e3beab9",
+    "status": "ACCEPTED",
+    "recorded_at": "2026-10-07T00:50:29.658656Z",
+    "event_ids": [
+      "b5ee30b6-a2b9-481d-873b-6f7d023c2a86"
+    ],
+    "result": {
+      "component": {
+        "component_id": "SKT-0900-R",
+        "pair_id": "SKT-0900",
+        "side": "R",
+        "label_identifier": "SKT-0900-R",
+        "serial_or_manufacturer_id": null,
+        "blade_type": null,
+        "component_condition": "GOOD",
+        "current_location_id": "LOC-RINK",
+        "last_seen_at": null,
+        "replacement_of_component_id": null,
+        "version": 1,
+        "created_at": "2026-10-07T00:50:29.659779Z",
+        "updated_at": "2026-10-07T00:50:29.659779Z"
+      },
+      "pair_version": 3
+    },
+    "error": null
+  },
+  {
+    "receipt_id": "e778c89c-af27-4bc5-8d7e-84d87b62115c",
+    "command_id": "399f3a29-b9cf-4570-b88d-80c87d5bb102",
+    "status": "ACCEPTED",
+    "recorded_at": "2026-10-07T00:50:29.661563Z",
+    "event_ids": [
+      "b3a9fb68-6dfe-4632-a2a7-ae7a172ee691"
+    ],
+    "result": {
+      "pair": {
+        "pair_id": "SKT-0900",
+        "owner_org_id": "ORG-OWNER",
+        "size_system": "US_MENS",
+        "size_value": "8",
+        "brand": null,
+        "model": null,
+        "category": "HOCKEY",
+        "acquisition_date": null,
+        "acquisition_source": null,
+        "acquisition_cost_minor": null,
+        "ownership_evidence_ref": null,
+        "home_location_id": "LOC-RINK",
+        "current_location_id": "LOC-RINK",
+        "custodian_org_id": "ORG-OWNER",
+        "availability_state": "AVAILABLE",
+        "maintenance_state": "OK",
+        "lifecycle_state": "ACTIVE",
+        "total_rental_cycles": 0,
+        "estimated_use_minutes": 0,
+        "last_inventory_verified_at": null,
+        "version": 4,
+        "created_at": "2026-10-07T00:50:29.653199Z",
+        "updated_at": "2026-10-07T00:50:29.662603Z",
+        "maintenance_flags": []
+      }
+    },
+    "error": null
+  },
+  {
+    "receipt_id": "cf8addee-f418-4ad0-bee1-e7855ffddf9e",
+    "command_id": "d0ebf53b-0af0-4cd8-bde4-ea7e9fb5b606",
+    "status": "ACCEPTED",
+    "recorded_at": "2026-10-07T00:50:29.663913Z",
+    "event_ids": [
+      "a49fa6b8-c7cb-46e2-96c0-6a2c3a365111"
+    ],
+    "result": {
+      "pair": {
+        "pair_id": "SKT-0901",
+        "owner_org_id": "ORG-OWNER",
+        "size_system": "US_MENS",
+        "size_value": "9",
+        "brand": null,
+        "model": null,
+        "category": "HOCKEY",
+        "acquisition_date": null,
+        "acquisition_source": null,
+        "acquisition_cost_minor": null,
+        "ownership_evidence_ref": null,
+        "home_location_id": "LOC-RINK",
+        "current_location_id": "LOC-RINK",
+        "custodian_org_id": "ORG-OWNER",
+        "availability_state": "MISSING_COMPONENT",
+        "maintenance_state": "OK",
+        "maintenance_flags": [],
+        "lifecycle_state": "ACTIVE",
+        "total_rental_cycles": 0,
+        "estimated_use_minutes": 0,
+        "last_inventory_verified_at": null,
+        "version": 1,
+        "created_at": "2026-10-07T00:50:29.665290Z",
+        "updated_at": "2026-10-07T00:50:29.665290Z"
+      }
+    },
+    "error": null
+  },
+  {
+    "receipt_id": "a6c0063d-4ccd-4334-bb9c-902ba0d3dff0",
+    "command_id": "7c81cbbc-07b6-4e28-9238-b1a722fef3b4",
+    "status": "ACCEPTED",
+    "recorded_at": "2026-10-07T00:50:29.667003Z",
+    "event_ids": [
+      "37e5711c-0dd8-413c-a191-8495f842ef40"
+    ],
+    "result": {
+      "component": {
+        "component_id": "SKT-0901-L",
+        "pair_id": "SKT-0901",
+        "side": "L",
+        "label_identifier": "SKT-0901-L",
+        "serial_or_manufacturer_id": null,
+        "blade_type": null,
+        "component_condition": "GOOD",
+        "current_location_id": "LOC-RINK",
+        "last_seen_at": null,
+        "replacement_of_component_id": null,
+        "version": 1,
+        "created_at": "2026-10-07T00:50:29.668006Z",
+        "updated_at": "2026-10-07T00:50:29.668006Z"
+      },
+      "pair_version": 2
+    },
+    "error": null
+  },
+  {
+    "receipt_id": "a7261501-9fd5-4bec-96dd-995f8840cedf",
+    "command_id": "f53d62f9-bc94-42e6-844b-ccc026550f45",
+    "status": "ACCEPTED",
+    "recorded_at": "2026-10-07T00:50:29.669809Z",
+    "event_ids": [
+      "e5359cf6-eea7-4b91-a5ba-4838f536960b"
+    ],
+    "result": {
+      "component": {
+        "component_id": "SKT-0901-R",
+        "pair_id": "SKT-0901",
+        "side": "R",
+        "label_identifier": "SKT-0901-R",
+        "serial_or_manufacturer_id": null,
+        "blade_type": null,
+        "component_condition": "GOOD",
+        "current_location_id": "LOC-RINK",
+        "last_seen_at": null,
+        "replacement_of_component_id": null,
+        "version": 1,
+        "created_at": "2026-10-07T00:50:29.670797Z",
+        "updated_at": "2026-10-07T00:50:29.670797Z"
+      },
+      "pair_version": 3
+    },
+    "error": null
+  },
+  {
+    "receipt_id": "126f8df2-ccfe-41c1-9e0d-2ba0d26e2ba5",
+    "command_id": "8ee03ec4-5d77-47c5-a6c0-cd9c22547a51",
+    "status": "ACCEPTED",
+    "recorded_at": "2026-10-07T00:50:29.672540Z",
+    "event_ids": [
+      "91aff204-09c3-4b1e-a5cf-7087a8940198"
+    ],
+    "result": {
+      "pair": {
+        "pair_id": "SKT-0901",
+        "owner_org_id": "ORG-OWNER",
+        "size_system": "US_MENS",
+        "size_value": "9",
+        "brand": null,
+        "model": null,
+        "category": "HOCKEY",
+        "acquisition_date": null,
+        "acquisition_source": null,
+        "acquisition_cost_minor": null,
+        "ownership_evidence_ref": null,
+        "home_location_id": "LOC-RINK",
+        "current_location_id": "LOC-RINK",
+        "custodian_org_id": "ORG-OWNER",
+        "availability_state": "AVAILABLE",
+        "maintenance_state": "OK",
+        "lifecycle_state": "ACTIVE",
+        "total_rental_cycles": 0,
+        "estimated_use_minutes": 0,
+        "last_inventory_verified_at": null,
+        "version": 4,
+        "created_at": "2026-10-07T00:50:29.665290Z",
+        "updated_at": "2026-10-07T00:50:29.673554Z",
+        "maintenance_flags": []
+      }
+    },
+    "error": null
+  }
+]

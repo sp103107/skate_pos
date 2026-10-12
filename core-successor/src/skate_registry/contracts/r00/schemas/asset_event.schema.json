@@ -1,0 +1,178 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:asset-event:0.1.0",
+  "title": "Asset Event",
+  "type": "object",
+  "required": [
+    "event_id",
+    "schema_version",
+    "event_type",
+    "occurred_at",
+    "recorded_at",
+    "actor_id",
+    "actor_role",
+    "location_id",
+    "device_id",
+    "offline_sequence",
+    "payload",
+    "integrity"
+  ],
+  "properties": {
+    "event_id": {
+      "$ref": "common.schema.json#/$defs/uuid"
+    },
+    "schema_version": {
+      "type": "string",
+      "const": "0.1.0"
+    },
+    "event_type": {
+      "type": "string",
+      "enum": [
+        "ASSET_REGISTERED",
+        "COMPONENT_REGISTERED",
+        "PAIR_LINKED",
+        "PAIR_UNLINKED",
+        "INVENTORY_VERIFIED",
+        "LOCATION_TRANSFERRED",
+        "CUSTODY_TRANSFERRED",
+        "OWNERSHIP_TRANSFERRED",
+        "RENTAL_CHECKOUT",
+        "RENTAL_CHECKIN",
+        "RENTAL_VOIDED",
+        "RENTAL_EXTENSION",
+        "CONDITION_INSPECTED",
+        "QUICK_CLEAN_COMPLETED",
+        "DEEP_CLEAN_COMPLETED",
+        "SHARPEN_COMPLETED",
+        "REPAIR_OPENED",
+        "REPAIR_COMPLETED",
+        "QUARANTINED",
+        "RETURNED_TO_SERVICE",
+        "DAMAGE_REPORTED",
+        "COMPONENT_MISSING",
+        "ASSET_LOST",
+        "ASSET_FOUND",
+        "LABEL_REPLACED",
+        "PAIR_MISMATCH_DETECTED",
+        "RESERVATION_CREATED",
+        "RESERVATION_RELEASED",
+        "EXTERNAL_EVENT_PACKED",
+        "EXTERNAL_EVENT_RETURNED",
+        "RECONCILIATION_OPENED",
+        "RECONCILIATION_CLOSED",
+        "CORRECTION_RECORDED",
+        "ASSET_MIGRATED",
+        "ASSET_UNIT_REGISTERED",
+        "ASSET_IDENTIFIER_ADDED"
+      ]
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "actor_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "actor_role": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 64
+    },
+    "location_id": {
+      "$ref": "common.schema.json#/$defs/location_id"
+    },
+    "pair_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^SKT-[0-9]{4,8}$"
+    },
+    "component_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^SKT-[0-9]{4,8}-[LR]$"
+    },
+    "rental_session_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 80
+    },
+    "command_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "reason_code": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 80
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 2000
+    },
+    "evidence_refs": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/evidence_ref"
+      },
+      "uniqueItems": true
+    },
+    "device_id": {
+      "$ref": "common.schema.json#/$defs/device_id"
+    },
+    "offline_sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "payload": {
+      "type": "object"
+    },
+    "integrity": {
+      "type": "object",
+      "required": [
+        "algorithm",
+        "event_hash"
+      ],
+      "properties": {
+        "algorithm": {
+          "type": "string",
+          "enum": [
+            "SHA-256"
+          ]
+        },
+        "event_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "previous_event_hash": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

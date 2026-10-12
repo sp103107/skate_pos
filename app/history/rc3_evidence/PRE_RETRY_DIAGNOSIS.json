@@ -1,0 +1,69 @@
+{
+  "locked_tool_versions": {
+    "playwright": "1.62.1",
+    "playwright-core": "1.62.1",
+    "typescript": "5.9.3"
+  },
+  "descriptor_sha256": "f306eed529599b1eaf2f8a85db9de2b23e1a3fe36c2b66434b7c9434fb627a99",
+  "chromium_descriptor": [
+    {
+      "name": "chromium",
+      "revision": "1234",
+      "installByDefault": true,
+      "browserVersion": "151.0.7922.34",
+      "title": "Chrome for Testing"
+    },
+    {
+      "name": "chromium-headless-shell",
+      "revision": "1234",
+      "installByDefault": true,
+      "browserVersion": "151.0.7922.34",
+      "title": "Chrome Headless Shell"
+    },
+    {
+      "name": "chromium-tip-of-tree",
+      "revision": "1433",
+      "installByDefault": false,
+      "browserVersion": "151.0.7893.0",
+      "title": "Chrome Canary for Testing"
+    },
+    {
+      "name": "chromium-tip-of-tree-headless-shell",
+      "revision": "1433",
+      "installByDefault": false,
+      "browserVersion": "151.0.7893.0",
+      "title": "Chrome Canary Headless Shell"
+    }
+  ],
+  "previous_install_workspace": "/workspace/scratch/792d47681b99/ui01_resume_tools",
+  "previous_cache_entries": [
+    {
+      "relative_path": ".links",
+      "type": "directory",
+      "size": 4096
+    },
+    {
+      "relative_path": ".links/ad9c0d49e8c964964aece0f696fc21ef944af8ea",
+      "type": "file",
+      "size": 78
+    },
+    {
+      "relative_path": "__dirlock",
+      "type": "directory",
+      "size": 4096
+    }
+  ],
+  "matching_active_installer_processes": [],
+  "available_disk_bytes": 29316603904,
+  "available_path_browsers": [],
+  "existing_cache_mutated": false,
+  "no_policy_denial_inferred": true,
+  "retry_limit": 1,
+  "official_installer_path": "/workspace/scratch/792d47681b99/ui01_resume_tools/node_modules/playwright/cli.js",
+  "process_inventory_status": {
+    "exit_code": 0,
+    "stderr": "",
+    "status": "AVAILABLE",
+    "note": "Empty matching list is not proof of absence if process inventory failed. No prior cache/lock was removed."
+  }
+}

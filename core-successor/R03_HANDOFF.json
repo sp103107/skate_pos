@@ -1,0 +1,20 @@
+{
+  "next_stage": "R03_RENTAL_RUNTIME",
+  "entry_contracts": [
+    "CommandProcessor",
+    "EventLedger",
+    "RuntimeSpine",
+    "skate_pairs projection",
+    "skate_components projection",
+    "R00 rental_session.schema.json",
+    "R00 checkout_pair/checkin_pair commands"
+  ],
+  "required_before_rental_activation": [
+    "Extend ProjectionRebuilder for RENTAL_CHECKOUT/RENTAL_CHECKIN/RENTAL_VOIDED/RENTAL_EXTENSION",
+    "Add rental_sessions persistence",
+    "Enforce one-active-rental-per-pair invariant",
+    "Enforce availability and maintenance checkout guards",
+    "Record usage cycles/minutes only through accepted rental events",
+    "Add rental replay and recovery tests before UI activation"
+  ]
+}

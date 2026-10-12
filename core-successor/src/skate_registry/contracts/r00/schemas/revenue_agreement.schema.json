@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:revenue-agreement:0.1.0",
+  "title": "Revenue Agreement",
+  "type": "object",
+  "required": [
+    "agreement_id",
+    "owner_org_id",
+    "venue_org_id",
+    "effective_from",
+    "model",
+    "terms"
+  ],
+  "properties": {
+    "agreement_id": {
+      "type": "string",
+      "pattern": "^RA-[A-Z0-9_-]{3,64}$"
+    },
+    "owner_org_id": {
+      "$ref": "common.schema.json#/$defs/org_id"
+    },
+    "venue_org_id": {
+      "$ref": "common.schema.json#/$defs/org_id"
+    },
+    "effective_from": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "effective_to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "model": {
+      "type": "string",
+      "enum": [
+        "PERCENTAGE",
+        "FIXED_PER_RENTAL",
+        "FIXED_PERIOD",
+        "HYBRID"
+      ]
+    },
+    "terms": {
+      "type": "object"
+    },
+    "agreement_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 512
+    }
+  },
+  "additionalProperties": false
+}

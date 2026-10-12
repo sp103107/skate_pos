@@ -1,0 +1,26 @@
+{
+  "head": 33,
+  "packets_schema_jcs_chain": 33,
+  "operator_input": "continue",
+  "operator_submission_at": "2026-10-06T21:45:31-04:00",
+  "current_actor": "skate-core-foreman",
+  "inputs": [
+    {
+      "id": "1_jUOT7DtisHSIX6p0estkxbTbT_fffMG",
+      "path": "/workspace/scratch/792d47681b99/attachments/fdb5c192-312f-4caf-b505-a651142bf788/Skate_Inventory_UI_Candidate_v0.1.0-rc.2.zip",
+      "sha256": "97857c6d776d68660f68d1eee7f81333f28d0eec7149e0133fb4111cfe3e6754"
+    },
+    {
+      "id": "1tq6paVMFr3eRD83BP0f2ixsEH-R41NVf",
+      "path": "/workspace/scratch/792d47681b99/attachments/9199ff5e-a85a-4175-b568-c7fd1e1d116a/SKATE_UI01_FOREMAN_COMPLETION_0002.json",
+      "sha256": "907656a731bee54a8577134eed763bbc32401422e858b349cf3f80a875171b2d"
+    },
+    {
+      "id": "1Gt3ZcMtTdGoftxRPU7u_Q8wYYj0Gvxji",
+      "path": "/workspace/scratch/792d47681b99/attachments/f54f6f35-b625-4d61-b70b-9861732cfe47/Skate_Inventory_Use_System_Core_Capsule_v0.3.1-rc.1.zip",
+      "sha256": "40ffdac4d0eb2bbbd6dd72cce2be0ec953842eb4b34ff7934cc6bab5f53b27e3"
+    }
+  ],
+  "rc2_manifest_files": 89,
+  "rc2_zip_crc": "PASS_FOREMAN_CONSISTENCY"
+}

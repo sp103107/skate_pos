@@ -1,0 +1,17 @@
+R02 VALIDATION
+
+Pytest:
+..................                                                       [100%]
+
+Additional gates:
+- Python compileall: PASS
+- R01 -> R02 in-place migration: PASS
+- Deterministic replay semantic match: PASS
+- Projection drift detection/repair: PASS
+- Ledger tamper detection: PASS
+- Recovery bundle roundtrip: PASS
+- JSON Schema runtime validation: PASS
+- Wheel build via pip wheel --no-deps --no-build-isolation: PASS
+- python -m build was unavailable in the execution environment.
+- Clean wheel installation and boot: PASS
+- Clean wheel deep health/replay: PASS

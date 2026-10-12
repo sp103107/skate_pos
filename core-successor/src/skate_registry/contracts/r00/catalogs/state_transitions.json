@@ -1,0 +1,98 @@
+{
+  "version": "0.1.0",
+  "availability": {
+    "AVAILABLE": [
+      "RENTED",
+      "RESERVED",
+      "IN_MAINTENANCE",
+      "QUARANTINED",
+      "MISSING_COMPONENT",
+      "LOST",
+      "RETIRED"
+    ],
+    "RENTED": [
+      "AVAILABLE",
+      "IN_MAINTENANCE",
+      "QUARANTINED",
+      "MISSING_COMPONENT",
+      "LOST"
+    ],
+    "RESERVED": [
+      "AVAILABLE",
+      "RENTED",
+      "IN_MAINTENANCE",
+      "QUARANTINED",
+      "MISSING_COMPONENT",
+      "LOST"
+    ],
+    "IN_MAINTENANCE": [
+      "AVAILABLE",
+      "QUARANTINED",
+      "MISSING_COMPONENT",
+      "RETIRED"
+    ],
+    "QUARANTINED": [
+      "IN_MAINTENANCE",
+      "AVAILABLE",
+      "RETIRED"
+    ],
+    "MISSING_COMPONENT": [
+      "IN_MAINTENANCE",
+      "AVAILABLE",
+      "LOST",
+      "RETIRED"
+    ],
+    "LOST": [
+      "IN_MAINTENANCE",
+      "AVAILABLE",
+      "RETIRED"
+    ],
+    "RETIRED": []
+  },
+  "lifecycle": {
+    "ACTIVE": [
+      "SEASONAL_STORAGE",
+      "TRANSFERRED",
+      "RETIRED"
+    ],
+    "SEASONAL_STORAGE": [
+      "ACTIVE",
+      "TRANSFERRED",
+      "RETIRED"
+    ],
+    "TRANSFERRED": [
+      "ACTIVE",
+      "SEASONAL_STORAGE",
+      "RETIRED"
+    ],
+    "RETIRED": [
+      "DISPOSED"
+    ],
+    "DISPOSED": []
+  },
+  "guards": [
+    {
+      "transition": "AVAILABLE->RENTED",
+      "requires": [
+        "complete_pair",
+        "no_blocking_maintenance",
+        "no_active_rental",
+        "no_reservation_conflict"
+      ]
+    },
+    {
+      "transition": "*->AVAILABLE",
+      "requires": [
+        "complete_pair",
+        "no_blocking_maintenance",
+        "lifecycle_active_or_transferred"
+      ]
+    },
+    {
+      "transition": "*->RETIRED",
+      "requires": [
+        "owner_admin_authorization"
+      ]
+    }
+  ]
+}

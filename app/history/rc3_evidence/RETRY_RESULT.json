@@ -1,0 +1,37 @@
+{
+  "authorized_invocations": 1,
+  "installer_invocations": 1,
+  "command": [
+    "node",
+    "/workspace/scratch/792d47681b99/ui01_resume_tools/node_modules/playwright/cli.js",
+    "install",
+    "chromium"
+  ],
+  "cwd": "/workspace/scratch/792d47681b99/ui01-rc3-install-work-v6zjetbe",
+  "fresh_empty_cache": "/workspace/scratch/792d47681b99/ui01-rc3-browser-cache-i1nlaxo_",
+  "isolated_tmp": "/workspace/scratch/792d47681b99/ui01-rc3-install-work-v6zjetbe/tmp",
+  "environment_overrides": {
+    "PLAYWRIGHT_BROWSERS_PATH": "/workspace/scratch/792d47681b99/ui01-rc3-browser-cache-i1nlaxo_",
+    "TMPDIR": "/workspace/scratch/792d47681b99/ui01-rc3-install-work-v6zjetbe/tmp",
+    "CI": "1",
+    "PLAYWRIGHT_DOWNLOAD_CONNECTION_TIMEOUT": "30000"
+  },
+  "started_at": "2026-10-07T01:47:51.767895+00:00",
+  "finished_at": "2026-10-07T01:48:08.008936+00:00",
+  "exit_code": 1,
+  "timeout": false,
+  "retained_files": [
+    {
+      "path": "ui01-rc3-browser-cache-i1nlaxo_/.links/ad9c0d49e8c964964aece0f696fc21ef944af8ea",
+      "size_bytes": 78,
+      "sha256": "0c09dd5de5aa9a9761943d4260ae4c83e0d9ac2af90c7743ef772928b559b446"
+    }
+  ],
+  "official_internal_retries_not_additional_operator_invocations": true,
+  "old_cache_or_locks_deleted": false,
+  "version_change_or_mirror_override": false,
+  "policy_bypass": false,
+  "browser_launch": "NOT_RUN_INSTALL_FAILED",
+  "raw_returned_archive_bytes": "NOT_RETAINED_BY_OFFICIAL_INSTALLER",
+  "root_cause": "UNDETERMINED; ZIP parse error is observed, no network-policy denial inferred"
+}

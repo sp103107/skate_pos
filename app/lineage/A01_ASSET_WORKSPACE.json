@@ -1,0 +1,9 @@
+{
+  "identity": "Skate_POS_App_v0.2.0-a01.1",
+  "parent_ui_zip": "Skate_Inventory_UI_Candidate_v0.1.0-rc.6.zip",
+  "parent_ui_sha256": "60d902370abbbda7e403d46163ccd102bc73a6df7b4158e6718551d3716778fc",
+  "core_successor": "0.4.0-a01.1",
+  "assignment": "POS-A01",
+  "bootstrap": "SKATE_POS_BOOTSTRAP_0003",
+  "bootstrap_sha256": "0d0bd7d04cda7f864c70823bc3750b628527c57cd3eb13fa927f4fbe2d4d1b31"
+}

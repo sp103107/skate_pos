@@ -1,0 +1,170 @@
+{
+  "version": "0.1.0",
+  "commands": [
+    {
+      "command": "register_pair",
+      "description": "Create a pair record and append ASSET_REGISTERED.",
+      "mutating": true
+    },
+    {
+      "command": "register_component",
+      "description": "Create a left/right component.",
+      "mutating": true
+    },
+    {
+      "command": "link_pair",
+      "description": "Bind active L/R components to one pair.",
+      "mutating": true
+    },
+    {
+      "command": "verify_inventory",
+      "description": "Record physical verification.",
+      "mutating": true
+    },
+    {
+      "command": "scan_asset",
+      "description": "Resolve identifier without mutation.",
+      "mutating": false
+    },
+    {
+      "command": "checkout_pair",
+      "description": "Validate pair and append RENTAL_CHECKOUT.",
+      "mutating": true
+    },
+    {
+      "command": "checkin_pair",
+      "description": "Close active rental and run maintenance policy.",
+      "mutating": true
+    },
+    {
+      "command": "void_rental",
+      "description": "Compensate an erroneous rental event.",
+      "mutating": true
+    },
+    {
+      "command": "extend_rental",
+      "description": "Extend an active rental where supported.",
+      "mutating": true
+    },
+    {
+      "command": "flag_condition",
+      "description": "Record observed condition and maintenance flags.",
+      "mutating": true
+    },
+    {
+      "command": "complete_cleaning",
+      "description": "Record quick/deep cleaning completion.",
+      "mutating": true
+    },
+    {
+      "command": "complete_sharpening",
+      "description": "Record sharpening evidence.",
+      "mutating": true
+    },
+    {
+      "command": "open_repair",
+      "description": "Open repair task and remove availability as needed.",
+      "mutating": true
+    },
+    {
+      "command": "complete_repair",
+      "description": "Close repair task.",
+      "mutating": true
+    },
+    {
+      "command": "quarantine_pair",
+      "description": "Block normal rental.",
+      "mutating": true
+    },
+    {
+      "command": "return_pair_to_service",
+      "description": "Restore eligibility after validation.",
+      "mutating": true
+    },
+    {
+      "command": "reserve_inventory",
+      "description": "Reserve quantity or explicit pairs.",
+      "mutating": true
+    },
+    {
+      "command": "release_reservation",
+      "description": "Release reservation.",
+      "mutating": true
+    },
+    {
+      "command": "pack_external_event",
+      "description": "Scan reserved pairs into manifest.",
+      "mutating": true
+    },
+    {
+      "command": "receive_external_event",
+      "description": "Receive returned manifest.",
+      "mutating": true
+    },
+    {
+      "command": "transfer_location",
+      "description": "Change physical location only.",
+      "mutating": true
+    },
+    {
+      "command": "transfer_custody",
+      "description": "Change custodian without changing ownership.",
+      "mutating": true
+    },
+    {
+      "command": "transfer_ownership",
+      "description": "Explicit authorized ownership transfer.",
+      "mutating": true
+    },
+    {
+      "command": "replace_label",
+      "description": "Retire/reissue physical label identity.",
+      "mutating": true
+    },
+    {
+      "command": "mark_component_missing",
+      "description": "Record missing left/right component.",
+      "mutating": true
+    },
+    {
+      "command": "mark_asset_lost",
+      "description": "Record pair lost.",
+      "mutating": true
+    },
+    {
+      "command": "mark_asset_found",
+      "description": "Record recovery.",
+      "mutating": true
+    },
+    {
+      "command": "open_reconciliation_period",
+      "description": "Begin financial reconciliation.",
+      "mutating": true
+    },
+    {
+      "command": "close_reconciliation_period",
+      "description": "Close financial reconciliation.",
+      "mutating": true
+    },
+    {
+      "command": "record_correction",
+      "description": "Append compensating correction event.",
+      "mutating": true
+    },
+    {
+      "command": "register_asset",
+      "description": "Register an individual skate, skating aid, or helmet asset.",
+      "mutating": true
+    },
+    {
+      "command": "add_asset_identifier",
+      "description": "Attach a lookup identifier (label/barcode/QR/NFC/manual) to an asset.",
+      "mutating": true
+    },
+    {
+      "command": "migrate_r03_assets",
+      "description": "System receipt marker for r03 component\u2192asset migration.",
+      "mutating": true
+    }
+  ]
+}

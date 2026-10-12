@@ -1,0 +1,30 @@
+{
+  "stage": "R02_EVENT_LEDGER_RUNTIME_SPINE",
+  "version": "0.2.0",
+  "status": "FROZEN_IMPLEMENTATION_CANDIDATE",
+  "parent_stage": "R01_ASSET_REGISTRY",
+  "parent_artifact": "Skate_Inventory_Use_System_R01_Asset_Registry_v0.1.0.zip",
+  "parent_sha256": "8e28144fad30ae800eb0ab50f2441f8fdffc464bd127ccc42caa4ed8298615f8",
+  "implements": [
+    "append-only ledger verification",
+    "deterministic R01/R02 projection replay",
+    "semantic projection drift detection",
+    "projection rebuild with pre/post checkpoints",
+    "ledger checkpoints",
+    "projection snapshots",
+    "runtime health reporting",
+    "evidence attachment hashing/registration",
+    "append-only correction annotations",
+    "recovery bundle export",
+    "recovery bundle restore",
+    "R01 database in-place migration"
+  ],
+  "non_claims": [
+    "No rental checkout/checkin runtime is activated in R02.",
+    "No maintenance policy engine is activated in R02.",
+    "No reservation or external-event runtime is activated in R02.",
+    "No financial reconciliation calculations are activated in R02.",
+    "No frontend/API server is activated in R02.",
+    "R02 projection replay intentionally supports only R01 inventory events plus R02 correction annotations."
+  ]
+}

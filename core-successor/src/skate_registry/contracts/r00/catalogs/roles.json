@@ -1,0 +1,42 @@
+{
+  "version": "0.1.0",
+  "roles": {
+    "OWNER_ADMIN": [
+      "*"
+    ],
+    "RINK_MANAGER": [
+      "scan_asset",
+      "checkout_pair",
+      "checkin_pair",
+      "flag_condition",
+      "verify_inventory",
+      "reserve_inventory",
+      "release_reservation",
+      "open_reconciliation_period",
+      "close_reconciliation_period",
+      "register_asset",
+      "add_asset_identifier",
+      "transfer_location"
+    ],
+    "COUNTER_STAFF": [
+      "scan_asset",
+      "checkout_pair",
+      "checkin_pair",
+      "flag_condition",
+      "register_asset",
+      "add_asset_identifier"
+    ],
+    "MAINTENANCE_TECH": [
+      "scan_asset",
+      "flag_condition",
+      "complete_cleaning",
+      "complete_sharpening",
+      "open_repair",
+      "complete_repair",
+      "quarantine_pair",
+      "return_pair_to_service",
+      "replace_label"
+    ],
+    "AUDITOR_READONLY": []
+  }
+}

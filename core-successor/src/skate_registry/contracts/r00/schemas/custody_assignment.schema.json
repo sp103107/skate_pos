@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:custody-assignment:0.1.0",
+  "title": "Custody Assignment",
+  "type": "object",
+  "required": [
+    "assignment_id",
+    "pair_id",
+    "owner_org_id",
+    "custodian_org_id",
+    "location_id",
+    "effective_from"
+  ],
+  "properties": {
+    "assignment_id": {
+      "type": "string",
+      "pattern": "^CUS-[A-Z0-9_-]{3,64}$"
+    },
+    "pair_id": {
+      "$ref": "common.schema.json#/$defs/pair_id"
+    },
+    "owner_org_id": {
+      "$ref": "common.schema.json#/$defs/org_id"
+    },
+    "custodian_org_id": {
+      "$ref": "common.schema.json#/$defs/org_id"
+    },
+    "location_id": {
+      "$ref": "common.schema.json#/$defs/location_id"
+    },
+    "effective_from": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "effective_to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "agreement_ref": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 512
+    }
+  },
+  "additionalProperties": false
+}

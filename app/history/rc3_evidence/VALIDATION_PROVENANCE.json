@@ -1,0 +1,48 @@
+{
+  "current_measured_scope": [
+    "locked tool/browser descriptor",
+    "old cache/disk/PATH browser diagnosis",
+    "one official isolated clean-cache installer invocation",
+    "archive/package/custody consistency"
+  ],
+  "current_runtime_or_browser_rerun": false,
+  "reused_rc2_evidence": {
+    "ADAPTER_RESULT.json": {
+      "source": "history/rc2_evidence/ADAPTER_RESULT.json",
+      "sha256": "c126840f1bb76b3f7a8214885560168d95361786a6d6175fc6b82313ee8a8bd8",
+      "current_turn_rerun": false
+    },
+    "ADAPTER_TEST_LOG.txt": {
+      "source": "history/rc2_evidence/ADAPTER_TEST_LOG.txt",
+      "sha256": "ed7dbe5ae9c2b3adacae9e2712d4578fce6c9d49df8122cb4dcf156a092be6d8",
+      "current_turn_rerun": false
+    },
+    "HTTP_TRANSCRIPT.json": {
+      "source": "history/rc2_evidence/HTTP_TRANSCRIPT.json",
+      "sha256": "4146dbb8353873cbaa79a6fd2ae1212e6d04fb8af738aeff02d7ac4e802978f1",
+      "current_turn_rerun": false
+    },
+    "SEED_RECEIPTS.json": {
+      "source": "history/rc2_evidence/SEED_RECEIPTS.json",
+      "sha256": "e0ec62c49b84c36100b70daa2d0bde4ca384f2a01b0b9d4bf520612fd979b59e",
+      "current_turn_rerun": false
+    },
+    "TYPECHECK_RESULT.json": {
+      "source": "history/rc2_evidence/TYPECHECK_RESULT.json",
+      "sha256": "a1bcffb629f64c39d2e6acc7e0435f72f1250e5fb04865f49400f2a4efeb1b6a",
+      "current_turn_rerun": false
+    },
+    "JS_SYNTAX.json": {
+      "source": "history/rc2_evidence/JS_SYNTAX.json",
+      "sha256": "7307e45462c3f87cae99aed29ff28786ab31ef1f62474bbda8d7481298393268",
+      "current_turn_rerun": false
+    }
+  },
+  "rc2_adapter_passed_unique": 18,
+  "rc2_typecheck_scope": [
+    "frontend/adapter.js",
+    "contracts/runtime-adapter.d.ts"
+  ],
+  "app_js_typecheck": "NOT_RUN_NOT_CLAIMED",
+  "reason_no_full_type_or_adapter_rerun": "Directive33 says stop tooling branch and return blocked handoff after retry failure; valid browser launch prerequisite not reached. Functional source unchanged; prior scoped evidence reused, no new runtime PASS."
+}

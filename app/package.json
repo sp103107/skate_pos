@@ -1,0 +1,16 @@
+{
+  "name": "skate-inventory-ui-companion",
+  "version": "0.1.0-rc.6",
+  "private": true,
+  "description": "UI01 local reference companion candidate",
+  "scripts": {
+    "browser": "node tests/browser_smoke.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,2 @@
+pair_id,size_system,size_value,category,brand,model,owner_org_id,custodian_org_id,home_location_id,current_location_id,left_label,right_label,acquisition_date,acquisition_source,acquisition_cost_minor,ownership_evidence_ref
+SKT-0001,US_MENS,8,HOCKEY,Riedell,Rental,ORG-AVARACHI,ORG-AVARACHI,LOC-RINK,LOC-RINK,SKT-0001-L,SKT-0001-R,2023-12-08,eBay,18000,receipt://example/SKT-0001

@@ -1,0 +1,12 @@
+{
+  "note": "POS-A01 binds the editable Core successor, not the sealed wheel install path.",
+  "parent_core_zip": "Skate_Inventory_Use_System_Core_Capsule_v0.3.1-rc.1.zip",
+  "parent_core_zip_sha256": "40ffdac4d0eb2bbbd6dd72cce2be0ec953842eb4b34ff7934cc6bab5f53b27e3",
+  "successor_identity": "0.4.0-a01.1",
+  "successor_package_version": "0.4.0a1",
+  "successor_path": "../core-successor",
+  "distribution": "skate-inventory-core==0.4.0a1",
+  "install": "scripts/install_core.py (pip install -e ../core-successor)",
+  "sealed_parent_immutable": true,
+  "dependency_not_embedded": true
+}

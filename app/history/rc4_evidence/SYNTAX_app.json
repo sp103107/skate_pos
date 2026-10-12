@@ -1,0 +1,12 @@
+{
+  "label": "SYNTAX_app",
+  "command": [
+    "node",
+    "--check",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "timeout": false
+}

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:maintenance-policy:0.1.0",
+  "title": "Maintenance Policy",
+  "type": "object",
+  "required": [
+    "policy_id",
+    "name",
+    "effective_from",
+    "rules",
+    "created_at"
+  ],
+  "properties": {
+    "policy_id": {
+      "type": "string",
+      "pattern": "^MP-[A-Z0-9_-]{3,64}$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160
+    },
+    "effective_from": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "effective_to": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "rule_type",
+          "threshold",
+          "action"
+        ],
+        "properties": {
+          "rule_type": {
+            "type": "string",
+            "enum": [
+              "RENTAL_CYCLES",
+              "USE_MINUTES",
+              "CONDITION_FLAG",
+              "CALENDAR_DAYS"
+            ]
+          },
+          "threshold": {},
+          "action": {
+            "type": "string",
+            "enum": [
+              "OK",
+              "INSPECTION_DUE",
+              "QUICK_CLEAN_DUE",
+              "DEEP_CLEAN_DUE",
+              "SHARPEN_DUE",
+              "REPAIR_DUE",
+              "OUT_OF_SERVICE"
+            ]
+          },
+          "category_filter": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

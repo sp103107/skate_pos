@@ -1,0 +1,47 @@
+{
+  "binding_version": "0.1.0",
+  "ui00_status": "DESIGN_ONLY_CANDIDATE",
+  "sources": [
+    {
+      "source_id": "SKATE_CORE_V0_3_0",
+      "artifact": "Skate_Inventory_Use_System_Core_Capsule_v0.3.0.zip",
+      "sha256": "b71b985851b90a79d9d5d667cf890738f4d951da6c2501033d43da3b88e119ea",
+      "role": "PARENT_RUNTIME_BASELINE",
+      "authority_use": "RUNTIME_AND_UI_HANDOFF_BASELINE",
+      "notes": "Exact bytes recovered from Library and hash matches sealed value."
+    },
+    {
+      "source_id": "AOS_RP01_FOUNDATION",
+      "artifact": "RP01_FOUNDATION_CAPSULE_REPAIR_CANDIDATE_0003(2).zip",
+      "sha256": "c34138e9f252c44f096dfce2fc729324b83a363e2504d724d08aa3edf1a32215",
+      "role": "FOUNDATION_REFERENCE",
+      "authority_use": "GOVERNANCE_AND_NON_CLAIM_CONSTRAINTS",
+      "notes": "Frozen/candidate package identity used as a reference; UI00 does not alter Foundation authority."
+    },
+    {
+      "source_id": "AOS_RP02_CONTROL_PLANE",
+      "artifact": "RP02_CONTROL_PLANE_CAPSULE_FROZEN_0002.zip",
+      "sha256": "06c0db0a36da65ccac597211a921e894ae0b93dc2b43964a4171e9313f6213bc",
+      "role": "CONTROL_PLANE_REFERENCE",
+      "authority_use": "COMMAND_GATE_RECEIPT_AND_CONTROL_SEPARATION",
+      "notes": "Frozen package; UI00 consumes control semantics only."
+    },
+    {
+      "source_id": "AOS_RP03_DATA_LAYER",
+      "artifact": "RP03_DATA_LAYER_CAPSULE_FROZEN_0002.zip",
+      "sha256": "dc86c86baf8cec062b464e0e28949f4be5196abb84ffec0ae568b2d5740ebcef",
+      "role": "DATA_LAYER_REFERENCE",
+      "authority_use": "PROJECTION_LINEAGE_OFFLINE_AND_DB_BOUNDARIES",
+      "notes": "Frozen package; database/projections remain non-canonical where declared."
+    },
+    {
+      "source_id": "AOS_AGENT_RELAY_RC1",
+      "artifact": "agent_relay_protocol_v0_1_0_rc1.zip",
+      "sha256": "862daec091ba51b33fde4127e00761ee902c6d812ed35b22626f2bcb71daf860",
+      "role": "COMMUNICATIONS_DESIGN_REFERENCE",
+      "authority_use": "TRANSPORT_INDEPENDENCE_ATOMICITY_OPERATOR_GATE_PATTERN",
+      "status": "CANDIDATE_FOR_FREEZE",
+      "notes": "Design reference only. Does not replace skate command envelopes or activate MCP/HTTP/NATS/socket transports."
+    }
+  ]
+}

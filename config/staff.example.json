@@ -1,0 +1,32 @@
+{
+  "version": "0.1.0",
+  "note": "Example staff file. Copy to staff.local.json (gitignored) and change PINs. Identifiers are not authentication tokens for customers.",
+  "staff": [
+    {
+      "staff_id": "STAFF-DEMO",
+      "display_name": "Demo Operator",
+      "role": "OWNER_ADMIN",
+      "pin": {
+        "algo": "pbkdf2_sha256",
+        "iterations": 200000,
+        "salt_hex": "a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1",
+        "hash_hex": "3b2ded8863963e1511b3b96f6e8379e6bac02c5d8ce463e389e36f1983106a09"
+      },
+      "active": true,
+      "demo_only": true
+    },
+    {
+      "staff_id": "STAFF-COUNTER",
+      "display_name": "Counter Staff",
+      "role": "COUNTER_STAFF",
+      "pin": {
+        "algo": "pbkdf2_sha256",
+        "iterations": 200000,
+        "salt_hex": "b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2",
+        "hash_hex": "8541fc17125d8e1a1e6809050f0e0442ddcedb9b1495ceb248a32ea1c6cc4ceb"
+      },
+      "active": true,
+      "demo_only": false
+    }
+  ]
+}

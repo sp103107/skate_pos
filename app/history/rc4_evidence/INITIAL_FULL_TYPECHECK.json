@@ -1,0 +1,24 @@
+{
+  "command": [
+    "node",
+    "/workspace/scratch/792d47681b99/ui01_resume_tools/node_modules/typescript/bin/tsc",
+    "--allowJs",
+    "--checkJs",
+    "--noEmit",
+    "--target",
+    "es2022",
+    "--module",
+    "es2022",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/adapter.js",
+    "/workspace/scratch/792d47681b99/ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/contracts/runtime-adapter.d.ts"
+  ],
+  "returncode": 2,
+  "stdout": "ui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js(5,75): error TS2339: Property 'disabled' does not exist on type 'HTMLElement'.\nui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js(6,428): error TS2339: Property 'dataset' does not exist on type 'Element'.\nui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js(8,44): error TS2339: Property 'value' does not exist on type 'HTMLElement'.\nui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js(16,97): error TS2339: Property 'dataset' does not exist on type 'Element'.\nui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js(17,142): error TS2339: Property 'value' does not exist on type 'HTMLElement'.\nui01_rc4/Skate_Inventory_UI_Candidate_v0.1.0-rc.4/frontend/app.js(19,161): error TS2339: Property 'value' does not exist on type 'HTMLElement'.\n",
+  "stderr": "",
+  "source_hashes": {
+    "frontend/app.js": "64e492c7ccd1c43951781e0abcc9f722b2857b6d2709b736c232da0943e357b6",
+    "frontend/adapter.js": "85f23fc74fc4449bb1641371b30021fac99b397922824f8ccb2c2b8bd3c69481",
+    "contracts/runtime-adapter.d.ts": "06792f3313ad42b09f4784faf9f8482d312edca2757bcbb0b985424ef995345e"
+  }
+}

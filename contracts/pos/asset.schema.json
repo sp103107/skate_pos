@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:pos:asset:0.1.0",
+  "title": "POS Asset (A01)",
+  "type": "object",
+  "required": [
+    "asset_id",
+    "asset_kind",
+    "availability_state",
+    "current_location_id",
+    "version",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "asset_id": { "type": "string", "minLength": 1, "maxLength": 80 },
+    "asset_kind": { "enum": ["SKATE_BOOT", "SKATING_AID", "HELMET"] },
+    "brand": { "type": ["string", "null"], "maxLength": 80 },
+    "model": { "type": ["string", "null"], "maxLength": 80 },
+    "size_system": {
+      "anyOf": [
+        { "type": "string", "enum": ["US_MENS", "US_WOMENS", "US_YOUTH", "EU", "OTHER"] },
+        { "type": "null" }
+      ]
+    },
+    "size_value": { "type": ["string", "null"], "maxLength": 16 },
+    "side": {
+      "anyOf": [
+        { "type": "string", "enum": ["L", "R"] },
+        { "type": "null" }
+      ]
+    },
+    "category": { "type": ["string", "null"], "maxLength": 40 },
+    "condition": { "type": "string", "maxLength": 40 },
+    "availability_state": {
+      "enum": [
+        "AVAILABLE",
+        "HELD",
+        "RENTED",
+        "RETURNED_AWAITING_INSPECTION",
+        "MAINTENANCE",
+        "LOST",
+        "RETIRED"
+      ]
+    },
+    "current_location_id": { "type": "string" },
+    "origin_pair_id": { "type": ["string", "null"] },
+    "origin_component_id": { "type": ["string", "null"] },
+    "identifiers": {
+      "type": "array",
+      "items": { "$ref": "asset_identifier.schema.json" }
+    },
+    "version": { "type": "integer", "minimum": 1 },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}

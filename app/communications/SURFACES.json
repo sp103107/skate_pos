@@ -1,0 +1,21 @@
+{
+  "entry": "adapter/bridge.py main; frontend/index.html -> app.js -> LoopbackAdapter",
+  "mounts": {
+    "frontend": "canonical source read-only served fixed paths",
+    "adapter": "canonical source trusted-local execution",
+    "history": "UI00 immutable historical design",
+    "contracts": "typed UI interface + exact Core schema reference projections",
+    "lineage": "hash-locked external dependency",
+    "evidence": "historical Foreman measurements NOT_JUDGE",
+    "context": "precommit checkpoint; live relay current actor/gate authority"
+  },
+  "envelopes": {
+    "commands": "Existing installed R00 command_envelope/receipt and R01/R02 payload contracts; whitelist6",
+    "queries": "Core C03 name/params request; whitelist5",
+    "relay": "RC1 team relay remains distinct; not domain request"
+  },
+  "MCP": "NOT_ACTIVATED_DOCUMENTATION_ONLY",
+  "VPort": "vport://aos/skate-inventory/core/foreman logical workbench only; no registration/listener",
+  "HTTP": "127.0.0.1 ephemeral port printed at explicit local startup; no public listener/daemon",
+  "security_non_claim": "Host/Origin/token/body/CSP are limited local guardrails; no authenticated identity or production security proof"
+}

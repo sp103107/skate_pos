@@ -1,0 +1,9 @@
+{
+  "status": "NOT_RUN_BLOCKED_PROVISIONING_FAILED",
+  "checks": [],
+  "screenshots_generated": false,
+  "browser_cases": 0,
+  "blocker": "Chromium download invalid/truncated ZIP; subsequent Playwright lock-update failure. No browser installed or executed.",
+  "compiler_status": "adapter JSDoc/declarations PASS_TypeScript5.9.3",
+  "independent_verdict": false
+}

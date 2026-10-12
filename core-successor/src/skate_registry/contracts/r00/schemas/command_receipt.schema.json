@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:skate:r00:schema:command-receipt:0.1.0",
+  "title": "Command Receipt",
+  "type": "object",
+  "required": [
+    "receipt_id",
+    "command_id",
+    "status",
+    "recorded_at",
+    "event_ids",
+    "result"
+  ],
+  "properties": {
+    "receipt_id": {
+      "$ref": "common.schema.json#/$defs/uuid"
+    },
+    "command_id": {
+      "$ref": "common.schema.json#/$defs/uuid"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACCEPTED",
+        "REJECTED",
+        "DUPLICATE",
+        "CONFLICT"
+      ]
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "event_ids": {
+      "type": "array",
+      "items": {
+        "$ref": "common.schema.json#/$defs/uuid"
+      },
+      "uniqueItems": true
+    },
+    "result": {
+      "type": "object"
+    },
+    "error": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "code": {
+          "type": "string"
+        },
+        "message": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "code",
+        "message"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

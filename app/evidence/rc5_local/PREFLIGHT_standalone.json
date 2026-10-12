@@ -1,0 +1,38 @@
+{
+  "status": "PREFLIGHT_PASS_NOT_BROWSER_OR_JUDGE_PASS",
+  "python": "3.12.3 (main, Mar 23 2026, 19:04:32) [GCC 13.3.0]",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "node": "v24.19.0",
+  "tool_versions": {
+    "playwright": "1.62.1",
+    "playwright-core": "1.62.1",
+    "typescript": "5.9.3"
+  },
+  "core_identity": {
+    "distribution": "skate-inventory-core==0.3.1rc1",
+    "origin": "/root/skate-ui01/rc5/python/lib/python3.12/site-packages",
+    "files_verified": 43
+  },
+  "core_zip_sha256": "40ffdac4d0eb2bbbd6dd72cce2be0ec953842eb4b34ff7934cc6bab5f53b27e3",
+  "core_wheel_sha256": "366dd13f585bbcb06dfdfb6637b88d6adfa0d217d8beb3e69c7365a8ad03b952",
+  "candidate_manifest_verified": true,
+  "source_hashes": {
+    "frontend/app.js": "f915103d6116b0c974cd3c61e087447b850e26e31d7b61e26fbca24f3a0f56a5",
+    "frontend/adapter.js": "85f23fc74fc4449bb1641371b30021fac99b397922824f8ccb2c2b8bd3c69481",
+    "contracts/runtime-adapter.d.ts": "06792f3313ad42b09f4784faf9f8482d312edca2757bcbb0b985424ef995345e",
+    "adapter/bridge.py": "77c500b77d8c3696a94533b2c3e84b845c2b8ceab38e356a6495a62334d6afaf",
+    "tests/test_adapter.py": "462f5127b1991163837b29a6e5f539e2edb1b46a2bfd3cc2814e1bee0a219325",
+    "tests/browser_smoke.cjs": "7e5ddd0b77c5af3fff6be5e7163dcd2ba64445167a32df8b28efc7e230add321"
+  },
+  "expected_browser": {
+    "name": "chromium",
+    "revision": "1234",
+    "installByDefault": true,
+    "browserVersion": "151.0.7922.34",
+    "title": "Chrome for Testing"
+  },
+  "browser_executable": null,
+  "browser_executable_sha256": null,
+  "browser_launch": "NOT_RUN",
+  "external_authority": "NOT_GRANTED_BY_SCRIPT"
+}

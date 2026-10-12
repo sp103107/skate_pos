@@ -1,0 +1,52 @@
+{
+  "npm": {
+    "exit_code": 0,
+    "result": "added3 packages",
+    "command": "npm task-local --ignore-scripts --no-audit --no-fund install typescript@5.9.3 playwright@1.62.1",
+    "deps": {
+      "typescript": {
+        "version": "5.9.3",
+        "license": "Apache-2.0",
+        "package_json_sha256": "822ef7ca6452205657b6288b066481ecf508bfbf43455d715cf7d3ec457561e6",
+        "license_sha256": null,
+        "registry": "https://registry.npmjs.org/",
+        "task_local": true
+      },
+      "playwright": {
+        "version": "1.62.1",
+        "license": "Apache-2.0",
+        "package_json_sha256": "ca170ec143a88ed3043ac953eb3b2377b2b97304104f4e1e23316684ce2c35af",
+        "license_sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+        "registry": "https://registry.npmjs.org/",
+        "task_local": true
+      },
+      "playwright-core": {
+        "version": "1.62.1",
+        "license": "Apache-2.0",
+        "package_json_sha256": "07c47543631fef9508760365dee9fbe958c562093ec8d122543949ed231f233f",
+        "license_sha256": "45873d00a0dd243596deb4aa23b2493b3d1f0671921bf2538ea431d7380220eb",
+        "registry": "https://registry.npmjs.org/",
+        "task_local": true
+      }
+    },
+    "lockfile_sha256": "3978096951c4ca26307179a4e5872be4ab3d0e87709c6742c0a370079e38fdb7"
+  },
+  "chromium": {
+    "exit_code": 1,
+    "result": "FAILED_INVALID_DOWNLOAD_AND_LOCK_UPDATE",
+    "expected_browser": "Chrome for Testing151.0.7922.34/playwright chromium1234",
+    "source": "https://cdn.playwright.dev/builds/cft/151.0.7922.34/linux64/chrome-linux64.zip",
+    "observed_errors": [
+      "End of central directory record signature not found. Either not a zip file, or file is truncated.",
+      "Unable to update lock within the stale threshold"
+    ],
+    "download_sha256": null,
+    "download_hash_note": "No successfully provisioned artifact retained; no valid binary/hash/license acceptance claim.",
+    "task_local_path": "/workspace/scratch/792d47681b99/ui01_resume_browsers",
+    "browser_installed": false,
+    "permission_override_or_bypass": false
+  },
+  "node": "v24.19.0",
+  "platform": "Same host as current adapter evidence",
+  "operator_authorization": "Sorcerer31 plus Foreman exact continue2026-10-06T20:47:45-04:00"
+}

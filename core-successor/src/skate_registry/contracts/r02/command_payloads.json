@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "0.2.0",
+  "commands": {
+    "record_correction": {
+      "type": "object",
+      "required": ["target_event_id", "correction_mode", "reason"],
+      "properties": {
+        "target_event_id": {"type": "string", "minLength": 1, "maxLength": 128},
+        "correction_mode": {"enum": ["ANNOTATION", "EVIDENCE_ADDENDUM"]},
+        "reason": {"type": "string", "minLength": 1, "maxLength": 2000},
+        "notes": {"type": ["string", "null"], "maxLength": 4000},
+        "evidence_refs": {
+          "type": "array",
+          "items": {"type": "string", "pattern": "^ATT-[A-Z0-9_-]{3,64}$"},
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
