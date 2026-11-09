@@ -1,0 +1,17 @@
+{
+  "assignment_id": "SKATE_POS_POS_K01_0001",
+  "project_id": "skate-pos",
+  "actor": "ChatGPT interactive implementation operator",
+  "task_id": "POS-K01",
+  "mode": "FAST_BUILD",
+  "source": {"repo": "sp103107/skate_pos", "remote_branch": "pos-a01-asset-workspace", "remote_parent_sha": "b48f9aca6365eb05cd72c9d5d4afe5a4d4109c33", "local_a02_reported_sha": "c99ee0a242bff81e026e42805e1bef453f252c20", "local_a02_remote_verification": "NOT_FOUND_ON_GITHUB"},
+  "target_branch": "feature/pos-k01-checkout",
+  "in_scope": ["new independent checkout-pos directory", "demo cart", "server-side pricing", "durable demo sale ledger", "local tests", "checkpoint", "github feature branch"],
+  "out_of_scope": ["existing inventory source changes", "frozen archives", "main merge", "live PayPal", "customer data", "production deployment", "hardware readers"],
+  "allowed_effects": ["local source build", "local tests", "create dedicated feature branch", "commit K01 source only"],
+  "validation": "LOCAL_ASSERTIONS_AND_DEMO_HTTP_SMOKE",
+  "independent_judge": "NOT_REQUESTED",
+  "release": false,
+  "live_activation": false,
+  "distribution": "HANDOFF_ONLY"
+}

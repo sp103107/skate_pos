@@ -1,0 +1,9 @@
+{
+  "schema": "skate.checkout.vport_registry.v1",
+  "revision": "0001",
+  "scope": "REPO_LOCAL_CANDIDATE_NOT_GLOBALLY_REGISTERED",
+  "routes": [
+    {"urn": "vport://aos/skate-pos/checkout/command", "direction": "inbound", "binding": null, "status": "UNBOUND"},
+    {"urn": "vport://aos/skate-pos/checkout/events", "direction": "outbound", "binding": null, "status": "UNBOUND"}
+  ]
+}

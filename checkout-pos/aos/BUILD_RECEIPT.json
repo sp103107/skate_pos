@@ -1,0 +1,17 @@
+{
+  "receipt_id": "SKATE_POS_K01_LOCAL_BUILD_0001",
+  "task_id": "POS-K01",
+  "local_validation": {
+    "pytest": "12 passed",
+    "javascript_node_check": "PASS",
+    "python_compileall": "PASS",
+    "http_status_catalog_index": "200/200/200",
+    "browser_playwright": "BLOCKED_BY_ADMINISTRATOR_NOT_RUN"
+  },
+  "candidate": "DEMO_ONLY",
+  "release": false,
+  "independent_review": "NOT_REQUESTED",
+  "source_authority": "K01 directory only; no A02/other source changes",
+  "provider_commit_sha": null,
+  "note": "Provider commit SHA to be recorded in external completion receipt after remote publication."
+}

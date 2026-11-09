@@ -1,0 +1,17 @@
+{
+  "schema": "skate.checkout.module_master.v1",
+  "module_id": "skate-checkout-pos",
+  "module_version": "0.1.0-k01",
+  "project_id": "skate-pos",
+  "repo": "sp103107/skate_pos",
+  "branch": "feature/pos-k01-checkout",
+  "source_baseline": "b48f9aca6365eb05cd72c9d5d4afe5a4d4109c33",
+  "interface": "LOCAL_LOOPBACK_FASTAPI",
+  "provider_binding": "NONE",
+  "standalone": true,
+  "paypal": "NOT_CONNECTED",
+  "inventory": "NOT_CONNECTED",
+  "mode": "DEMO_ONLY",
+  "authority_effect": "NONE",
+  "global_vport_admission": false
+}

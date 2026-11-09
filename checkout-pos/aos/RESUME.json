@@ -1,0 +1,13 @@
+{
+  "project_id": "skate-pos",
+  "task_id": "POS-K01",
+  "branch": "feature/pos-k01-checkout",
+  "status": "LOCAL_TESTED_CANDIDATE",
+  "verified_remote_base": "b48f9aca6365eb05cd72c9d5d4afe5a4d4109c33",
+  "remote_source_gap": "pos-a02-enrollment@c99ee0a and A02.1-A03B not remotely verified; preserve the source before integration",
+  "working_component": "checkout-pos",
+  "next_task": "POS-K02 PayPal Sandbox adapter with verified payment state machine and webhook integration",
+  "next_actor": "Coding Agent",
+  "required_before_merge": ["reconcile unpublished A02 lineage", "independent milestone validation when required", "operator merge approval"],
+  "non_claims": ["no PayPal API calls", "no live transactions", "no hardware kiosk test", "no inventory checkout", "no independent Judge verdict"]
+}

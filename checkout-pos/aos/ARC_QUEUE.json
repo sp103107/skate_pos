@@ -1,0 +1,13 @@
+{
+  "project_id": "skate-pos",
+  "execution_profile": "EVERYDAY_DEV_FAST_BUILD_v0.3.1-RC1",
+  "branch": "feature/pos-k01-checkout",
+  "tasks": [
+    {"task_id": "POS-K00", "objective": "Remote source reconciliation", "status": "REMOTE_SOURCE_GAP_RECORDED"},
+    {"task_id": "POS-K01", "objective": "Independent demo cart, pricing, atomic sale, demo receipt", "status": "LOCAL_TESTED_HANDOFF_CANDIDATE"},
+    {"task_id": "POS-K02", "objective": "PayPal Sandbox Orders v2, verified capture, reconciliation", "status": "PLANNED_NOT_AUTHORIZED_FOR_LIVE"},
+    {"task_id": "POS-K03", "objective": "Authenticated inventory envelope adapter and fulfillment", "status": "PLANNED"},
+    {"task_id": "POS-K04", "objective": "Windows kiosk UI and real environment acceptance", "status": "PLANNED"}
+  ],
+  "next_task": "POS-K02"
+}
