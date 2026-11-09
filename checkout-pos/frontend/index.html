@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Skate Checkout POS · DEMO</title>
+<link rel="stylesheet" href="/styles.css">
+<script src="/app.js" type="module"></script>
+</head>
+<body>
+<a class="skip" href="#products">Skip to products</a>
+<header class="topbar">
+  <div><strong class="brand">SKATE<span> / CHECKOUT</span></strong><p>Counter · Standalone POS K01</p></div>
+  <div class="badges"><span class="badge danger">DEMO ONLY</span><span class="badge" id="connection">Connecting</span></div>
+</header>
+<main class="shell">
+  <section class="catalog" aria-labelledby="products-title">
+    <div class="section-title"><div><p class="eyebrow">01 / PRODUCTS</p><h1 id="products-title">Build a cart</h1></div><p class="hint">Tap a product to add it.</p></div>
+    <p class="notice">Demo transactions only. Skate rental products do <strong>not</strong> reserve or issue equipment.</p>
+    <div class="product-grid" id="products" role="list" aria-live="polite"></div>
+  </section>
+  <aside class="checkout" aria-labelledby="cart-title">
+    <div class="section-title"><div><p class="eyebrow">02 / CHECKOUT</p><h2 id="cart-title">Current sale</h2></div><button type="button" id="clear" class="text-btn">Clear</button></div>
+    <div id="cart" aria-live="polite" class="cart-items"><p class="empty">No items added.</p></div>
+    <label for="discount">Demo discount ($)</label>
+    <input id="discount" type="text" inputmode="decimal" autocomplete="off" value="0.00" pattern="\d+(\.\d{1,2})?" aria-describedby="discount-help">
+    <small id="discount-help">Applied to cart before demonstration tax calculations.</small>
+    <div class="totals" aria-live="polite">
+      <div><span>Subtotal</span><strong id="subtotal">$0.00</strong></div>
+      <div><span>Discount</span><strong id="discount-show">$0.00</strong></div>
+      <div><span>Tax <small id="tax-state">Unconfigured</small></span><strong id="tax">$0.00</strong></div>
+      <div class="grand"><span>Total</span><strong id="total">$0.00</strong></div>
+    </div>
+    <button id="create-sale" type="button" class="primary" disabled>Create demo sale</button>
+    <button id="simulate-payment" type="button" class="secondary" disabled>Simulate payment — no charge</button>
+    <p role="status" aria-live="polite" id="status-text" class="status-line">Loading catalog…</p>
+    <section id="receipt" class="receipt" hidden aria-labelledby="receipt-title">
+      <h3 id="receipt-title">Demo receipt</h3><p id="receipt-id"></p>
+      <p id="receipt-state"></p><div id="receipt-lines"></div>
+      <p id="receipt-total"></p><p><strong>SIMULATION — NOT A PAYMENT RECEIPT</strong></p>
+      <button type="button" id="print" class="secondary">Print demo receipt</button>
+    </section>
+  </aside>
+</main>
+<footer><span>SKATE POS / POS-K01</span><span>PayPal: not connected · Inventory: not connected · Live payments: disabled</span></footer>
+</body>
+</html>
